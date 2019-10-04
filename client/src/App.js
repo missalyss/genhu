@@ -11,7 +11,7 @@ import ProtectedRoute from './components/auth/ProtectedRoute';
 
 const App = () => (
   <Fragment>
-    <Container>
+    
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/admin" component={Login} />
@@ -21,7 +21,7 @@ const App = () => (
         </FetchUser>
         <Route component={Nomatch} />
       </Switch>
-    </Container>
+    
   </Fragment>
 )
 
