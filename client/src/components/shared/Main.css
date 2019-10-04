@@ -1,0 +1,68 @@
+/* --------------- Fonts ---------------- */
+
+
+
+/* --------------- Colors ---------------- */
+/* #FFFFFF #724524 #7344 */
+
+
+
+/* --------------- NAV ---------------- */
+
+.main-nav {
+  width: 100%;
+  background-color: #7344;
+}
+
+/* --------------- HERO ---------------- */
+
+.hero-wrapper {
+  width: 100vw;
+  height: 100vh;
+  padding: 0em 5em;
+}
+
+/* --------------- ABout ---------------- */
+.about-col-one {
+  flex: 50%;
+}
+.col-two {
+  flex: 50%;
+}
+
+/* --------------- STATS ---------------- */
+
+  .container {
+    position: relative;
+    background-image: url("paper.gif");
+  }
+
+  .statsGrid {
+    
+    text-align: center;
+    font-size: 36px;
+    color: black
+  }
+
+  .stat-background-image {
+  height: 25%;
+  width: 100%;
+  opacity: 0.75;
+
+  }
+  .container2 {
+    height: 90vh;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .cell {
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    padding: 4rem;
+  }
+
+
+
