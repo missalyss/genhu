@@ -1,11 +1,11 @@
 import React from 'react';
 import { Header, } from 'semantic-ui-react';
-import Navbar from '../shared/Navbar';
+import AdminNav from './AdminNav';
 import { Container, } from "semantic-ui-react";
 
 const AdminHome = () => (
   < Container>
-    <Navbar />
+    <AdminNav />
     <Header as="h3" textAlign="center">GenHu Admin Home</Header>
   </Container>
 )

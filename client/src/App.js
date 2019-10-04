@@ -1,5 +1,5 @@
 import React, { Fragment, } from 'react';
-import Home from './components/shared/Home';
+import Home from './components/shared/Landing';
 import Nomatch from './components/shared/Nomatch';
 import FetchUser from './components/auth/FetchUser';
 import Login from './components/auth/Login';
