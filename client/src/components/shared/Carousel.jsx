@@ -8,13 +8,13 @@ const LandingCarousel = () => {
   return(
     <Carousel className='hero-wrapper' fade indicators={false} interval={2000} pauseOnHover={false}>
       <Carousel.Item>
+        <div className='hero-align_col' style={{border: 'solid 1px red'}}>
+          <div className=''>
         <img
           className='hero-pic'
           src={carouselPic}
           alt="First slide"
         />
-        <div className=''>
-          <div className=''>
             <Carousel.Caption>
             <h3>First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>

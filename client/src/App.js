@@ -10,6 +10,8 @@ import AdminHome from './components/admin/AdminHome';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 
 const App = () => (
+
+  // if the screen size changes show this: 
   <Fragment>
     
       <Switch>
@@ -23,6 +25,8 @@ const App = () => (
       </Switch>
     
   </Fragment>
+
+  // otherwise show this.
 )
 
 export default App;
