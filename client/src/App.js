@@ -13,7 +13,7 @@ const App = () => (
 
   // if the screen size changes show this: 
   <Fragment>
-    <Container>
+    
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/admin" component={Login} />
@@ -23,7 +23,7 @@ const App = () => (
         </FetchUser>
         <Route component={Nomatch} />
       </Switch>
-    </Container>
+    
   </Fragment>
 
   // otherwise show this.

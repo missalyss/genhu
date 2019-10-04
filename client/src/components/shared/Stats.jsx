@@ -7,7 +7,7 @@ const Stats = () => {
   return(
     <div class='body'>
       Stats Grid
-      <img src={StatImage} class='statsImage' />
+      {/* <img src={StatImage} class='statsImage' /> */}
       <div class='statsHeader'>SUCCESS 
       <br/>
       Since 2008. You have cared. We did the math.

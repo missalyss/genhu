@@ -55,31 +55,37 @@
 /* --------------- STATS ---------------- */
 
 .body {
-background-image: image('stats_image.jpg')
-}
-
-.statsImage {
-  position: relative;
-  height: 45%;
+  background-image: url('../../assets/Images/stats_image.jpg'); 
+  background-position: center;
+  background-size: cover;
+  height: 100%;
   width: 100%;
   opacity: 0.75;
 }
 
+/* .statsImage {
+  position: relative;
+  height: 45%;
+  width: 100%;
+  opacity: 0.75;
+} */
+
 .container {
-  height: 90vh;
+  height: 100vh;
   margin: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
 .cell {
-  color: black;
-  font-size: 3rem;
+  color: white;
+  font-size: 2rem;
   text-align: center;
-  padding: 4rem;
+  padding: 3rem;
 }
 .statsHeader {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
+  color:white;
 
 }
