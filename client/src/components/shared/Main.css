@@ -1,0 +1,55 @@
+/* --------------- Fonts ---------------- */
+
+
+
+/* --------------- Colors ---------------- */
+/* #FFFFFF #724524 #7344 */
+
+
+
+/* --------------- NAV ---------------- */
+
+.main-nav {
+  width: 100%;
+  background-color: #7344;
+}
+
+/* --------------- HERO ---------------- */
+
+.hero-wrapper {
+  width: 100vw;
+  height: 100vh;
+  padding: 0em 5em;
+}
+
+/* --------------- About ---------------- */
+.about-container {
+  
+  border: solid 2px blue;
+  padding: 5em;
+}
+
+.logo-col {
+  border: solid 2px red;
+  padding: 3em;
+  width: 24%;
+  height: 84%;
+  margin: auto;
+}
+
+.mission-col {
+  border: solid 2px purple;
+  padding: 3em;
+  width: 33%;
+  margin: auto;
+}
+
+.converted-col {
+  border: solid 2px orange;
+  padding: 3em;
+  width: 33%;
+}
+
+
+
+
