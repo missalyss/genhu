@@ -1,9 +1,30 @@
-/* --------------- Fonts ---------------- */
+/* This Targets EVERYTHING -- just a good thing to do for any project.
+ Gives a default value of 0 padding and margin */
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+/* --------------- Fonts ---------------- */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oxygen&display=swap");
+
+@font-face {
+  /* TITLES */
+  font-family: 'Oxygen', sans-serif;
+  /* TEXT */
+  font-family: 'Open Sans', sans-serif;
+}
 
 
 /* --------------- Colors ---------------- */
-/* #FFFFFF #724524 #7344 */
+
+/* Main Color Palette From Site */
+/* #CEBF3F #D2AA32 #863A29 #5B3450 #3D6667 #FFFFFF */
+
+/* Other Color Palettes to keep in mind */
+/* https: //coolors.co/u/harlanevans */
 
 
 
@@ -26,43 +47,39 @@
 .about-col-one {
   flex: 50%;
 }
+
 .col-two {
   flex: 50%;
 }
 
 /* --------------- STATS ---------------- */
 
-  .container {
-    position: relative;
-    background-image: url("paper.gif");
-  }
+.body {
+background-image: image('stats_image.jpg')
+}
 
-  .statsGrid {
-    
-    text-align: center;
-    font-size: 36px;
-    color: black
-  }
-
-  .stat-background-image {
-  height: 25%;
+.statsImage {
+  position: relative;
+  height: 45%;
   width: 100%;
   opacity: 0.75;
+}
 
-  }
-  .container2 {
-    height: 90vh;
-    margin: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
-  .cell {
-    color: black;
-    font-size: 2rem;
-    text-align: center;
-    padding: 4rem;
-  }
+.container {
+  height: 90vh;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.cell {
+  color: black;
+  font-size: 3rem;
+  text-align: center;
+  padding: 4rem;
+}
+.statsHeader {
+  text-align: center;
+  font-size: 3rem;
 
-
-
+}

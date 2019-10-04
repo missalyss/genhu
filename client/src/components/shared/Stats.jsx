@@ -5,15 +5,15 @@ import StatImage from '../../assets/Images/stats_image.jpg';
 
 const Stats = () => {
   return(
-    <div>
+    <div class='body'>
       Stats Grid
-      <img src={StatImage} className= 'stat-background-image' />
-      <div class='statsGrid'>SUCCESS 
+      <img src={StatImage} class='statsImage' />
+      <div class='statsHeader'>SUCCESS 
       <br/>
       Since 2008. You have cared. We did the math.
       <br/><br/>
       </div>
-      <div class="container2">
+      <div class="container">
         <div class="cell cell-1">1526 Children</div>
         <div class="cell cell-2">17070 Meals Per Month</div>
         <div class="cell cell-3">818,033 Meals To Date</div>
