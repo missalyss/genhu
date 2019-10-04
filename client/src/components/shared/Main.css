@@ -1,11 +1,29 @@
-/* --------------- Fonts ---------------- */
+/* This Targets EVERYTHING -- just a good thing to do for any project.
+ Gives a default value of 0 padding and margin */
+* {
+  padding: 0;
+  margin: 0;
+}
 
+
+/* --------------- Fonts ---------------- */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oxygen&display=swap");
+
+@font-face {
+  /* TITLES */
+  font-family: 'Oxygen', sans-serif;
+  /* TEXT */
+  font-family: 'Open Sans', sans-serif;
+}
 
 
 /* --------------- Colors ---------------- */
-/* #FFFFFF #724524 #7344 */
 
+/* Main Color Palette From Site */
+/* #CEBF3F #D2AA32 #863A29 #5B3450 #3D6667 #FFFFFF */
 
+/* Other Color Palettes to keep in mind */
+/* https: //coolors.co/u/harlanevans */
 
 /* --------------- NAV ---------------- */
 
@@ -40,6 +58,7 @@
 .about-col-one {
   flex: 50%;
 }
+
 .col-two {
   flex: 50%;
 }
