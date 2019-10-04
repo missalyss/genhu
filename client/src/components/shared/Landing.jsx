@@ -3,6 +3,7 @@ import { GlobalTitle } from './GlobalStyles';
 import Navbar from './Navbar'
 import Carousel from './Carousel';
 
+
 const Landing = () => {
   return(
     <div>

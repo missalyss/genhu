@@ -1,0 +1,50 @@
+/* --------------- Fonts ---------------- */
+
+
+
+/* --------------- Colors ---------------- */
+/* #FFFFFF #724524 #7344 */
+
+
+
+/* --------------- HERO ---------------- */
+
+.hero-wrapper {
+  width: 100vw;
+  height: 100vh;
+  padding: 0em 5em;
+}
+
+/* --------------- ABout ---------------- */
+.about-col-one {
+  flex: 50%;
+}
+.col-two {
+  flex: 50%;
+}
+
+/* --------------- NAV ---------------- */
+
+.main-nav {
+  display:-webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  padding: 2em;
+  width: 100vw;
+  height: 5em;
+  background-color: #f2f2f2;
+  border-color: red;
+} 
+
+.left {
+  margin-right:auto;
+}
+
+.nav-item {
+  padding: 2em;
+  margin: 0% 0% 0% 1%;
+}
