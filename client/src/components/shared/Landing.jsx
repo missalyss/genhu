@@ -1,14 +1,15 @@
 import React from 'react';
 import { GlobalTitle } from './GlobalStyles';
 import Navbar from './Navbar'
-import Carousel from './Carousel';
+import LandingCarousel from './Carousel';
+import './Main.css';
 
 
 const Landing = () => {
   return(
     <div>
     <Navbar />
-    <Carousel />
+    <LandingCarousel />
     {/* stats */}
     </div>
     )
