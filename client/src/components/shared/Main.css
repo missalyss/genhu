@@ -28,21 +28,29 @@
 .main-nav {
   display:-webkit-flex;
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
+  flex-direction: row;
   align-items: center;
   position: relative;
   margin: 0 auto;
   padding: 2em;
   width: 100vw;
   height: 5em;
-  background-color: #f2f2f2;
-  border-color: red;
+  background-color: white;
+  -moz-box-shadow: 0 0 3px #ccc;
+  -webkit-box-shadow: 0 0 3px #ccc;
+  box-shadow: 0 0 3px #ccc;
+  font-size: 1.2em;
+  
 } 
 
-.left {
-  margin-right:auto;
+/* .right-nav {
+  justify-content: flex-end;
 }
+
+.left-nav {
+  justify-content: right;
+} */
 
 .nav-item {
   padding: 2em;
