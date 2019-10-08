@@ -5,6 +5,7 @@ import LandingCarousel from './Carousel';
 import Stats from '../shared/Stats'
 import './Main.css';
 
+
 const Landing = () => {
   return(
     <div>
