@@ -121,10 +121,10 @@
   display:-webkit-flex;
   display: flex;
   flex-direction: row;
-  align-items: center; 
+  /* align-items: center;  */
   /* position: relative;
   margin: 0 auto; */
-  padding: 2em;
+  /* padding: 2em; */
   width: 100vw;
   height: 5em;
   background-color: white;
@@ -136,20 +136,18 @@
   
 } 
 
-.nav_column {
+.nav-home {
   display: flex;
-  flex-direction: column;
-  /* flex-basis: 100%; */
-  /* flex: 1; */
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 50%;
 }
 
-.right_column {
-
-  
-}
-
-.left_column {
-
+.right_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
 }
 
 .nav-item {
