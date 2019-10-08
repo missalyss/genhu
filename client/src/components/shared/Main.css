@@ -1,29 +1,9 @@
-/* This Targets EVERYTHING -- just a good thing to do for any project.
- Gives a default value of 0 padding and margin */
-* {
-  padding: 0;
-  margin: 0;
-}
-
-
 /* --------------- Fonts ---------------- */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oxygen&display=swap");
 
-@font-face {
-  /* TITLES */
-  font-family: 'Oxygen', sans-serif;
-  /* TEXT */
-  font-family: 'Open Sans', sans-serif;
-}
 
 
 /* --------------- Colors ---------------- */
-
-/* Main Color Palette From Site */
-/* #CEBF3F #D2AA32 #863A29 #5B3450 #3D6667 #FFFFFF */
-
-/* Other Color Palettes to keep in mind */
-/* https: //coolors.co/u/harlanevans */
+/* #FFFFFF #724524 #7344 */
 
 /* --------------- NAV ---------------- */
 
@@ -46,28 +26,46 @@
   padding: 0em 1em;
 }
 
-<<<<<<< HEAD
 /* --------------- About ---------------- */
 
 
 
 
-=======
-.hero-align_col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
-
-
-
-/* --------------- ABout ---------------- */
-.about-col-one {
+.col-two {
   flex: 50%;
->>>>>>> 338fe5da7a985c7841072cd138d8b9b9d2cfd545
 }
 
+/* --------------- NAV ---------------- */
 
+.main-nav {
+  display:-webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  padding: 2em;
+  width: 100vw;
+  height: 5em;
+  background-color: white;
+  -moz-box-shadow: 0 0 3px #ccc;
+  -webkit-box-shadow: 0 0 3px #ccc;
+  box-shadow: 0 0 3px #ccc;
+  font-size: 1.2em;
+  
+} 
 
+/* .right-nav {
+  justify-content: flex-end;
+}
 
+.left-nav {
+  justify-content: right;
+} */
 
+.nav-item {
+  padding: 2em;
+  margin: 0% 0% 0% 1%;
+}

@@ -9,6 +9,7 @@ import LandingCarousel from './Carousel';
 >>>>>>> 338fe5da7a985c7841072cd138d8b9b9d2cfd545
 import './Main.css';
 
+
 const Landing = () => {
   return(
     <div>
