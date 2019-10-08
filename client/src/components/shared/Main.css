@@ -102,7 +102,7 @@
 }
 
 .container {
-  height: 50vh;
+  height: 80vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -119,7 +119,7 @@
   font-size: 2rem;
   color:white;
   margin: 1rem;
-  
+}
 
 /* --------------- NAV ---------------- */
 
