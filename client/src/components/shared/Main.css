@@ -1,3 +1,12 @@
+/* This Targets EVERYTHING -- just a good thing to do for any project.
+ Gives a default value of 0 padding and margin */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
 /* --------------- Fonts ---------------- */
 
 
@@ -20,7 +29,34 @@
   padding: 0em 5em;
 } */
 
-.hero-pic {
+.hero-pic1 {
+  background-image: url('../../assets/carousel-pic.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 50vw;
+  padding: 0em 1em;
+}
+.hero-pic2 {
+  background-image: url('../../assets/carousel-pic2.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 50vw;
+  padding: 0em 1em;
+}
+.hero-pic3 {
+  background-image: url('../../assets/carousel-pic3.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 50vw;
+  padding: 0em 1em;
+}
+.hero-pic4 {
+  background-image: url('../../assets/carousel-pic4.jpg');
+  background-position: center;
+  background-size: cover;
   width: 100vw;
   height: 50vw;
   padding: 0em 1em;
@@ -30,17 +66,54 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
+  
 }
 
-
-
-/* --------------- ABout ---------------- */
-.about-col-one {
-  flex: 50%;
+.hero-align_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  color: white;
 }
+
 .col-two {
   flex: 50%;
 }
+
+/* --------------- STATS ---------------- */
+
+.body {
+  background-image: url('../../assets/Images/stats_image.jpg'); 
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.75;
+  
+}
+
+.container {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1px 1px;
+}
+.cell {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+.statsHeader {
+  text-align: center;
+  font-size: 2rem;
+  color:white;
+  margin: 1rem;
+  
 
 /* --------------- NAV ---------------- */
 
