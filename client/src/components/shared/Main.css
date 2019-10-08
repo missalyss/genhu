@@ -1,3 +1,12 @@
+/* This Targets EVERYTHING -- just a good thing to do for any project.
+ Gives a default value of 0 padding and margin */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
 /* --------------- Fonts ---------------- */
 
 
@@ -79,6 +88,38 @@
 .col-two {
   flex: 50%;
 }
+
+/* --------------- STATS ---------------- */
+
+.body {
+  background-image: url('../../assets/Images/stats_image.jpg'); 
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.75;
+  
+}
+
+.container {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1px 1px;
+}
+.cell {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+.statsHeader {
+  text-align: center;
+  font-size: 2rem;
+  color:white;
+  margin: 1rem;
+  
 
 /* --------------- NAV ---------------- */
 
