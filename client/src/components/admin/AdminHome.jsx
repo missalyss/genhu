@@ -1,13 +1,16 @@
-import React from 'react';
-import { Header, } from 'semantic-ui-react';
-import AdminNav from './AdminNav';
-import { Container, } from "semantic-ui-react";
+import React from "react";
+import AdminNav from "./AdminNav";
 
-const AdminHome = () => (
-  < Container>
+const AdminHome = () => {
+  return(
+
+    <div>
     <AdminNav />
-    <Header as="h3" textAlign="center">GenHu Admin Home</Header>
-  </Container>
+    <div>
+      GenHu Admin Home
+    </div>
+  </div>
 )
+};
 
 export default AdminHome;
