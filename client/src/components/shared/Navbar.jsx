@@ -10,6 +10,8 @@ const Navbar = () => {
         <div className='left_column'>
           <NavLink to="/" className='nav-item'>Home</NavLink>
         </div>
+      </div>
+      <div className='nav_column'>
         <div className='right_column'>
           <NavLink to="/calendar" className='nav-item' >Calendar</NavLink>
           <NavLink to="/about" className='nav-item'>About Us</NavLink>
