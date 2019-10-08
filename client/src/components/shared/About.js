@@ -1,6 +1,6 @@
 import React from 'react';
-import Logo from '../../assets/Images/LogoSymbol.png';
-import Carousel from './Carousel';
+// import Logo from '../../assets/Images/LogoSymbol.png';
+// import Carousel from './Carousel';
 
 const About = () => {
 
