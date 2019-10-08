@@ -43,33 +43,60 @@
 }
 
 /* --------------- About ---------------- */
-.about-container {
+
+.title-container {
+  display: flex;
+  border: 1px #ccc solid;
+  padding: 10px;
+  justify-content: center
   
-  border: solid 2px blue;
-  padding: 5em;
+}
+
+.title-col {
+  justify-content: right;
+  display: flex;
+  padding:
+  
+}
+
+.about-container {
+  display: flex;
+  
+  
 }
 
 .logo-col {
-  border: solid 2px red;
-  padding: 3em;
-  width: 24%;
-  height: 84%;
-  margin: auto;
+  display: flex;
+  flex: 1;
+  padding: 30em;
+  /* height: 100px;
+  width: 500px; */
+  background-image: url(../../assets/Images/LogoSymbol.png);
+  border-radius: 8px;
 }
 
 .mission-col {
-  border: solid 2px purple;
-  padding: 3em;
-  width: 33%;
-  margin: auto;
-  flex-grow: 4;
+  flex: 1;
+  padding: 10px;
+}
+
+.bottom-container {
+  display: flex;
+  padding: 10px;
 }
 
 .converted-col {
-  border: solid 2px orange;
-  padding: 3em;
-  width: 33%;
+  
+  flex: 3;
+  padding: 10px;
 }
+
+.carou-col {
+  flex: 4;
+  padding: 10px;
+
+}
+
 
 
 

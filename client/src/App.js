@@ -7,6 +7,7 @@ import Register from './components/auth/Register';
 import { Switch, Route, } from 'react-router-dom';
 import AdminHome from './components/admin/AdminHome';
 import ProtectedRoute from './components/auth/ProtectedRoute';
+// import About from './components/shared/About';
 
 const App = () => (
 
