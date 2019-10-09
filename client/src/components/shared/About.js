@@ -1,6 +1,7 @@
 import React from "react";
 // import Logo from '../../assets/Images/LogoSymbol.png';
 import Carousel from 'react-bootstrap/Carousel';
+import './About.css';
 
 const About = () => {
 
