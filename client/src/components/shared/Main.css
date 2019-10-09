@@ -100,7 +100,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 1px 1px;
+  grid-gap: 0.5px;
 }
 .cell {
   color: white;
@@ -112,7 +112,7 @@
   text-align: center;
   font-size: 2rem;
   color:white;
-  margin: 1rem;
+  padding-top: 2rem;
 }
 
 /* --------------- NAV ---------------- */

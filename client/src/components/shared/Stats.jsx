@@ -5,7 +5,7 @@ const Stats = () => {
   return(
     <div class='body'>
       <div class='statsHeader'><h1 style={{marginTop: '5rem'}}>SUCCESS </h1>
-      <h1>Since 2008. You have cared. We did the math.</h1>
+      <h1>Since 2008. You have cared. We did the math.</h1><br/><br/>
       </div>
       <div class="container">
         <div class="cell cell-1"><h1>1526</h1><h6>Children</h6></div>
