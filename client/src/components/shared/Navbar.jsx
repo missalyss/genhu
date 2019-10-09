@@ -4,12 +4,11 @@ import styles from'./Main.css';
 
 const Navbar = () => {
   return(
-    <>
     <div className='main-nav'>
-      <div className='left-nav'>
+      <div className='nav-home'>
         <NavLink to="/" className='nav-item'>Home</NavLink>
       </div>
-      <div className='right-nav'>
+      <div className='right_nav'>
         <NavLink to="/calendar" className='nav-item' >Calendar</NavLink>
         <NavLink to="/about" className='nav-item'>About Us</NavLink>
         <NavLink to="/expeditions" className='nav-item'>Expeditions</NavLink>
@@ -17,7 +16,6 @@ const Navbar = () => {
         <NavLink to="/contact" className='nav-item'>Contact Us</NavLink>
       </div>
     </div>
-    </>
   )
 }
 
