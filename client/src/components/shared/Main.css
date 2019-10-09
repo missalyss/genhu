@@ -120,12 +120,11 @@
 .main-nav {
   display:-webkit-flex;
   display: flex;
-  justify-content: flex-end;
   flex-direction: row;
-  align-items: center;
-  position: relative;
-  margin: 0 auto;
-  padding: 2em;
+  /* align-items: center;  */
+  /* position: relative;
+  margin: 0 auto; */
+  /* padding: 2em; */
   width: 100vw;
   height: 5em;
   background-color: white;
@@ -133,22 +132,24 @@
   -webkit-box-shadow: 0 0 3px #ccc;
   box-shadow: 0 0 3px #ccc;
   font-size: 1.2em;
+  flex-wrap: wrap;
   
 } 
 
-/* .right-nav {
-  justify-content: flex-end;
+.nav-home {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 50%;
 }
 
-.left-nav {
-  justify-content: right;
-} */
+.right_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+}
 
 .nav-item {
   padding: 2em;
-  margin: 0% 0% 0% 1%;
 }
-
-
-/* --------------- ABOUT ---------------- */
-
