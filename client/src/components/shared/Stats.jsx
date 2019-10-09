@@ -1,13 +1,14 @@
 import React from 'react';
+import "./Stats.css"
 
 
 const Stats = () => {
   return(
-    <div class='body'>
+    <div class='stats-body'>
       <div class='statsHeader'><h1 style={{marginTop: '5rem'}}>SUCCESS </h1>
       <h1>Since 2008. You have cared. We did the math.</h1><br/><br/>
       </div>
-      <div class="container">
+      <div class="stats-container">
         <div class="cell cell-1"><h1>1526</h1><h6>Children</h6></div>
         <div class="cell cell-2"><h1>17070</h1><h6>Meals Per Month</h6></div>
         <div class="cell cell-3"><h1>818,033</h1><h6>Meals To Date</h6></div>
