@@ -1,0 +1,83 @@
+.title {
+  /* display: flex; */
+  /* justify-content: ; */
+  font-size: 27px;
+  padding: 1em;
+}
+
+.main {
+  display: flex;
+  /* padding: 3em; */
+  height: 30em;
+  
+}
+
+.logo {
+  background-image: url(../../assets/Images/LogoSymbol.png);
+  /* background-position: center; */
+  background-size: cover;
+  /* justify-content: flex-start; */
+  /* background-size: 40% */
+  height: 100%;
+  width: 50%;
+  /* padding: 13em; */
+}
+.container {
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-flow: column wrap; */
+  /* align-content:  */
+}
+
+.learn {
+  width: 90%; 
+  /* height: 10%; */
+}
+
+.mission {
+  font-size: 16px;
+  /* text-indent: em; */
+  /* text-decoration: ; */
+  /* align-content: space-around; */
+  /* flex-direction: column; */
+  /* font-size: 20px; */
+  /* flex-flow: column wrap; */
+  /* align-items: flex-start; */
+  /* padding: 2em; */
+  /* flex-grow: 1; */
+}
+
+.mission-paragraph {
+  /* flex: 2; */
+  /* font-size: 17px; */
+  /* align-content: space-around; */
+  /* flex-direction: column; */
+  /* flex-flow: wrap */
+  /* align-items: flex-end; */
+  /* flex-flow: column wrap; */
+  /* align-self: auto; */
+  /* padding: 5em; */
+}
+
+.bottom {
+  display: flex;
+  /* padding: 3em; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* height: 100%; */
+  /* align-content: flex-end; */
+}
+
+.converted {
+  /* align-content: space-around; */
+  /* flex-grow: 1; */
+  font-size: 20px;
+  /* padding: 2em; */
+
+}
+
+.converted-paragraph {
+  /* align-content: flex-end; */
+  font-size: 17px;
+  /* padding: 5em; */
+}
