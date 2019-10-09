@@ -4,6 +4,7 @@ import Navbar from './Navbar'
 import About from './About';
 import LandingCarousel from './Carousel';
 import Stats from '../shared/Stats'
+import ProvenSouls from '../shared/Proved-souls';
 import './Main.css';
 
 
@@ -12,6 +13,7 @@ const Landing = () => {
     <div>
      <Navbar />
      <LandingCarousel />
+     <ProvenSouls />
      <Stats/>
     <About />
     </div>
