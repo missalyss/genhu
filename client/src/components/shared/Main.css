@@ -131,7 +131,7 @@
   -moz-box-shadow: 0 0 3px #ccc;
   -webkit-box-shadow: 0 0 3px #ccc;
   box-shadow: 0 0 3px #ccc;
-  font-size: 1.2em;
+  font-size: 1.4em;
   flex-wrap: wrap;
   
 } 
@@ -152,4 +152,27 @@
 
 .nav-item {
   padding: 2em;
+  color: black;
+  position: relative;
+}
+
+.nav-item:hover {
+  color: darkgrey;
+}
+
+.nav-item:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 20px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: darkgrey;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav-item:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
