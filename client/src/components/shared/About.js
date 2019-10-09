@@ -1,22 +1,30 @@
 import React from "react";
 // import Logo from '../../assets/Images/LogoSymbol.png';
-// import Carousel from './Carousel';
+import Carousel from 'react-bootstrap/Carousel';
+import './About.css';
 
 const About = () => {
+
   return (
     <div>
+      {/* <div class="title">Learn More About Generations Humanitarian</div> */}
+
       <div class="main">
-        <div class="logo">Logo Here</div>
-        <div class="title">Learn More About Generations Humanitarian</div>
-        <div class="mission">OUR MISSION</div>
-        <div class="mission-paragraph">
-          Generations Humanitarian is committed to transforming street children
-          toward an abundance of health, hope, and loving homes—thereby breaking
-          the cycle of scarcity for generations to come. This is done through
-          broad research, novel development, strengthening nonprofit entities in
-          development, and individual nurturing in a home environment.
+          <div class="container">
+            <div class="logo"></div>
+            <div class='learn'>
+            <div class="title">Learn More About Generations Humanitarian</div>
+            <div class="mission">OUR MISSION</div>
+            <div class="mission-paragraph">
+              Generations Humanitarian is committed to transforming street children
+              toward an abundance of health, hope, and loving homes—thereby breaking
+              the cycle of scarcity for generations to come. This is done through
+              broad research, novel development, strengthening nonprofit entities in
+              development, and individual nurturing in a home environment.
+            </div>
+            </div>
+          </div>
         </div>
-      </div>
 
       <div class="bottom">
         <div class="converted">BECOME CONVERTED</div>
@@ -30,6 +38,14 @@ const About = () => {
           the world today—arts, environment, animals, and public benefit—but no
           greater joy comes from loving our fellowman and serving the “least of
           these.”
+        </div>
+          <div class="photos-col">
+            agageoja
+          <div class="carousel">
+            <Carousel>
+            
+            </Carousel>
+          </div>
         </div>
       </div>
     </div>

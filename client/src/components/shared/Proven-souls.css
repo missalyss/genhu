@@ -1,0 +1,26 @@
+.ps-container {
+  width: 65%;
+  border: 1px red solid;
+  margin-left: 1.75em;
+}
+
+.button {
+  
+  cursor: pointer;
+  background: #3C7473;
+  font-size: 1em;
+  border-radius: 3px;
+  align-content: center;
+  color: white;
+  font-size: 1.75em;
+  
+  /* border: 2px solid white; */
+  margin: 0 auto;
+ margin-top: 1em;
+  /* padding: 0.5em 1em; */
+  width: 20rem;
+  transition: 0.5s all ease-out;
+  padding: 1em 2em;
+  margin-left: 0 auto;
+  margin-bottom: 1em;
+}
