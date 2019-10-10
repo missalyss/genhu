@@ -24,7 +24,7 @@
   /* border: purple 2/px solid; */
 }
 
-.learn {
+.learn-section {
   width: 70%; 
   /* border: blue 1em solid; */
   
@@ -57,13 +57,15 @@
 .converted-paragraph {
   /* border: solid red 1em; */
   font-size: 17px;
-  width: 50%;
-  
+  width: 65%;
+  /* justify-content: space-around; */
+  padding: 1em;
 }
 
 .about-wrapper {
-  width: 65%;
+  width: 50%;
   /* border: blue 2px solid; */
+  padding: 1em;
 }
 .about-pic1 {
   background-position: center;
