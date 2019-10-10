@@ -1,0 +1,32 @@
+/* --------------- STATS ---------------- */
+
+.stats-body {
+  background-image: url('../../assets/Images/stats_image.jpg'); 
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.75;
+  
+}
+
+.stats-container {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 0.5px;
+  font-size: x-large;
+}
+.cell {
+  color: white;
+  font-size: large;
+  text-align: center;
+  padding: 1rem;
+}
+.statsHeader {
+  text-align: center;
+  font-size: 2rem;
+  color:white;
+  padding-top: 2rem;
+}
