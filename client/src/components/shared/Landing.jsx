@@ -7,6 +7,7 @@ import { AboutCarousel } from '../shared/About';
 import LandingCarousel from './Carousel';
 import Stats from '../shared/Stats'
 import ProvenSouls from '../shared/Proved-souls';
+import ThreeStages from '../shared/ThreeStages';
 import './Main.css';
 
 
@@ -19,6 +20,7 @@ const Landing = () => {
      <Stats/>
     <About />
       <AboutCarousel />
+    <ThreeStages />
     </div>
     )
 }
