@@ -1,6 +1,7 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { Title, SubHeading, Button } from '../styles/StyledComponents';
+import './Carousel.css';
 
 // style={{border: 'solid 1px blue'}}
 
