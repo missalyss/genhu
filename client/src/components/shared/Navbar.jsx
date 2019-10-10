@@ -6,7 +6,7 @@ const Navbar = () => {
   return(
     <div className='main-nav'>
       <div className='nav-home'>
-        <NavLink to="/" className='nav-item'>Home</NavLink>
+        <NavLink to="/" className='nav-item'><img src=</NavLink>
       </div>
       <div className='right_nav'>
         <NavLink to="/calendar" className='nav-item' >Calendar</NavLink>
