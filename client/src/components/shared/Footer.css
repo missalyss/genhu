@@ -1,0 +1,32 @@
+/* --------------- FOOTER ---------------- */
+
+.footer-container{
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+  margin-left: 7em;
+  margin-right: 7em;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 100px;
+  /* outline: solid;
+  outline-color: red; */
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.mission {
+  align-content: center;
+  font-size: small;
+}
+
+.header{
+  font-size: small;
+}
