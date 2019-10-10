@@ -1,12 +1,14 @@
 import React from 'react';
 import { NavLink, } from "react-router-dom";
 import styles from'./Main.css';
-
+import { Image } from 'semantic-ui-react';
+import Logo from "../../assets/Images/GENHU-logo-fake.png";
+import Facebook from "../../assets/Images/facebook.png"
 const Navbar = () => {
   return(
     <div className='main-nav'>
       <div className='nav-home'>
-        <NavLink to="/" className='nav-item'><img src=</NavLink>
+        <NavLink to="/"><Image src={Logo} className='logo-image' alt='logo'/></NavLink>
       </div>
       <div className='right_nav'>
         <NavLink to="/calendar" className='nav-item' >Calendar</NavLink>
@@ -14,6 +16,7 @@ const Navbar = () => {
         <NavLink to="/expeditions" className='nav-item'>Expeditions</NavLink>
         <NavLink to="/homes" className='nav-item'>Homes & Projects</NavLink>
         <NavLink to="/contact" className='nav-item'>Contact Us</NavLink>
+        <a href="https://www.facebook.com/genhu.org/" target="_blank"><Image src={Facebook} className='facebook-image' alt='facebook'/></a>
       </div>
     </div>
   )

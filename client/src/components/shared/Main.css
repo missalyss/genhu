@@ -121,19 +121,14 @@
   display:-webkit-flex;
   display: flex;
   flex-direction: row;
-  /* align-items: center;  */
-  /* position: relative;
-  margin: 0 auto; */
-  /* padding: 2em; */
   width: 100vw;
-  height: 5em;
+  height: 4.5em;
   background-color: white;
   -moz-box-shadow: 0 0 3px #ccc;
   -webkit-box-shadow: 0 0 3px #ccc;
   box-shadow: 0 0 3px #ccc;
-  font-size: 1.4em;
-  flex-wrap: wrap;
-  
+  font-size: 1.1em;
+  align-items: center;
 } 
 
 .nav-home {
@@ -151,13 +146,13 @@
 }
 
 .nav-item {
-  padding: 2em;
+  padding: 2em 1.2em;
   color: black;
   position: relative;
 }
 
 .nav-item:hover {
-  color: darkgrey;
+  color:black;
 }
 
 .nav-item:after {    
@@ -165,10 +160,10 @@
   bottom: 20px;
   content: "";
   display: block;
-  height: 2px;
+  height: 3px;
   left: 50%;
   position: absolute;
-  background: darkgrey;
+  background: teal;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -176,3 +171,15 @@
   width: 100%; 
   left: 0; 
 }
+
+.logo-image {
+  margin: 1em 0em 1em 0em;
+  width: 15em;
+  
+}
+
+.facebook-image {
+  width: 2em;
+  margin: 2em 0em 0em 0em;
+}
+
