@@ -15,7 +15,6 @@ import Footer from '../shared/Footer';
 const Landing = () => {
   return(
     <div>
-     <Navbar />
      <LandingCarousel />
      <ProvenSouls />
      <Stats/>
