@@ -7,6 +7,7 @@ import Stats from '../shared/Stats'
 import ProvenSouls from '../shared/Proved-souls';
 import ThreeStages from '../shared/ThreeStages';
 import './Main.css';
+import Footer from '../shared/Footer';
 
 
 const Landing = () => {
@@ -18,6 +19,7 @@ const Landing = () => {
      <Stats/>
     <About />
     <ThreeStages />
+    <Footer/>
     </div>
     )
 }
