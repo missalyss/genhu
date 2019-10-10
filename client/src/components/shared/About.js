@@ -17,7 +17,6 @@ const About = () => {
           <img src={Logo} className='about-logo'/>
           <div class='learn-section'>
           <div class="about-title">Learn More About Generation Humanitarian</div>
-          {/* <div class="mission">OUR MISSION</div> */}
             <div class="mission-paragraph">
           <h3>OUR MISSION</h3>
           <br></br>
@@ -52,7 +51,7 @@ export const AboutCarousel = () => {
           greater joy comes from loving our fellowman and serving the “least of
           these.”
         </div>
-        
+
         <div className='about-wrapper'>
           <Carousel  fade indicators={false} interval={2500}pauseOnHover={false} style={{width: '100%', height: '100%'}}>
             <Carousel.Item>

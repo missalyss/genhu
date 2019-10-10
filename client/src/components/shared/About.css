@@ -8,12 +8,10 @@
 }
 
 .about-logo {
-  background-image: url(../../assets/Images/LogoSymbol.png);
   background-size: cover;
   background-position: center;
   height: 100%;
   width: 30%;
-  /* align-content: left; */
   /* border: red 2px solid; */
 }
 
@@ -55,17 +53,16 @@
 }
 
 .converted-paragraph {
-  /* border: solid red 1em; */
   font-size: 17px;
   width: 65%;
-  /* justify-content: space-around; */
   padding: 1em;
+  /* border: solid red 1em; */
 }
 
 .about-wrapper {
   width: 50%;
-  /* border: blue 2px solid; */
   padding: 1em;
+  /* border: blue 2px solid; */
 }
 .about-pic1 {
   background-position: center;
