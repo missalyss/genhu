@@ -10,7 +10,7 @@ const ProvenSouls = () => {
       <h3>Our oldest aged-out kids have flourished off the streets. 
         They are productive members of Peruvian, Bolivian, and Colombian society. 
         Follow them in their lives. Enjoy payback days from your gifts.</h3>
-        <button className='button'>Discover More</button>
+        <button className='proven-button'>Discover More</button>
     </div>
   </>
   )
