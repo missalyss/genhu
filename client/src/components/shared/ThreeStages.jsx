@@ -1,10 +1,18 @@
 import React from 'react';
 import "./ThreeStages.css";
+import Image from '../../assets/Images/city-buildings.jpg';
 
 const ThreeStages = () => {
-  return(
+  return (
     <div className='ts-top-container'>
-      <h3 className="ts-heading">Three stages of Street Children Development</h3>
+
+    <div className='ts-top-bg'>
+      {/* <div className='test-image' style={{ filter: 'grayscale(100%)' }}>
+        <img src={Image} className='test-image' />
+      </div> */}
+
+      <div className='ts-content-wrapper'>
+        <h3 className="ts-heading">Three stages of Street Children Development</h3>
         <div className='ts'>
           <div className='ts-background-image'>
             <div className='ts-color-opacity'>
@@ -23,7 +31,7 @@ const ThreeStages = () => {
                 <span className='hr'></span>
                 <p>(Street Workers)</p>
                 <h4>SECONDARY PREVENTION</h4>
-             </div>
+              </div>
             </div>
           </div>
           <div className='ts-background-image3'>
@@ -37,12 +45,14 @@ const ThreeStages = () => {
             </div>
           </div>
           <div className='ts-long-box'>
-              <div className='ts-flex'>
-                <h2>Help support Generations Humanitarian and our Causes</h2>
-                <button className='ts-button'>Discover More</button>
-              </div>
+            <div className='ts-flex'>
+              <h2>Help support Generations Humanitarian and our Causes</h2>
+              <button className='ts-button'>Discover More</button>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
     </div>
   )
 }
@@ -51,7 +61,7 @@ export default ThreeStages;
 
 
 {/* <div className='content'>
-            
+
 <h3>Children at High Risk</h3>
 <span className='hr'></span>
 <p>(In Absolute Poverty)</p>
