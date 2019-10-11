@@ -52,18 +52,20 @@ export const AboutCarousel = () => {
           these.”
         </div>
 
-        <div className='about-wrapper'>
-          <Carousel  fade indicators={false} interval={2500}pauseOnHover={false} style={{width: '100%', height: '100%'}}>
-            <Carousel.Item>
-              <img src={PicOne} className='about-pic1'/>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img src={PicTwo} className='about-pic2'/>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img src={PicThree} className='about-pic3'/>  
-            </Carousel.Item>
-          </Carousel>
+        <div className='about-carousel'>
+          <div className='carousel-animation'>
+            <Carousel  fade indicators={false} interval={2500}pauseOnHover={false} style={{width: '100%', height: '100%'}}>
+              <Carousel.Item>
+                <img src={PicOne} className='about-pic1'/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={PicTwo} className='about-pic2'/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={PicThree} className='about-pic3'/>  
+              </Carousel.Item>
+            </Carousel>
+          </div>
         </div>
       </div>
     );
