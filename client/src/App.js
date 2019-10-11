@@ -5,7 +5,6 @@ import FetchUser from './components/auth/FetchUser';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 import { Switch, Route, } from 'react-router-dom';
-import AdminHome from './components/admin/AdminHome';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import Calendar from './components/calendar/Calendar';
 import Navbar from './components/shared/Navbar';
@@ -13,6 +12,9 @@ import About from './components/about/About';
 import Expeditions from './components/expeditions/Expeditions';
 import Homes from './components/homes/Homes';
 import Contact from './components/contact/Contact';
+// Admin Imports
+import AdminHome from './components/admin/AdminHome';
+import Stats from './components/admin/stats/Stats';
 
 const App = () => (
   // if the screen size changes show this:
@@ -28,10 +30,11 @@ const App = () => (
         <Route exact path='/expeditions' component={Expeditions} />
         <Route exact path='/homes' component={Homes} />
         <Route exact path='/contact' component={Contact} />
-        <Route component={Nomatch} />
         <FetchUser>
           <ProtectedRoute exact path="/admin_home" component={AdminHome} />
+          <ProtectedRoute exact path="/datastats" component={Stats} />
         </FetchUser>
+        <Route component={Nomatch} />
       </Switch>
       </>
   </Fragment>

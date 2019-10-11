@@ -2,7 +2,7 @@ import React from 'react';
 import "./Stats.css"
 
 
-const Stats = () => {
+const LandingStats = () => {
   return(
     <div class='stats-body'>
       <div class='statsHeader'><h1 style={{marginTop: '5rem'}}>SUCCESS </h1>
@@ -23,4 +23,4 @@ const Stats = () => {
   )
 }
 
-export default Stats;
+export default LandingStats;

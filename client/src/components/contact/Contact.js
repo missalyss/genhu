@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import Logo from "../../assets/Images/GENHU-logo-fake.png";
 import styles from'../shared/Main.css';
+import Footer from '../shared/Footer';
 
 class Contact extends Component {
   render() {
     return (
+      
       <>
       <div className='contact'>
       <div className='contact_left'>
@@ -21,7 +23,11 @@ class Contact extends Component {
         <p>Insert form here</p>
       </div>
       </div>
+      <h2>Coming Soon!</h2>
+      <Footer/>
       </>
+      
+  
     )
   }
 }
