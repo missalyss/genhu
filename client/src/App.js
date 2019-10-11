@@ -20,9 +20,6 @@ const App = () => (
     <Navbar />
     <>
       <Switch>
-        <FetchUser>
-          <ProtectedRoute exact path="/admin_home" component={AdminHome} />
-        </FetchUser>
         <Route exact path="/" component={Home} />
         <Route exact path="/admin" component={Login} />
         <Route exact path="/register" component={Register} />
@@ -31,6 +28,9 @@ const App = () => (
         <Route exact path='/expeditions' component={Expeditions} />
         <Route exact path='/homes' component={Homes} />
         <Route exact path='/contact' component={Contact} />
+        {/* <FetchUser> */}
+          <ProtectedRoute exact path="/admin_home" component={AdminHome} />
+        {/* </FetchUser> */}
         <Route component={Nomatch} />
       </Switch>
       </>
