@@ -30,10 +30,10 @@ const App = () => (
         <Route exact path='/expeditions' component={Expeditions} />
         <Route exact path='/homes' component={Homes} />
         <Route exact path='/contact' component={Contact} />
-        {/* <FetchUser> */}
+        <FetchUser>
           <ProtectedRoute exact path="/admin_home" component={AdminHome} />
           <ProtectedRoute exact path="/datastats" component={Stats} />
-        {/* </FetchUser> */}
+        </FetchUser>
         <Route component={Nomatch} />
       </Switch>
       </>
