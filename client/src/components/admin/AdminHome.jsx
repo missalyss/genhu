@@ -2,6 +2,7 @@ import React from "react";
 import AdminNav from "./AdminNav";
 import "./AdminHome.css";
 import { AdminTitle } from './Styles';
+import { Link } from 'react-router-dom';
 
 const AdminHome = () => {
   return (
@@ -14,7 +15,9 @@ const AdminHome = () => {
 
           <div className="button-col-one">
             <div className="row-one">
+              <Link to='/datastats'>
               <button>Stats Page</button>
+              </Link>
               <button>Employees Page</button>
               <button>Events Page</button>
             </div>
