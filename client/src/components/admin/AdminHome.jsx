@@ -1,14 +1,14 @@
 import React from "react";
 import AdminNav from "./AdminNav";
 import "./AdminHome.css";
-// import { AdminTitle } from './Styles';
+import { AdminTitle } from './Styles';
 
 const AdminHome = () => {
   return (
     <div>
       <AdminNav />
       <div className="admin-container">
-        <div className="title">GenHu Admin Home</div>
+        <AdminTitle >GenHu Admin Home</AdminTitle>
 
         <div className='papa'>
 
@@ -23,8 +23,6 @@ const AdminHome = () => {
             <div className="row-one">
               <button>Orphanages Page</button>
               <button>Calendar Page</button>
-              <button>Drop-Ins Page</button>
-              <button>Drop-Ins Page</button>
               <button>Drop-Ins Page</button>
             </div>
         </div>
