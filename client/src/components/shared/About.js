@@ -13,22 +13,23 @@ const About = () => {
   return (
     <div>
       <div class="main">
-          <div class="about-container">
-            <img src={Logo} className='about-logo'/>
-            <div class='learn'>
-            <div class="about-title">Learn More About Generations Humanitarian</div>
-            <div class="mission">OUR MISSION</div>
+        <div class="about-container">
+          <img src={Logo} className='about-logo'/>
+          <div class='learn-section'>
+          <div class="about-title">Learn More About Generation Humanitarian</div>
             <div class="mission-paragraph">
-              Generations Humanitarian is committed to transforming street children
-              toward an abundance of health, hope, and loving homes—thereby breaking
-              the cycle of scarcity for generations to come. This is done through
-              broad research, novel development, strengthening nonprofit entities in
-              development, and individual nurturing in a home environment.
-            </div>
-           </div>
+          <h3>OUR MISSION</h3>
+          <br></br>
+            Generations Humanitarian is committed to transformingstreet children
+            toward an abundance of health, hope, and lovinghomes—thereby breaking
+              the cycle of scarcity for generations to come. This isdone through
+            broad research, novel development, strengthening nonprofitentities in
+            development, and individual nurturing in a homeenvironment.
+          </div>
           </div>
         </div>
       </div>
+    </div>
   );
 };
 
@@ -36,11 +37,10 @@ const About = () => {
 export const AboutCarousel = () => {
 
   return(
-    // <div class="bottom">
       <div className="convert-container">
-        {/* <div class="converted"> */}
         <div class="converted-paragraph">
         <h3>BECOME CONVERTED</h3>
+        <br></br>
           Come with us to Peru or Colombia and know these children first hand.
           Strip away the materialism that surrounds us here in the USA and
           experience how these children view the world—their humility,
@@ -51,23 +51,24 @@ export const AboutCarousel = () => {
           greater joy comes from loving our fellowman and serving the “least of
           these.”
         </div>
-        <div className='about-wrapper'>
-      <Carousel  fade indicators={false} interval={2500} pauseOnHover={false} style={{width: '100%', height: '100%'}}>
-        <Carousel.Item>
-          <img src={PicOne} className='about-pic1'/>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img src={PicTwo} className='about-pic2'/>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img src={PicThree} className='about-pic3'/>  
-        </Carousel.Item>
-      </Carousel>
+
+        <div className='about-carousel'>
+          <div className='carousel-animation'>
+            <Carousel  fade indicators={false} interval={2500}pauseOnHover={false} style={{width: '100%', height: '100%'}}>
+              <Carousel.Item>
+                <img src={PicOne} className='about-pic1'/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={PicTwo} className='about-pic2'/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={PicThree} className='about-pic3'/>  
+              </Carousel.Item>
+            </Carousel>
+          </div>
         </div>
       </div>
-    // </div>
-    // </div>
-  );
-};
+    );
+  };
 
 export default About;
