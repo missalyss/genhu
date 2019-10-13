@@ -14,9 +14,9 @@ class About extends Component {
             Some volunteer their time, others are paid.</p>
 
             <ul class='list-style'>
-              <li>Board of Directors</li>
-              <li>Management & Staff</li>
-              <li>Volunteers</li>
+              <a href= ''><li>Board of Directors</li></a>
+              <a href= ''><li>Management & Staff</li></a>
+              <a href= ''><li>Volunteers</li></a>
             </ul>
             <br/>
           </div>
