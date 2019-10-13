@@ -18,10 +18,12 @@ class About extends Component {
               <li>Management & Staff</li>
               <li>Volunteers</li>
             </ul>
+            <br/>
           </div>
           <div class='au-container'>
           <h4 >VISION</h4>
           <p>Generations Humanitarian envisions a world without street children.</p>
+          <br/>
           </div>
             <div class='au-container'>
               <h4>MISSION</h4>
@@ -30,6 +32,7 @@ class About extends Component {
                 This is done through broad research, novel development, strengthening nonprofit entities in development, 
                 and individual nurturing in a home environment.
               </p>
+              <br/>
             </div>
             <div class='au-container'>
               <h4>MANDATES</h4>
@@ -38,6 +41,7 @@ class About extends Component {
                 We will comply with accounting and regulatory requirements. 
                 As we develop our alliances with government agencies and other actors in the field, 
                 we are aware that some mandates may be set forth.</p>
+                <br/>
             </div>
             <div class='au-container'>
               <h4>BELIEFS</h4>
@@ -52,6 +56,7 @@ class About extends Component {
                 Other than professing a belief in Jesus Christ and his teachings, we do not permit our mission to coerce street children toward any religious institution, thereby respecting their right to self-determination.
               </li>
             </ul>
+            <br/>
           </div>
           <div>
               <h4>VALUES</h4>
