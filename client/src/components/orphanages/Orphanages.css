@@ -1,13 +1,14 @@
 .orph-background {
  display: flex;
+ 
  justify-content: center;
  flex-direction: column;
- /* border: red solid 2px; */
- height: 50vh;
+ height: 65vh;
  width: 100%;
- padding-top: 2em;
- padding-left: 11em;
- padding-bottom: 10em;
+ padding: 10em 10em 10em;
+ background: url('../../assets/Images/testpic.jpg');
+ background-size: cover;
+ color: white;
 }
 .orph-title {
   font-size: 60px;
@@ -43,22 +44,21 @@
 }
 .mid-box1 {
   display: flex;
-  /* justify-content: space-around; */
   font-size: 30px;
   flex-direction: column;
   /* border: blue 2px solid; */
   width: 50%
 }
 .mid-para1 {
-  /* justify-content: space-around; */
   display: flex;
   font-size: 13px;
   /* border: burlywood 2px solid; */
 }
 .mid-picbox1 {
   display: flex;
+  /* background: url('../../assets/Images/orphtest.jpg'); */
   width: 50%;
-  /* border: teal solid 2px; */
+  border: teal solid 2px;
 }
 .mid-container2 {
   display: flex;
@@ -68,14 +68,12 @@
 }
 .mid-box2 {
   display: flex;
-  /* justify-content: space-around; */
   font-size: 30px;
   flex-direction: column;
   /* border: blue 2px solid; */
   width: 50%
 }
 .mid-para2 {
-  /* justify-content: space-around; */
   display: flex;
   font-size: 13px;
   /* border: burlywood 2px solid; */
