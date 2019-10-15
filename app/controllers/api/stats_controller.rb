@@ -14,7 +14,7 @@ class Api::StatsController < ApplicationController
 
   def update
     stat = Stat.find(params[:id])
-    if stat.update
+    if stat.update(stat_params)
       render json: stat
     else
       render json: { errors: stat.errors }, status: :unprocessable_entity
