@@ -12,7 +12,14 @@ const Navbar = () => {
       </div>
       <div className='right_nav'>
         <NavLink to="/calendar" className='nav-item' >Calendar</NavLink>
+        <div className='dropdown'>
         <NavLink to="/about" className='nav-item'>About Us</NavLink>
+        <div className='dropdown-content'>
+        <NavLink to='/staff'>Staff & Volunteers</NavLink>
+        <NavLink to='/policy'>Policy & Financial</NavLink>
+        <NavLink to='/proven_souls'>Proven Souls</NavLink>
+        </div>
+        </div>
         <NavLink to="/expeditions" className='nav-item'>Expeditions</NavLink>
         <NavLink to="/homes" className='nav-item'>Homes & Projects</NavLink>
         <NavLink to="/contact" className='nav-item'>Contact Us</NavLink>

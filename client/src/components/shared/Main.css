@@ -18,14 +18,86 @@ h1 {
 /* --------------- Colors ---------------- */
 /* #FFFFFF #724524 #7344 */
 
-/* --------------- NAV ---------------- */
-
-.main-nav {
-  width: 100%;
-  background-color: #7344;
+/* --------------- CONTACT ---------------- */
+.contact {
+  display:-webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 100px 200px 150px 200px;
 }
 
+.contact_left {
+  width: 50%;
+  /* margin: 30vh 5em 0em 18em; */
+  flex: 1;
+}
 
+.contact_submit {
+  background-color: teal;
+}
+
+.contact_submit:hover {
+  background-color: rgb(1, 87, 87);
+}
+
+.contact_right:hover {
+  padding: 5em;
+  box-shadow: 0px 8px 16px 0px rgba(155, 149, 149, 0.2);
+}
+
+.contact_right {
+  background-color: white;
+  flex: 1;
+  justify-content: flex-start;
+  padding: 5em;
+}
+
+.contact_item {
+  padding-bottom: 2em;
+  font-size: 14px;
+}
+
+.contact_item textarea, .contact_item input {
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #ccc;
+  padding: 20px;
+  width: 100%;
+}
+
+.contact_item input:hover, textarea:hover {
+  border-bottom: solid 1px teal;
+}
+
+.contact_item input, .contact_item label {
+  display: block;
+}
+
+.contact_item textarea {
+  height: 150px;
+}
+
+.contact h2 {
+  margin-bottom: 50px;
+}
+
+.contact p {
+  font-size: 1.4em;
+}
+
+.contact_logo {
+  margin-bottom: 3vh;
+  width: 32em;
+}
+.address_info {
+  font-weight: bold;
+}
+
+.address_info p {
+  margin: 0.5em;
+}
 
 
 
@@ -38,11 +110,9 @@ h1 {
   width: 100vw;
   height: 4.5em;
   background-color: white;
-  -moz-box-shadow: 0 0 3px #ccc;
-  -webkit-box-shadow: 0 0 3px #ccc;
-  box-shadow: 0 0 3px #ccc;
   font-size: 1.1em;
   align-items: center;
+  margin-left: 2em;
 } 
 
 .nav-home {
@@ -63,6 +133,7 @@ h1 {
   padding: 2em 1.2em;
   color: black;
   position: relative;
+  display: inline-block;
 }
 
 .nav-item:hover {
@@ -96,4 +167,35 @@ h1 {
   width: 2em;
   margin: 2em 0em 0em 0em;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 5000;
+  font-size: 0.9em;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: teal;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 

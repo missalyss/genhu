@@ -5,13 +5,19 @@ class StatForm extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    this.props.addStat({...this.state});
+    if (this.props.id) {
+      this.props.editStat(this.props.id, this.state)
+      this.props.toggleEdit()
+    } else {
+      this.props.addStat({...this.state});
+    }
     this.setState({name: '', value: '', priority: ''})
   }
   
   handleChange = (e) => {
     const { name, value} = e.target;
     this.setState({[name]: value})
+
   }
 
   
@@ -20,8 +26,6 @@ class StatForm extends React.Component {
     const {name, value, priority} = this.state;
     return (
       <div>
-        <button onClick={this.props.toggleForm}>Add New Stat</button>
-        {this.props.toggleState ? 
         <form onSubmit={this.handleSubmit}>
           <label>Name:</label>
           <input
@@ -48,7 +52,6 @@ class StatForm extends React.Component {
             onChange={this.handleChange}
             /><button type='submit'>Submit</button>
         </form>
-          : <div></div>} 
       </div>
     )
   }

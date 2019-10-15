@@ -1,0 +1,83 @@
+.orph-background {
+ display: flex;
+ /* border: red solid 2px; */
+ height: 50vh;
+ width: 100%;
+ padding: 2em;
+}
+
+.orph-title {
+  font-size: 50px;
+  /* border: orange solid 2px; */
+  height: 20vh;
+  align-content: baseline;
+}
+
+.mid-col {
+  display: flex;
+  height: 25vh;
+  width: 100%;
+  flex-direction: column;
+  padding: 5em;
+  /* border: pink solid 2px; */
+}
+.mid-title {
+  display: flex;
+  font-size: 30px;
+}
+.mid-p {
+  display: flex;
+}
+
+.mid-container1 {
+  display: flex;
+  justify-content: space-around;
+  /* border: purple 2px solid; */
+  padding: 5em;
+}
+.mid-box1 {
+  display: flex;
+  /* justify-content: space-around; */
+  font-size: 30px;
+  flex-direction: column;
+  /* border: blue 2px solid; */
+  width: 50%
+}
+.mid-para1 {
+  /* justify-content: space-around; */
+  display: flex;
+  font-size: 13px;
+  /* border: burlywood 2px solid; */
+}
+.mid-picbox1 {
+  display: flex;
+  width: 50%;
+  /* border: teal solid 2px; */
+}
+.mid-container2 {
+  display: flex;
+  justify-content: space-around;
+  /* border: purple 2px solid; */
+  padding: 5em;
+}
+.mid-box2 {
+  display: flex;
+  /* justify-content: space-around; */
+  font-size: 30px;
+  flex-direction: column;
+  /* border: blue 2px solid; */
+  width: 50%
+}
+.mid-para2 {
+  /* justify-content: space-around; */
+  display: flex;
+  font-size: 13px;
+  /* border: burlywood 2px solid; */
+}
+.mid-picbox2 {
+  display: flex;
+  width: 50%;
+  /* border: teal solid 2px; */
+}
+
+
