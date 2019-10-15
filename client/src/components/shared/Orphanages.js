@@ -1,6 +1,6 @@
 import React from 'react';
 import './Orphanages.css';
-// import Photo from '../../assets/Images/testpic';
+import TestPic from '../../assets/Images/testpic';
 
 
 const Orphanages = () => {
@@ -8,9 +8,9 @@ const Orphanages = () => {
   return (
     <div>
       <div className="orph-background">
-        {/* <img scc={Photo} className='testpic'/> */}
+        {/* <img src={Pic} className='testpic'/> */}
         <div className="orph-title">About Generations Humanitarian Orphanages</div>
-        {/* <img src={Photo} className='background'/> */}
+        <img src={TestPic} className='background'/>
       </div>
 
       <div className="mid-col">
