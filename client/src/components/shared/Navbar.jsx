@@ -21,9 +21,15 @@ const Navbar = () => {
         </div>
         </div>
         <NavLink to="/expeditions" className='nav-item'>Expeditions</NavLink>
+        <div className='dropdown'>
         <NavLink to="/homes" className='nav-item'>Homes & Projects</NavLink>
+        <div className='dropdown-content'>
+        <NavLink to='/orphanages'>Orphanages</NavLink>
+        <NavLink to='/drop_in_centers'>Drop-In Centers</NavLink>
+        </div>
+        </div>
         <NavLink to="/contact" className='nav-item'>Contact Us</NavLink>
-        <a href="https://www.facebook.com/genhu.org/" target="_blank"><Image src={Facebook} className='facebook-image' alt='facebook'/></a>
+        <a href="https://www.facebook.com/genhu.org/" target="_blank"><Image src={Facebook} className='facebook-image' alt='facebook'/></a>     
       </div>
     </div>
   )
