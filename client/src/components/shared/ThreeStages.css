@@ -112,6 +112,11 @@
   background-size: cover;
 }
 
+.ts-background-image:hover {
+  transform: scale(1.02);
+}
+
+
 .ts-color-opacity {
   background-color: rgba(46, 89, 88, 0.6);
 }
@@ -122,6 +127,10 @@
   background-size: cover;
 }
 
+.ts-background-image2:hover {
+  transform: scale(1.02);
+}
+
 .ts-color-opacity2 {
   background-color: rgba(162, 90, 81, 0.6);
 }
@@ -130,6 +139,9 @@
   background-image: url('../../assets/carousel-pic4.jpg');
   background-position: center;
   background-size: cover;
+}
+.ts-background-image3:hover {
+  transform: scale(1.02);
 }
 
 .ts-color-opacity3 {
