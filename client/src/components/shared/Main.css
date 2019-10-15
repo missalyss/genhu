@@ -23,24 +23,64 @@ h1 {
   display:-webkit-flex;
   display: flex;
   flex-direction: row;
-  
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 100px 200px 150px 200px;
 }
 
 .contact_left {
-  flex-direction: column;
   width: 50%;
-  margin: 30vh 5em 0em 18em;
+  /* margin: 30vh 5em 0em 18em; */
+  flex: 1;
+}
+
+.contact_submit {
+  background-color: teal;
+}
+
+.contact_submit:hover {
+  background-color: rgb(1, 87, 87);
+}
+
+.contact_right:hover {
+  padding: 5em;
+  box-shadow: 0px 8px 16px 0px rgba(155, 149, 149, 0.2);
 }
 
 .contact_right {
-  flex-direction: column;
-  background-color: #f9f9f9;
-  width: 30vw;
-  height: 50vh;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: white;
+  flex: 1;
+  justify-content: flex-start;
+  padding: 5em;
+}
+
+.contact_item {
+  padding-bottom: 2em;
+  font-size: 14px;
+}
+
+.contact_item textarea, .contact_item input {
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #ccc;
+  padding: 20px;
+  width: 100%;
+}
+
+.contact_item input:hover, textarea:hover {
+  border-bottom: solid 1px teal;
+}
+
+.contact_item input, .contact_item label {
+  display: block;
+}
+
+.contact_item textarea {
+  height: 150px;
+}
+
+.contact h2 {
+  margin-bottom: 50px;
 }
 
 .contact p {

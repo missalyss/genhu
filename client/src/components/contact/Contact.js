@@ -20,11 +20,34 @@ class Contact extends Component {
       </div>
       </div>
       <div className='contact_right'>
-        <p>Insert form here</p>
+        <form className='contact_form'>
+        <h2>We're ready to help!</h2>
+        <div className='contact_items'>
+        <div className='contact_item'>
+        <label>Name</label>
+        <input name='name' />
+        </div>
+        <div className='contact_item'>
+        <label>Email</label>
+        <input type='email' name='email' />
+        </div>
+        <div className='contact_item'>
+        <label>Subject</label>
+        <input name='subject' />
+        </div>
+        <div className='contact_item'>
+        <label>Message</label>
+        <textarea name='message' />
+        </div>
+        <div>
+          <button type='submit' className='contact_submit'>Send Message</button>
+        </div>
+        </div>
+        </form>
       </div>
       </div>
-      <h2>Coming Soon!</h2>
-      <Footer/>
+
+      <Footer />
       </>
       
   
