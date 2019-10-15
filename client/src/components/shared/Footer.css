@@ -11,7 +11,7 @@
 .column {
   float: left;
   width: 25%;
-  padding: 100px;
+  padding: 2em;
   /* outline: solid;
   outline-color: red; */
 }
