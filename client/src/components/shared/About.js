@@ -12,12 +12,12 @@ const About = () => {
 
   return (
     <div>
-      <div class="main">
-        <div class="about-container">
+      <div className="main">
+        <div className="about-container">
           <img src={Logo} className='about-logo'/>
-          <div class='learn-section'>
-          <div class="about-title">Learn More About Generation Humanitarian</div>
-            <div class="mission-paragraph">
+          <div className='learn-section'>
+          <div className="about-title">Learn More About Generation Humanitarian</div>
+            <div className="mission-paragraph">
           <h3>OUR MISSION</h3>
           <br></br>
             Generations Humanitarian is committed to transformingstreet children
@@ -38,7 +38,7 @@ export const AboutCarousel = () => {
 
   return(
       <div className="convert-container">
-        <div class="converted-paragraph">
+        <div className="converted-paragraph">
         <h3>BECOME CONVERTED</h3>
         <br></br>
           Come with us to Peru or Colombia and know these children first hand.
