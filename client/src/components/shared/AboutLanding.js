@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
-import './About.css';
+import './AboutLanding.css';
 import Logo from '../../assets/Images/LogoSymbol.png';
 import PicOne from '../../assets/carousel-pic.jpg';
 import PicTwo from '../../assets/carousel-pic2.jpg';
@@ -8,7 +8,7 @@ import PicThree from '../../assets/carousel-pic3.jpg';
 
 
 
-const About = () => {
+const AboutLanding = () => {
 
   return (
     <div>
@@ -71,4 +71,4 @@ export const AboutCarousel = () => {
     );
   };
 
-export default About;
+export default AboutLanding;

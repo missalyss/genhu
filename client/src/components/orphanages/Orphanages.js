@@ -8,9 +8,8 @@ const Orphanages = () => {
   return (
     <div>
       <div className="orph-background">
-        {/* <img src={TestPic} className='testpic'/> */}
-        <div className="orph-title">About Generations Humanitarian Orphanages</div>
-        {/* <img src={TestPic} className='background'/> */}
+        <div className="orph-title">About Generations Humanitarian</div>
+        <div className="orph-word">Orphanages</div>
       </div>
 
       <div className="mid-col">

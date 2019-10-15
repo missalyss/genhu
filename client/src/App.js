@@ -12,7 +12,7 @@ import About from './components/about/About';
 import Expeditions from './components/expeditions/Expeditions';
 import Homes from './components/homes/Homes';
 import Contact from './components/contact/Contact';
-import Orphanages from './components/shared/Orphanages';
+import Orphanages from './components/orphanages/Orphanages';
 // Admin Imports
 import AdminHome from './components/admin/AdminHome';
 import Stats from './components/admin/stats/Stats';
