@@ -1,62 +1,61 @@
-import React from 'react';
+import React from "react";
 
 class StatForm extends React.Component {
-  state = { name: '', value: '', priority: ''};
+  state = { name: "", value: "",};
 
-  handleSubmit = (e) => {
+  componentDidMount() {
+    if (this.props.id) {
+      this.setState({
+        name: this.props.statName,
+        value: this.props.statValue,
+      });
+    }
+  }
+
+  handleSubmit = e => {
     e.preventDefault();
     if (this.props.id) {
-      this.props.editStat(this.props.id, this.state)
-      this.props.toggleEdit()
+      this.props.editStat(this.props.id, this.state);
+      this.props.editToggle();
     } else {
-      this.props.addStat({...this.state});
+      this.props.addStat({ ...this.state });
     }
-    this.setState({name: '', value: '', priority: ''})
-  }
-  
-  handleChange = (e) => {
-    const { name, value} = e.target;
-    this.setState({[name]: value})
+    this.setState({ name: "", value: "", });
+  };
 
-  }
-
-  
+  handleChange = e => {
+    const { name, value } = e.target;
+    this.setState({ [name]: value });
+  };
 
   render() {
-    const {name, value, priority} = this.state;
+    const { name, value, } = this.state;
     return (
-      <div>
+      <div className='form-cont'>
         <form onSubmit={this.handleSubmit}>
           <label>Name:</label>
           <input
-            name='name'
+            name="name"
             value={name}
-            placeholder='Name'
+            placeholder="Name"
             required
             onChange={this.handleChange}
-            />
-            <label>Value:</label>
-            <input
-            name='value'
+          />
+          <label>Value:</label>
+          <input
+            name="value"
             value={value}
-            placeholder='Value'
+            placeholder="Value"
             required
             onChange={this.handleChange}
-            />
-            <label>Priority:</label>
-            <input
-            name='priority'
-            value={priority}
-            placeholder='Priority'
-            required
-            onChange={this.handleChange}
-            /><button type='submit'>Submit</button>
+          />
+          <div className="button-cont-stat">
+          <button type="submit">Submit</button>
+          </div>
         </form>
       </div>
-    )
+    );
   }
 }
-
-
 
 export default StatForm;

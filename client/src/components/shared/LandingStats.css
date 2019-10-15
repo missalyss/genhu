@@ -1,0 +1,47 @@
+/* --------------- STATS ---------------- */
+
+.stats-body {
+  background-image: url('../../assets/Images/stats_image.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.75;
+  font-size: xx-large;
+}
+
+.stats-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0em 2em 2em;
+}
+
+.la-single-stat {
+  color: white;
+  text-align: center;
+  width: 33%;
+  height: 100%;
+  padding: .5em 0em;
+}
+
+.stat-name {
+  font-size: .5em;
+  padding: 1em;
+  font-weight: 100;
+}
+
+.stat-value {
+  font-size: 2.25em;
+  padding: .25em;
+
+}
+.statsHeader {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  padding-top: 2rem;
+}

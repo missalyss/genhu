@@ -50,8 +50,16 @@
 }
 
 button {
-  padding: 1em;
-  background-color: black;
+  font-family: 'Oxygen', sans-serif;
+  padding: .5em .5em;
+  background-color: #3C7473;
   color: white;
   width: 10em;
+  border-radius: 5px;
+  margin: 5em;
+}
+
+button:hover {
+  background-color: rgb(50, 91, 95);
+
 }
