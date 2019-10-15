@@ -12,7 +12,6 @@
 }
 .orph-title {
   font-size: 60px;
-  /* border: orange solid 2px; */
   height: 7vh;
 }
 .orph-word {
@@ -25,12 +24,10 @@
   width: 100%;
   flex-direction: column;
   padding: 5em 10em 0em;
-  border: pink solid 2px;
 }
 .mid-title {
   display: flex;
   font-size: 30px;
-  border: solid red 2px;
 }
 .mid-p {
   display: flex;
@@ -38,50 +35,57 @@
 
 .mid-container1 {
   display: flex;
-  justify-content: space-around;
-  border: purple 2px solid;
-  padding: 5em 10em 0em;
+
+  padding: 0em 10em 0em;
 }
 .mid-box1 {
   display: flex;
   font-size: 30px;
   flex-direction: column;
-  /* border: blue 2px solid; */
+  padding-top: 4em;
+  padding-right: 2em;
   width: 50%
 }
 .mid-para1 {
   display: flex;
-  font-size: 13px;
-  /* border: burlywood 2px solid; */
+  padding-top: 2em;
+  font-size: 16px;
 }
 .mid-picbox1 {
   display: flex;
-  /* background: url('../../assets/Images/orphtest.jpg'); */
+  background: url('../../assets/Images/orphtest.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 2em;
+  height: 50vh;
   width: 50%;
-  border: teal solid 2px;
 }
 .mid-container2 {
   display: flex;
   justify-content: space-around;
-  border: purple 2px solid;
-  padding: 5em 10em 0em;
+  padding: 5em 10em 3em;
 }
 .mid-box2 {
   display: flex;
   font-size: 30px;
   flex-direction: column;
-  /* border: blue 2px solid; */
+  padding-top: 4em;
+  padding-left: 2em;
   width: 50%
 }
 .mid-para2 {
   display: flex;
-  font-size: 13px;
-  /* border: burlywood 2px solid; */
+  padding-top: 2em;
+  font-size: 16px;
 }
 .mid-picbox2 {
   display: flex;
+  background: url('../../assets/Images/avacado.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 2em;
+  height: 50vh;
   width: 50%;
-  /* border: teal solid 2px; */
 }
 
 
