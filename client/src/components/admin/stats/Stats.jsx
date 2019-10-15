@@ -4,7 +4,7 @@ import Stat from './Stat';
 import StatForm from './StatForm';
 
 class Stats extends React.Component {
-  state = { stats:[], toggleForm: false }
+  state = { stats:[], toggleForm: false, editing: false }
 
   componentDidMount() {
     axios.get('/api/stats')
@@ -29,6 +29,24 @@ class Stats extends React.Component {
     this.setState({ toggleForm: !toggleForm})
   } 
 
+  toggleEdit = () => {
+    const { editing } = this.state;
+    this.setState({ editing: !editing })
+  }
+
+  editStat = (id) => {
+    axios.put(`api/stats/${id}`)
+    .then( res => {
+      const stats = this.state.stats.map(stat => {
+        if (stat.id === id)
+          return res.data;
+          return stat;
+
+      });
+      this.setState({ stats, })
+    })
+  }
+
   renderStats() {
 
     const { stats } = this.state;
@@ -40,6 +58,9 @@ class Stats extends React.Component {
         <Stat
         key={stat.id}
         {...stat}
+        editStat={this.editStat}
+        toggleEdit={this.toggleEdit}
+        editing={this.state.editing}
         // updateStat={updateStat}
         // deleteStat={deleteStat}
         />
@@ -52,7 +73,9 @@ class Stats extends React.Component {
   render() {
     return (
       <div>
-        <StatForm toggleForm = {this.toggle} toggleState={this.state.toggleForm} addStat={this.addStat}/>
+        <button onClick={this.toggle}>Add New Stat</button>
+        {this.state.toggleForm ? 
+        <StatForm addStat={this.addStat} /> : <div>not toggled</div> }
         {this.renderStats()}
       </div>
       
