@@ -26,17 +26,17 @@
   padding: 5em 10em 0em;
 }
 .mid-title {
-  display: flex;
   font-size: 30px;
+  padding-bottom: 1em;
 }
 .mid-p {
-  display: flex;
+  font-size: 16px;
+  padding-top: .10em;
 }
 
 .mid-container1 {
   display: flex;
-
-  padding: 0em 10em 0em;
+  padding: 4em 10em 0em;
 }
 .mid-box1 {
   display: flex;
@@ -63,7 +63,7 @@
 .mid-container2 {
   display: flex;
   justify-content: space-around;
-  padding: 5em 10em 3em;
+  padding: 5em 10em 5em;
 }
 .mid-box2 {
   display: flex;
