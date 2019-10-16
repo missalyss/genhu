@@ -7,7 +7,11 @@ Rails.application.routes.draw do
   
   namespace :api do
     resources :homes
+    get '/volunteers/', to: 'homes#volunteers'
+    get '/staff/', to: 'homes#staff'
+    get '/directors', to: 'homes#directors'
   end
+
 
   # Custom Routes for Homes
   
