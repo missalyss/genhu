@@ -126,7 +126,10 @@ h1 {
   background-color: white;
   font-size: .9vw;
   align-items: center;
-  margin-left: 2em;
+  margin-left: 0;
+  padding-left: 2em;
+  position: fixed;
+  z-index: 10000;
 } 
 
 .nav-home {

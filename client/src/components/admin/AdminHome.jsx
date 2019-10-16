@@ -18,7 +18,9 @@ const AdminHome = () => {
               <Link to='/datastats'>
               <button>Stats Page</button>
               </Link>
+              <Link to='/admin_employee'>
               <button>Employees Page</button>
+              </Link>
               <button>Events Page</button>
             </div>
         </div>
