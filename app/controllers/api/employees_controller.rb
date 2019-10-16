@@ -2,6 +2,10 @@ class Api::EmployeesController < ApplicationController
   def index
     render json: Employee.all
   end
+  
+  # def board_of_directors
+  #   render json: Employee.where(:role ===)
+  # end
 
   def create
     employee = Employee.new(employee_params)

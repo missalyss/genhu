@@ -1,9 +1,9 @@
 import React from 'react';
 import { GlobalTitle } from './GlobalStyles';
 import Navbar from './Navbar';
-import About from '../shared/About';
-import './About.css';
-import { AboutCarousel } from '../shared/About';
+import AboutLanding from '../shared/AboutLanding';
+import './AboutLanding.css';
+import { AboutCarousel } from '../shared/AboutLanding';
 import LandingCarousel from './Carousel';
 import Stats from './LandingStats'
 import ProvenSouls from '../shared/Proved-souls';
@@ -18,7 +18,7 @@ const Landing = () => {
      <LandingCarousel />
      <ProvenSouls />
      <Stats/>
-    <About />
+    <AboutLanding />
       <AboutCarousel />
     <ThreeStages />
     <Footer/>
