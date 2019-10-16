@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  role: MyString
+  sheltered_children: 1
+  victims: 1
+  orphans: 1
+  volunteers: 1
+  director: MyString
+  sponsor: MyString
+
+two:
+  name: MyString
+  role: MyString
+  sheltered_children: 1
+  victims: 1
+  orphans: 1
+  volunteers: 1
+  director: MyString
+  sponsor: MyString
