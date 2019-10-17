@@ -12,5 +12,9 @@ Rails.application.routes.draw do
     # get '/homes/', to: 'homes#index'
   end
 
+  # Custom Routes for Homes
+  
+  
+  # Custom Routes for Employees
 
 end

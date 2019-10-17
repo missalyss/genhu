@@ -17,6 +17,8 @@ import Orphanages from './components/orphanages/Orphanages';
 import AdminHome from './components/admin/AdminHome';
 import Stats from './components/admin/stats/Stats';
 import Homes from './components/admin/homes/Homes';
+import Employees from './components/admin/employees/Employees'
+
 
 const App = () => (
   // if the screen size changes show this:
@@ -37,6 +39,7 @@ const App = () => (
           <ProtectedRoute exact path="/admin_home" component={AdminHome} />
           <ProtectedRoute exact path="/datastats" component={Stats} />
           <ProtectedRoute exact path="/homes" component={Homes} />
+          <ProtectedRoute exact path="/admin_employee" component={Employees} />
         </FetchUser>
         <Route component={Nomatch} />
       </Switch>
