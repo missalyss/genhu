@@ -3,7 +3,7 @@ import { NavLink, } from "react-router-dom";
 import styles from'./Main.css';
 import { Image } from 'semantic-ui-react';
 import Logo from "../../assets/Images/GENHU-logo-fake.png";
-import Facebook from "../../assets/Images/facebook.png"
+import Facebook from "../../assets/Images/facebook.png";
 const Navbar = () => {
   return(
     <div className='main-nav'>

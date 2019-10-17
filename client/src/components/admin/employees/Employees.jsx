@@ -2,7 +2,9 @@ import React from "react";
 import axios from "axios";
 import EmployeeForm from "./EmployeeForm";
 import {AdminTitle} from "../Styles";
-import Employee from "./Employee";
+import Staff from "./Staff";
+import Volunteers from "./Volunteers";
+import Directors from "./Directors";
 
 class Employees extends React.Component {
   state = { employees: [], volunteers: [], directors: [], staff: [], toggleForm: false };
@@ -63,15 +65,49 @@ class Employees extends React.Component {
     });
   };
 
-  renderEmployees() {
-    const { employees } = this.state;
+  renderStaff() {
+    const { staff } = this.state;
 
     return(
       <div>
-        { employees.map(employee => (
-          <Employee 
-            key={ employee.id }
-            { ...employee }
+        { staff.map(s => (
+          <Staff
+            key={ s.id }
+            { ...s }
+            editEmployee = { this.editEmployee }
+            deleteEmployee = { this.deleteEmployee }
+          />
+        ))}
+      </div>
+    );
+  }
+
+  renderDirectors() {
+    const { directors } = this.state;
+
+    return(
+      <div>
+        { directors.map(d => (
+          <Directors
+            key={ d.id }
+            { ...d }
+            editEmployee = { this.editEmployee }
+            deleteEmployee = { this.deleteEmployee }
+          />
+        ))}
+      </div>
+    );
+  }
+
+  renderVolunteers() {
+    const { volunteers } = this.state;
+
+    return(
+      <div>
+        { volunteers.map(v => (
+          <Volunteers
+            key={ v.id }
+            { ...v }
             editEmployee = { this.editEmployee }
             deleteEmployee = { this.deleteEmployee }
           />
@@ -94,7 +130,9 @@ class Employees extends React.Component {
         ) : (
           <div></div>
         )}
-        {/* {this.renderEmployees()} */}
+        {this.renderStaff()}
+        {this.renderVolunteers()}
+        {this.renderDirectors()}
       </div>
     );
   }
