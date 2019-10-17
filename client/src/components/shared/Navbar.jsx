@@ -3,8 +3,36 @@ import { NavLink, } from "react-router-dom";
 import styles from'./Main.css';
 import { Image } from 'semantic-ui-react';
 import Logo from "../../assets/Images/GENHU-logo-fake.png";
-import Facebook from "../../assets/Images/facebook.png"
-const Navbar = () => {
+import Facebook from "../../assets/Images/facebook.png";
+import axios from 'axios';
+
+
+class Navbar extends React.Component {
+  state = {orphanages: [], centers: []}
+
+  componentDidMount() {
+    axios.get('api/orphanages')
+      .then(res => {
+        this.setState({ orphanages: res.data })
+      })
+  }
+
+  renderO = () => {
+    const { orphanages } = this.state;
+
+    return (
+      <>
+        {orphanages.map(o => (
+          <div
+            key={o.id}
+            {...o}
+            ><NavLink to={{ pathname: `/orphanages/${o.id}` }} {...o}>{o.name}</NavLink></div>
+            ))}
+      </>
+    );
+  }
+
+  render() {
   return(
     <div className='main-nav'>
       <div className='nav-home'>
@@ -24,7 +52,12 @@ const Navbar = () => {
         <div className='dropdown'>
         <NavLink to="/homes" className='nav-item'>Homes & Projects</NavLink>
         <div className='dropdown-content'>
+          
         <NavLink to='/orphanages'>Orphanages</NavLink>
+
+          {
+            this.renderO()
+          }
         <NavLink to='/drop_in_centers'>Drop-In Centers</NavLink>
         </div>
         </div>
@@ -34,7 +67,6 @@ const Navbar = () => {
     </div>
   )
 }
-
-
+}
 
 export default Navbar;

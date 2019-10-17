@@ -6,7 +6,8 @@ director: '', sponsor: ''  };
 
   componentDidMount() {
     if (this.props.id) {
-      const { deleteHome, editHome, editToggle, ...rest } = this.props 
+      const { deleteHome, editHome, editToggle, created_at, updated_at, id, ...rest } = this.props 
+
       this.setState({
         ...rest
       });
@@ -20,9 +21,8 @@ director: '', sponsor: ''  };
       this.props.editToggle();
     } else {
       this.props.addHome({ ...this.state });
-      this.props.toggle();
     }
-    this.setState({name: '', role: '', sheltered_children: '', victims: '', orphans: '', volunteers: '', 
+    this.setState({name: '', role: '', shelter: '', sheltered_children: '', victims: '', orphans: '', volunteers: '', 
     director: '', sponsor: '' });
     // this.props.renderHomes();
   };
