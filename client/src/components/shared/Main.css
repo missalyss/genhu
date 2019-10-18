@@ -130,6 +130,7 @@ h1 {
   padding-left: 2em;
   position: fixed;
   z-index: 10000;
+  box-shadow: 0px 8px 16px 0px rgba(214, 213, 213, 0.2);
 } 
 
 .nav-home {

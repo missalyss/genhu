@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AdminSubTitle, AdminData } from "../../Styles";
-import HomeForm from "../HomeForm";
+import HomeForm from "../AdminHomeForm";
 
 const Center = ({ editHome, id, deleteHome, ...orest }) => {
   const [toggleEdit, setToggleEdit] = useState(false);
@@ -12,10 +12,6 @@ const Center = ({ editHome, id, deleteHome, ...orest }) => {
       <div className="stat-data">
         <AdminSubTitle>Center Name: </AdminSubTitle>
         <AdminData> {orest.name}</AdminData>
-      </div>
-      <div className="stat-data">
-        <AdminSubTitle> Center Role: </AdminSubTitle>
-        <AdminData> {orest.role}</AdminData>
       </div>
       <div className="button-cont-stat">
         <button onClick={editToggle}>Edit</button>
