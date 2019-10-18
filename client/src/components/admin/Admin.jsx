@@ -26,6 +26,9 @@ const AdminHome = () => {
         </div>
           <div className="button-col">
             <div className="row-one">
+            <Link to='/homes'>
+              <button>Homes</button>
+              </Link>
               <button>Orphanages Page</button>
               <button>Calendar Page</button>
               <button>Drop-Ins Page</button>

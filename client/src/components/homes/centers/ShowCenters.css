@@ -1,0 +1,29 @@
+.centers-top-cont {
+  display: flex;
+  height: 60vh;
+  width: 100%;
+  /* margin-top: 5em; */
+  border: green 2px solid;
+  z-index: -1000;
+}
+
+.centers-dir {
+  width: 50%;
+  border: red 2px solid;
+}
+
+.centers-img {
+  width: 50%;
+  
+  border: blue 2px solid
+}
+
+.centers-stats-cont {
+  height: 15em;
+  width: 100%;
+  border: purple 2px solid;
+}
+
+.single-stat {
+  font-size: 1em;
+}

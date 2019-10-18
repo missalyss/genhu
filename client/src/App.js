@@ -10,14 +10,18 @@ import MyCalendar from './components/calendar/MyCalendar';
 import Navbar from './components/shared/Navbar';
 import About from './components/about/About';
 import Expeditions from './components/expeditions/Expeditions';
-import Homes from './components/homes/Homes';
+// import Homes from './components/homes/Homes';
 import Contact from './components/contact/Contact';
 import Orphanages from './components/orphanages/Orphanages';
+import ShowOrphanages from './components/orphanages/ShowOrphanages';
+import ShowCenters from './components/homes/centers/ShowCenters';
 // Admin Imports
-import AdminHome from './components/admin/AdminHome';
+import Admin from './components/admin/Admin';
 import Stats from './components/admin/stats/Stats';
-import Employees from './components/admin/employees/Employees'; 
 import Staff from './components/staff/Staff';
+import AdminHome from './components/admin/homes/AdminHomes';
+import Employees from './components/admin/employees/Employees'
+
 
 const App = () => (
   // if the screen size changes show this:
@@ -26,18 +30,21 @@ const App = () => (
     <>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/admin" component={Login} />
+        <Route exact path="/login" component={Login} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/calendar" component={MyCalendar} />
         <Route exact path='/about' component={About} />
         <Route exact path='/expeditions' component={Expeditions} />
-        <Route exact path='/homes' component={Homes} />
+        {/* <Route exact path='/homes' component={Homes} /> */}
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/staff' component={Staff} />
         <Route exact path='/orphanages' component={Orphanages} />
+        <Route exact path='/orphanages/:id' component={ShowOrphanages} />
+        <Route exact path='/centers/:id' component={ShowCenters} />
         <FetchUser>
-          <ProtectedRoute exact path="/admin_home" component={AdminHome} />
+          <ProtectedRoute exact path="/admin" component={Admin} />
           <ProtectedRoute exact path="/datastats" component={Stats} />
+          <ProtectedRoute exact path="/admin_home" component={AdminHome} />
           <ProtectedRoute exact path="/admin_employee" component={Employees} />
         </FetchUser>
         <Route component={Nomatch} />

@@ -4,7 +4,53 @@ import styles from'./Main.css';
 import { Image } from 'semantic-ui-react';
 import Logo from "../../assets/Images/GENHU-logo-fake.png";
 import Facebook from "../../assets/Images/facebook.png";
-const Navbar = () => {
+import axios from 'axios';
+
+
+class Navbar extends React.Component {
+  state = {orphanages: [], centers: []}
+
+  componentDidMount() {
+    axios.get('api/orphanages')
+      .then(res => {
+        this.setState({ orphanages: res.data })
+      })
+    axios.get('api/centers')
+      .then(res => {
+        this.setState({ centers: res.data })
+      })
+  }
+
+  renderO = () => {
+    const { orphanages } = this.state;
+
+    return (
+      <>
+        {orphanages.map(o => (
+          <div
+            key={o.id}
+            {...o}
+            ><NavLink to={{ pathname: `/orphanages/${o.id}` }} {...o}>{o.name}</NavLink></div>
+            ))}
+      </>
+    );
+  }
+  renderC = () => {
+    const { centers } = this.state;
+
+    return (
+      <>
+        {centers.map(c => (
+          <div
+            key={c.id}
+            {...c}
+            ><NavLink to={{ pathname: `/centers/${c.id}` }} {...c}>{c.name}</NavLink></div>
+            ))}
+      </>
+    );
+  }
+
+  render() {
   return(
     <div className='main-nav'>
       <div className='nav-home'>
@@ -24,8 +70,15 @@ const Navbar = () => {
         <div className='dropdown'>
         <NavLink to="/homes" className='nav-item'>Homes & Projects</NavLink>
         <div className='dropdown-content'>
+
         <NavLink to='/orphanages'>Orphanages</NavLink>
+          {
+            this.renderO()
+          }
         <NavLink to='/drop_in_centers'>Drop-In Centers</NavLink>
+          {
+            this.renderC()
+          }
         </div>
         </div>
         <NavLink to="/contact" className='nav-item'>Contact Us</NavLink>
@@ -34,7 +87,6 @@ const Navbar = () => {
     </div>
   )
 }
-
-
+}
 
 export default Navbar;
