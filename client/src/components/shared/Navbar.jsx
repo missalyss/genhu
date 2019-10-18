@@ -72,13 +72,13 @@ class Navbar extends React.Component {
         <div className='dropdown-content'>
 
         <NavLink to='/orphanages'>Orphanages</NavLink>
-          {
-            this.renderO()
-          }
+          <div className='homes-tab'>
+          { this.renderO() }
+          </div>
         <NavLink to='/drop_in_centers'>Drop-In Centers</NavLink>
-          {
-            this.renderC()
-          }
+          <div className='homes-tab'>
+            { this.renderC() }
+          </div>
         </div>
         </div>
         <NavLink to="/contact" className='nav-item'>Contact Us</NavLink>
