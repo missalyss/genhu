@@ -105,7 +105,6 @@ class EmployeeForm extends React.Component {
             name="image"
             value={image}
             placeholder="Add URL"
-            required
             onChange={this.handleChange}
           />
           <label>Other:</label>
