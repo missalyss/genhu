@@ -2,8 +2,8 @@ import React from "react";
 import axios from "axios";
 import Orphanage from "./orphanages/Orphanage";
 import Center from "./orphanages/Center";
-import HomeForm from "./HomeForm";
-import { AdminTitle } from "../Styles";
+import HomeForm from "./AdminHomeForm";
+import { AdminTitle, AdminSubTitle } from "../Styles";
 import "../stats/AdminStats.css";
 
 class Homes extends React.Component {
@@ -50,6 +50,7 @@ class Homes extends React.Component {
         return home;
       });
       this.setState({ homes });
+      window.location.href = '/homes'
     });
   };
 
@@ -89,7 +90,7 @@ class Homes extends React.Component {
     const { orphanages } = this.state;
 
     return (
-      <div>
+      <div className='home-section-cont'>
         {orphanages.map(orphanage => (
           <Orphanage
             key={orphanage.id}
@@ -107,7 +108,7 @@ class Homes extends React.Component {
     const { centers } = this.state;
     
     return (
-      <div>
+      <div className='home-section-cont'>
         {centers.map(center => (
           <Center
           key={center.id}
@@ -137,12 +138,12 @@ class Homes extends React.Component {
           )}
           <div>
           <div>
-          <h1>Orphanages</h1>
-        {this.renderOrphanages()}
+          <AdminSubTitle className='sa-title'>Orphanages</AdminSubTitle>
+            {this.renderOrphanages()}
           </div>
           <div>
-          <h1>Centers</h1>
-        {this.renderCenters()}
+          <AdminSubTitle className='sa-title'>Centers</AdminSubTitle>
+            {this.renderCenters()}
           </div>
           </div>
         {/* </AdminTitle> */}

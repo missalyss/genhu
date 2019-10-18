@@ -15,6 +15,10 @@ class Api::HomesController < ApplicationController
     # binding.pry
   end
 
+  def show
+    render json: Home.find(params[:id])
+  end
+
   def create
     home = Home.new(home_params)
     if home.save
