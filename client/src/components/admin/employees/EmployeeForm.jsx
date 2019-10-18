@@ -105,7 +105,6 @@ class EmployeeForm extends React.Component {
             name="image"
             value={image}
             placeholder="Add URL"
-            required
             onChange={this.handleChange}
           />
           <label>Other:</label>
@@ -113,7 +112,6 @@ class EmployeeForm extends React.Component {
             name="other"
             value={other}
             placeholder="Other"
-            required
             onChange={this.handleChange}
           />
           <div className="button-cont-stat">
