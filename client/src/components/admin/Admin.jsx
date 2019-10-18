@@ -29,9 +29,7 @@ const AdminHome = () => {
             <Link to='/admin_homes'>
               <button>Homes</button>
               </Link>
-              <button>Orphanages Page</button>
               <button>Calendar Page</button>
-              <button>Drop-Ins Page</button>
             </div>
         </div>
         </div>

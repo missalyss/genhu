@@ -112,7 +112,6 @@ class EmployeeForm extends React.Component {
             name="other"
             value={other}
             placeholder="Other"
-            required
             onChange={this.handleChange}
           />
           <div className="button-cont-stat">

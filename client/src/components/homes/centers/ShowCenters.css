@@ -1,3 +1,5 @@
+
+
 .centers-top-cont {
   display: flex;
   height: 60vh;
@@ -8,22 +10,75 @@
 }
 
 .centers-dir {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 4em;
   width: 50%;
+  background-image: url('../../../assets/expeditionAssets/exp-girls.jpg');
+  background-position: center;
+  background-size: cover;
+  opacity: 0.7;
+  color: white;
   border: red 2px solid;
+}
+
+.dir-title {
+  font-size: 3em !important;
+}
+
+.centers-dir h1 {
+  font-size: 2em;
+}
+
+.centers-dir-flex {
+  display: flex;
+  /* border: black 2px solid; */
+  /* justify-content: space-evenly; */
+  
+}
+.centers-dir-col {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  /* border: black 2px solid; */
+  margin-left: 2em;
 }
 
 .centers-img {
   width: 50%;
-  
+  background-image: url('../../../assets/Images/mapPic.jpg');
+  background-position: center;
+  background-size: cover;
   border: blue 2px solid
 }
 
 .centers-stats-cont {
+  display: flex;
+  justify-content: space-between;
+  padding: 0em 4.5em;
   height: 15em;
   width: 100%;
   border: purple 2px solid;
+  background-color: #67385D;
 }
 
-.single-stat {
-  font-size: 1em;
+.centers-single-stat {
+  display: flex;
+  justify-content: center;
+  border: blue 2px solid;
+  color: white;
+  font-size: 2em !important;
+  width: 25%;
+}
+
+/* .center-stat-size {
+
+} */
+
+.centers-single-stat-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

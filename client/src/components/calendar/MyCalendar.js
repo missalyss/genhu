@@ -217,21 +217,21 @@
   // };
   
   
-  import React, { useState, useEffect } from "react";
-  import { Calendar, momentLocalizer } from 'react-big-calendar'
-  import moment from 'moment'
+//   import React, { useState, useEffect } from "react";
+//   import { Calendar, momentLocalizer } from 'react-big-calendar'
+//   import moment from 'moment'
   
-  const localizer = momentLocalizer(moment)
+//   const localizer = momentLocalizer(moment)
   
-  const MyCalendar = props => (
-    <div>
-    <Calendar
-      localizer={localizer}
-      // events={myEventsList}
-      startAccessor="start"
-      endAccessor="end"
-    />
-  </div>
-)
+//   const MyCalendar = props => (
+//     <div>
+//     <Calendar
+//       localizer={localizer}
+//       // events={myEventsList}
+//       startAccessor="start"
+//       endAccessor="end"
+//     />
+//   </div>
+// )
 
-export default MyCalendar;
+// export default MyCalendar;

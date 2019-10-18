@@ -1,15 +1,15 @@
 
 
-
+.aboutUs-container p{
+  line-height: 2.5
+}
 
 .aboutUs-container{
-
   padding: 5px;
   margin-top: 50px;
   margin-left: 190px;
   margin-right: 190px;
   line-height: 2.5;
-
 }
 
 
