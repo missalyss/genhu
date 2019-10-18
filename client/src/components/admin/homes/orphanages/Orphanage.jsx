@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AdminSubTitle, AdminData } from "../../Styles";
-import HomeForm from "../HomeForm";
+import HomeForm from "../AdminHomeForm";
 import '../Homes.css';
 
 const Orphanage = ({ editHome, id, deleteHome, ...orest }) => {

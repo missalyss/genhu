@@ -17,6 +17,10 @@ class ShowOrphanages extends React.Component {
       <div style={{padding: '5em'}}>
       <h1>SHOW ME</h1>SHOW
       <h1>{orphanage.name}</h1>
+      <h1>{orphanage.director}</h1>
+      <h1>{orphanage.sponsor}</h1>
+  
+
       </div>
       )
     }

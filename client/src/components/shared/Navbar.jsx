@@ -15,6 +15,10 @@ class Navbar extends React.Component {
       .then(res => {
         this.setState({ orphanages: res.data })
       })
+    axios.get('api/centers')
+      .then(res => {
+        this.setState({ centers: res.data })
+      })
   }
 
   renderO = () => {
@@ -27,6 +31,20 @@ class Navbar extends React.Component {
             key={o.id}
             {...o}
             ><NavLink to={{ pathname: `/orphanages/${o.id}` }} {...o}>{o.name}</NavLink></div>
+            ))}
+      </>
+    );
+  }
+  renderC = () => {
+    const { centers } = this.state;
+
+    return (
+      <>
+        {centers.map(c => (
+          <div
+            key={c.id}
+            {...c}
+            ><NavLink to={{ pathname: `/centers/${c.id}` }} {...c}>{c.name}</NavLink></div>
             ))}
       </>
     );
@@ -52,13 +70,15 @@ class Navbar extends React.Component {
         <div className='dropdown'>
         <NavLink to="/homes" className='nav-item'>Homes & Projects</NavLink>
         <div className='dropdown-content'>
-          
-        <NavLink to='/orphanages'>Orphanages</NavLink>
 
+        <NavLink to='/orphanages'>Orphanages</NavLink>
           {
             this.renderO()
           }
         <NavLink to='/drop_in_centers'>Drop-In Centers</NavLink>
+          {
+            this.renderC()
+          }
         </div>
         </div>
         <NavLink to="/contact" className='nav-item'>Contact Us</NavLink>

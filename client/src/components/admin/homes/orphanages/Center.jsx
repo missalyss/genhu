@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AdminSubTitle, AdminData } from "../../Styles";
-import HomeForm from "../HomeForm";
+import HomeForm from "../AdminHomeForm";
 
 const Center = ({ editHome, id, deleteHome, ...orest }) => {
   const [toggleEdit, setToggleEdit] = useState(false);

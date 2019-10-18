@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import Orphanage from "./orphanages/Orphanage";
 import Center from "./orphanages/Center";
-import HomeForm from "./HomeForm";
+import HomeForm from "./AdminHomeForm";
 import { AdminTitle, AdminSubTitle } from "../Styles";
 import "../stats/AdminStats.css";
 
