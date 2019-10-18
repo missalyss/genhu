@@ -8,4 +8,29 @@
 display: flex;
 
 }
-                    
+           
+.drop-background {
+  display: flex;
+  
+  justify-content: center;
+  flex-direction: column;
+  height: 65vh;
+  width: 100%;
+  padding: 10em 10em 10em;
+  background: url('../../assets/DropInAssets/DropInHead.jpg');
+  background-size: cover;
+  color: white;
+ }
+
+ .drop-title {
+  font-size: 60px;
+  height: 7vh;
+}
+.drop-word {
+  font-size: 60px;
+}
+
+.box1 {
+
+  
+}

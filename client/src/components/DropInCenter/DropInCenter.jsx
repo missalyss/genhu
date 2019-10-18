@@ -9,8 +9,10 @@ const DropInCenters = () => (
       <br/>
       <br/>
        <div>
-          <h1>Generations Humanitarian Drop-In Center Operations Manual</h1>
-        </div>
+       <div className="drop-background">
+        <div className="drop-title">Generations Humanitarian Drop-In Center</div>
+        <div className="drop-word">Operations Manual</div>
+      </div>
         <div class="drop-container">
           <div>
             <h1>A. Definition and Criteria.</h1>
@@ -24,7 +26,7 @@ const DropInCenters = () => (
                   <li>They are victims of armed conflict or internally displaced persons.</li>
                 </ol>
           </div>
-          <div>
+          <div class= "box1">
           
           </div>
 
@@ -108,6 +110,7 @@ const DropInCenters = () => (
               <li>Local governments are to provide between 10 – 25 percent of the food costs. The home director is responsible for securing this participation as well as seek food donations from local vendors.</li>
               <li>The average monthly expense for each child ranges from $15 – $21 per child. This takes the monthly deposit (food, salaries, utilities, etc.) and divides it by the number of children registered at each home. Budgets for each home are determined on a case by case basis through a process of consultation with local donors, home directors, local government participation, and needs of the community.</li>
             </ol>
+        </div>
         </div>
         
          
