@@ -6,10 +6,10 @@ Rails.application.routes.draw do
   end
   
   namespace :api do
-    resources :homes
-    get '/volunteers/', to: 'homes#volunteers'
-    get '/staff/', to: 'homes#staff'
-    get '/directors', to: 'homes#directors'
+    resources :employees
+    get '/volunteers/', to: 'employees#volunteers'
+    get '/staff/', to: 'employees#staff'
+    get '/directors', to: 'employees#directors'
   end
 
 

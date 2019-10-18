@@ -15,7 +15,6 @@ class EmployeeForm extends React.Component {
         other: this.props.other,
         role: this.props.role,
         image: this.props.image
-        
       });
     }
   }

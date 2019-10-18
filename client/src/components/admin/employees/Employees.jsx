@@ -40,6 +40,7 @@ class Employees extends React.Component {
     axios.post("/api/employees", employee).then(res => {
       const { employees } = this.state;
       this.setState({ employees: [...employees, res.data] });
+      window.location.href = '/admin_employee'
     });
   };
 
@@ -55,6 +56,7 @@ class Employees extends React.Component {
           return employee;
       });
       this.setState({ employees });
+      window.location.href = '/admin_employee'
     })
   }
 
@@ -63,6 +65,7 @@ class Employees extends React.Component {
       const { employees } = this.state;
       this.setState({ employees: employees.filter(e => e.id !== id) });
     });
+    window.location.href = '/admin_employee'
   };
 
   renderStaff() {

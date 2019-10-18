@@ -1,16 +1,37 @@
 import React from 'react';
+import axios from 'axios';
 import Footer from '../shared/Footer';
 
-const Orphanages = () => {
+class Staff extends React.Component {
   
-  return (
-    <div>
-      <h2>Test</h2>
-      <Footer />
-    </div>
-    
-    
-  )
+  state = { directors: [], volunteers: [], staff: []};
+
+  componentDidMount() {
+    axios
+      .get("/api/staff")
+      .then(res => {
+        this.setState({ staff: res.data });
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  }
+
+  renderStaff() {
+    const { staff } = this.state;
+
+    return (
+      <div>
+        { staff.map(s => (
+          <>
+          <div>{s.phone}</div>
+          </>
+        ))}
+      </div>
+        );
+
+  }
+
 }
 
-export default Orphanages;
+export default Staff;
