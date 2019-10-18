@@ -19,7 +19,7 @@ import ShowCenters from './components/homes/centers/ShowCenters';
 import Admin from './components/admin/Admin';
 import Stats from './components/admin/stats/Stats';
 import Staff from './components/staff/Staff';
-import AdminHome from './components/admin/homes/AdminHomes';
+import AdminHomes from './components/admin/homes/AdminHomes';
 import Employees from './components/admin/employees/Employees'
 
 
@@ -44,7 +44,7 @@ const App = () => (
         <FetchUser>
           <ProtectedRoute exact path="/admin" component={Admin} />
           <ProtectedRoute exact path="/datastats" component={Stats} />
-          <ProtectedRoute exact path="/admin_home" component={AdminHome} />
+          <ProtectedRoute exact path="/admin_homes" component={AdminHomes} />
           <ProtectedRoute exact path="/admin_employee" component={Employees} />
         </FetchUser>
         <Route component={Nomatch} />
