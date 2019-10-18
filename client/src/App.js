@@ -18,6 +18,7 @@ import ShowCenters from './components/homes/centers/ShowCenters';
 // Admin Imports
 import Admin from './components/admin/Admin';
 import Stats from './components/admin/stats/Stats';
+import Staff from './components/staff/Staff';
 import AdminHomes from './components/admin/homes/AdminHomes';
 import Employees from './components/admin/employees/Employees'
 
@@ -36,6 +37,7 @@ const App = () => (
         <Route exact path='/expeditions' component={Expeditions} />
         {/* <Route exact path='/homes' component={Homes} /> */}
         <Route exact path='/contact' component={Contact} />
+        <Route exact path='/staff' component={Staff} />
         <Route exact path='/orphanages' component={Orphanages} />
         <Route exact path='/orphanages/:id' component={ShowOrphanages} />
         <Route exact path='/centers/:id' component={ShowCenters} />
