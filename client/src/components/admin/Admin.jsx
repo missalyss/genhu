@@ -26,7 +26,7 @@ const AdminHome = () => {
         </div>
           <div className="button-col">
             <div className="row-one">
-            <Link to='/homes'>
+            <Link to='/admin_homes'>
               <button>Homes</button>
               </Link>
               <button>Orphanages Page</button>
