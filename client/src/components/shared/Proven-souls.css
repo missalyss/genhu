@@ -19,8 +19,9 @@
 .ps-title {
   font-family: 'Oxygen', sans-serif;
   font-weight: bold;
-  font-size: 4.5em;
+  font-size: 3.5em;
   margin-bottom: 1em;
+  /* flex-shrink: -1; */
 }
 .ps-para {
   
