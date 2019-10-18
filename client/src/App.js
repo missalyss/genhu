@@ -13,6 +13,7 @@ import Expeditions from './components/expeditions/Expeditions';
 import Homes from './components/homes/Homes';
 import Contact from './components/contact/Contact';
 import Orphanages from './components/orphanages/Orphanages';
+import DropInCenters from './components/DropInCenter/DropInCenter';
 // Admin Imports
 import AdminHome from './components/admin/AdminHome';
 import Stats from './components/admin/stats/Stats';
@@ -33,6 +34,7 @@ const App = () => (
         <Route exact path='/homes' component={Homes} />
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/orphanages' component={Orphanages} />
+        <Route exact path='/drop_in_centers' component={DropInCenters} />
         <FetchUser>
           <ProtectedRoute exact path="/admin_home" component={AdminHome} />
           <ProtectedRoute exact path="/datastats" component={Stats} />
