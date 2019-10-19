@@ -1,5 +1,6 @@
 import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
+import './StaffModal.css';
 
 // const StaffModal = ({toggleShow, staffId}) => {
   class StaffModal extends React.Component {
@@ -10,15 +11,15 @@ import { Modal, Button } from 'react-bootstrap';
 
     render() {
       return (
-        // <div style={{zIndex:5000, marginTop: '10em'}}>
+        <div >
           <Modal 
-          
+          className = 'modal-container'
           center
           autoFocus
             {...this.props}
             size='lg'
           >
-            <Modal.Header>
+            <Modal.Header className = 'modal-header'>
               <Modal.Title >{this.props.firstName} {this.props.lastName}</Modal.Title>
               <Modal.Title>{this.props.title}</Modal.Title>
             </Modal.Header>
@@ -29,12 +30,12 @@ import { Modal, Button } from 'react-bootstrap';
               </div>
               </Modal.Body>
             <Modal.Footer>
-              <Button variant="primary" onClick={this.props.onHide}>
+              <Button variant='secondary' className='modal-button' onClick={this.props.onHide}>
                 Close
               </Button>
             </Modal.Footer>
           </Modal>
-        // </div>
+        </div>
       );
   }
 }
