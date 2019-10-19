@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import './Staff.css';
 import StaffModal from './StaffModal';
 import StaffShow from './StaffShow';
+import DirectorShow from './DirectorShow';
+import VolunteerShow from './VolunteerShow';
 
 class Staff extends React.Component {
   
@@ -57,17 +59,10 @@ class Staff extends React.Component {
     return (
       <div className = 'staff-container'>
         { directors.map(d => (
-          <div >
-          <Link><div className= 'staff-box'>
-            <div className='staff-name'>
-              <h1>{d.first_name} {d.last_name}</h1>
-            </div>
-            <div className='staff-title'>
-              <h3>{d.title}</h3>
-            </div>
-          </div>
-          </Link>
-          </div>
+          <DirectorShow
+          key = { d.id }
+          {...d}
+          />
         ))}
       </div>
         );
@@ -77,14 +72,12 @@ class Staff extends React.Component {
 
     const { volunteers } = this.state;
     return (
-      <div>
+      <div className = 'staff-container'>
         { volunteers.map(v => (
-          <div className = 'staff-container'>
-          <div className='staff-box'>
-          <Link><div>{v.first_name} {v.last_name}</div></Link>
-          <div>{v.title}</div>
-          </div>
-          </div>
+          <VolunteerShow
+          key = { v.id }
+          {...v}
+          />
         ))}
       </div>
         );

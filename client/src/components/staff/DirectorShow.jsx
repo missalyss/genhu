@@ -5,7 +5,7 @@ import StaffModal from './StaffModal';
 
 
 
-const StaffShow = ({ first_name, last_name, title }) => {
+const DirectorShow = ({ first_name, last_name, title }) => {
 
   const [ showModal, setShowModal ] = useState( false )
 
@@ -27,4 +27,4 @@ const StaffShow = ({ first_name, last_name, title }) => {
   )
 }
 
-export default StaffShow;
+export default DirectorShow;
