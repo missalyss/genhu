@@ -1,7 +1,11 @@
+.homes-btn-cont {
+  margin-top: 4em;
+}
+
 .home-section-cont {
   display: flex;
   flex-wrap: wrap;
-  margin: 2em 5em 0em 5em;
+  margin: em 5em 0em 5em;
 
 }
 

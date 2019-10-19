@@ -10,7 +10,7 @@ import VolunteerShow from './VolunteerShow';
 
 class Staff extends React.Component {
   
-  state = { directors: [], volunteers: [], staff: [], toggleForm: false };
+  state = { directors: [], volunteers: [], staff: [], toggleForm: false, toggleModal: false, };
 
   componentDidMount() {
     axios
@@ -88,8 +88,8 @@ class Staff extends React.Component {
     return (
       <>
       <div style={{padding: '5em' }}>
-        <StaffModal/>
         <div>
+        <StaffModal/>
         <h1>Directors</h1>
         {this.renderDirectors()}
         </div>
