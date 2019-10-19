@@ -18,7 +18,11 @@ height: 15em;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-color: black;
+  /* background-color: black; */
+  background-image: url('../../assets/Images/LogoSymbol.png');
+  background-position: center;
+  background-size: 95%;
+
   
 }
 
