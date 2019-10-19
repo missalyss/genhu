@@ -15,8 +15,8 @@ const DirectorShow = ({ first_name, last_name, title, id, bio, email, phone, oth
 
     <div>
         <div className= 'staff-box' onClick = { toggleShow }>
-          <div className='staff-name'><h1>{first_name} {last_name}</h1></div>
-          <div className='staff-title'><h3>{title}</h3></div>
+          <div className='staff-name'><h3>{first_name} {last_name}</h3></div>
+          <div className='staff-title'><h4>{title}</h4></div>
         </div>
         {showModal ?
           <StaffModal 
