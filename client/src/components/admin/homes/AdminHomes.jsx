@@ -5,6 +5,7 @@ import Center from "./orphanages/Center";
 import HomeForm from "./AdminHomeForm";
 import { AdminTitle, AdminSubTitle } from "../Styles";
 import "../stats/AdminStats.css";
+import { Link } from 'react-router-dom';
 
 class Homes extends React.Component {
   state = { homes: [], orphanages: [], centers: [], toggleForm: false };
@@ -50,7 +51,7 @@ class Homes extends React.Component {
         return home;
       });
       this.setState({ homes });
-      window.location.href = '/homes'
+      window.location.href = '/admin_homes'
     });
   };
 
@@ -58,7 +59,7 @@ class Homes extends React.Component {
     axios.delete(`/api/homes/${id}`).then(res => {
       const { homes, } = this.state;
       this.setState({ homes: homes.filter(h => h.id !== id) });
-      window.location.href = '/homes'
+      window.location.href = '/admin_homes'
 
     });
   };
@@ -126,10 +127,15 @@ class Homes extends React.Component {
     return (
       <div>
         <AdminTitle>Homes Page</AdminTitle>
-        <div>
+        <div className='homes-btn-cont'>
           <button className="add-button" onClick={this.toggle}>
             Add New Home
           </button>
+          <Link to='/admin'>
+          <button className="add-button" onClick={this.toggle} >
+            Back
+          </button>
+          </Link>
         </div>
         {this.state.toggleForm ? (
           <div className='center'> <HomeForm addHome={this.addHome} toggle={this.toggle}/> </div>
