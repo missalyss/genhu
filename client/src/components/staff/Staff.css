@@ -5,8 +5,12 @@ flex-direction: row;
 justify-content: space-evenly;
 /* border: 2px solid red; */
 width: 100%;
-height: 15em;
+height: 100%;
 /* text-align: center */
+flex-wrap: wrap;
+padding: 0em 2em 2em;
+/* border: 5px solid red; */
+
 
 
 }
@@ -14,14 +18,22 @@ height: 15em;
 .staff-box{
   border: 2px solid black;
   width: 20em;
-  height: 100%;
+  height: 16em;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin: 2em 1em;
+  
+  
+
+  /* --------------- BACKGROUND ---------------- */
   /* background-color: black; */
-  background-image: url('../../assets/Images/LogoSymbol.png');
-  background-position: center;
-  background-size: 95%;
+  background-image: url('../../assets/Icons/profile.png');
+  background-position: top;
+  background-size: 55%;
+  background-repeat: no-repeat;
+  /* border: 5px solid blue; */
+  
 
   
 }
@@ -34,6 +46,7 @@ height: 15em;
   color: white; 
   background-color: #67385D;
   padding-left: 1.5em;
+
 
 }
 .staff-title{

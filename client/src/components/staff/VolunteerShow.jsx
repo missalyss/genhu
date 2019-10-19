@@ -29,7 +29,7 @@ const VolunteerShow = ({ first_name, last_name, title, id, bio, email, phone, ot
           show={showModal} 
           staffId={id} 
           onHide={ toggleShow } 
-          toggleShow = { toggleShow }/> : <div> Not showing modal </div>
+          toggleShow = { toggleShow }/> : <div> </div>
         }
     </div>
   )
