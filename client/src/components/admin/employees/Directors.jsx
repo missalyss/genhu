@@ -11,41 +11,38 @@ const Directors = ({ first_name, last_name, bio, title, email, phone, other, rol
   return (
     <div>
       <div>
-        <AdminSubTitle>Directors First Name: </AdminSubTitle>
-        <AdminData> {first_name}</AdminData>
+        <AdminSubTitle><h3>Name: </h3><AdminData><h3> {first_name} {last_name}</h3></AdminData></AdminSubTitle>
       </div>
-      <div>
+      {/* <div>
         <AdminSubTitle> Directors Last Name: </AdminSubTitle>
         <AdminData> {last_name}</AdminData>
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <AdminSubTitle> Directors Bio: </AdminSubTitle>
         <AdminData> {bio}</AdminData>
-      </div>
+      </div> */}
       <div>
-        <AdminSubTitle> Directors Title: </AdminSubTitle>
-        <AdminData> {title}</AdminData>
+        <AdminSubTitle><h3>Title: </h3><AdminData><h3> {title}</h3></AdminData> </AdminSubTitle>
       </div>
-      <div>
+      {/* <div>
         <AdminSubTitle> Email: </AdminSubTitle>
         <AdminData> {email}</AdminData>
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <AdminSubTitle>Phone: </AdminSubTitle>
         <AdminData> {phone}</AdminData>
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <AdminSubTitle> Other: </AdminSubTitle>
         <AdminData> {other}</AdminData>
-      </div>
+      </div> */}
       <div>
-        <AdminSubTitle> Staff Role: </AdminSubTitle>
-        <AdminData> {role}</AdminData>
+        <AdminSubTitle><h3>Role: </h3><AdminData><h3>{role}</h3> </AdminData></AdminSubTitle>
       </div>
-      <div>
+      {/* <div>
         <AdminSubTitle> Directors Image: </AdminSubTitle>
         <AdminData> {image}</AdminData>
-      </div>
+      </div> */}
       <div>
         <button onClick={editToggle}>Edit</button>
         <button
