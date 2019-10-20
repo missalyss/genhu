@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import CountUp from 'react-countup';
+import Footer from '../../shared/Footer';
 import './ShowCenters.css';
 
 
@@ -68,6 +69,20 @@ class ShowCenters extends React.Component {
         </div>
 
       </div>
+      <div className='cntr-content-home'>
+        <div className='cntr-col'>
+
+        <div>
+          <h3>About {center.name} Drop-In Center</h3>
+          <p>Coming Soon...</p>
+          <h4>Stay Tuned!</h4>
+        </div>
+        <div>
+          <h1>Image Coming Soon</h1>
+        </div>
+        </div>
+      </div>
+      <Footer />
       </>
       )
     }

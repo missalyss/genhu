@@ -12,12 +12,15 @@ const DirectorShow = ({ first_name, last_name, title, id, bio, email, phone, oth
   const toggleShow = () => { setShowModal(!showModal) }
 
   return(
-
-    <div>
+<>
+    <div className='img-wrapper'>
+      <div className=''>
         <div className= 'staff-box' onClick = { toggleShow }>
           <div className='staff-name'><h3>{first_name} {last_name}</h3></div>
           <div className='staff-title'><h4>{title}</h4></div>
         </div>
+      </div>
+    </div>
         {showModal ?
           <StaffModal 
           firstName={first_name} 
@@ -29,7 +32,7 @@ const DirectorShow = ({ first_name, last_name, title, id, bio, email, phone, oth
           onHide={ toggleShow } 
           toggleShow = { toggleShow }/> : <div> </div>
         }
-    </div>
+        </>
   )
 }
 

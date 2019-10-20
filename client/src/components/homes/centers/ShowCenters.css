@@ -2,7 +2,7 @@
 
 .centers-top-cont {
   display: flex;
-  height: 60vh;
+  height: 70vh;
   width: 100%;
   /* margin-top: 5em; */
   /* border: green 2px solid; */
@@ -63,7 +63,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0em 4.5em;
-  height: 15em;
+  height: 11em;
   width: 100%;
   /* border: purple 2px solid; */
   background-color: #67385D;
@@ -97,4 +97,26 @@
 .homes-stat-title {
   font-size: .75em;
   color: color
+}
+
+/* ----------------- Content Portion ----------------- */
+
+.cntr-content-home {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+  border: red solid 2px;
+}
+
+.cntr-content-home div {
+  border: blue solid 2px;
+  width: 50%
+}
+
+.cntr-col-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: green solid 2px;
 }
