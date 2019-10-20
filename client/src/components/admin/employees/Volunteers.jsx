@@ -11,7 +11,21 @@ const Volunteers = ({ first_name, last_name, bio, title, email, phone, other, ro
   return (
     <div>
       <div>
+<<<<<<< HEAD
         <AdminSubTitle><h3>Name: </h3><AdminData> <h3>{first_name} {last_name}</h3></AdminData> </AdminSubTitle>
+=======
+        <AdminSubTitle><h3>Name: </h3><AdminData><h3> {first_name} {last_name}</h3></AdminData></AdminSubTitle>
+      </div>
+        <div>
+        <AdminSubTitle><h3>Title: </h3><AdminData><h3>{title}</h3></AdminData></AdminSubTitle>
+      </div>
+        <div>
+        <AdminSubTitle><h3>Role: </h3><AdminData><h3>{role}</h3></AdminData></AdminSubTitle>
+      </div>
+      {/* <div>
+        <AdminSubTitle>Volunteers First Name: </AdminSubTitle>
+        <AdminData> {first_name}</AdminData>
+>>>>>>> d543380b71fcc877c77a085a956d714cc75be0e4
       </div>
       {/* <div>
         <AdminSubTitle> Volunteers Last Name: </AdminSubTitle>
