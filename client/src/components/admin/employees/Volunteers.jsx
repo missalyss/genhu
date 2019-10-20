@@ -31,9 +31,9 @@ const Volunteers = ({ first_name, last_name, bio, title, email, phone, other, ro
         <AdminSubTitle> Volunteers Bio: </AdminSubTitle>
         <AdminData> {bio}</AdminData>
       </div> */}
-      <div>
+      {/* <div>
         <AdminSubTitle><h3>Title: </h3><AdminData><h3>{title}</h3> </AdminData></AdminSubTitle>
-      </div>
+      </div> */}
       {/* <div>
         <AdminSubTitle> Email: </AdminSubTitle>
         <AdminData> {email}</AdminData>
@@ -46,9 +46,9 @@ const Volunteers = ({ first_name, last_name, bio, title, email, phone, other, ro
         <AdminSubTitle> Other: </AdminSubTitle>
         <AdminData> {other}</AdminData>
       </div> */}
-      <div>
+      {/* <div>
         <AdminSubTitle><h3>Role: </h3><AdminData><h3> {role}</h3></AdminData></AdminSubTitle>
-      </div>
+      </div> */}
       {/* <div>
         <AdminSubTitle> Volunteers Image: </AdminSubTitle>
         <AdminData> {image}</AdminData>

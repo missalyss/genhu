@@ -74,17 +74,10 @@ class Employees extends React.Component {
 
     return(
       <div>
-<<<<<<< HEAD
-        <div className = 'employee-title'><h1>Staff</h1></div>
-        <div className='employees-container'>
-        { staff.map(s => (
-          <div className= "employee-box">
-=======
         <h1 className='employee-title'>Staff</h1>
         <div className='employees-container'>
         { staff.map(s => (
           <div className='employee-box'>
->>>>>>> d543380b71fcc877c77a085a956d714cc75be0e4
           <Staff
          
             key={ s.id }
@@ -92,11 +85,7 @@ class Employees extends React.Component {
             editEmployee = { this.editEmployee }
             deleteEmployee = { this.deleteEmployee }
           />
-<<<<<<< HEAD
-           </div>
-=======
           </div>
->>>>>>> d543380b71fcc877c77a085a956d714cc75be0e4
         ))}
         </div>
       </div>
@@ -107,23 +96,6 @@ class Employees extends React.Component {
     const { directors } = this.state;
 
     return(
-<<<<<<< HEAD
-      <div>
-        <div className = 'employee-title'><h1>Directors</h1></div>
-          <div className='employees-container'>
-            { directors.map(d => (
-              <div className= "employee-box">
-              <Directors
-              
-                key={ d.id }
-                { ...d }
-                editEmployee = { this.editEmployee }
-                deleteEmployee = { this.deleteEmployee }
-              />
-              </div>
-            ))}
-          </div>
-=======
         <div>
           <h1 className='employee-title'>Directors</h1>
         <div className='employees-container'>
@@ -137,7 +109,6 @@ class Employees extends React.Component {
           />
           </div>
         ))}
->>>>>>> d543380b71fcc877c77a085a956d714cc75be0e4
       </div>
       </div>
     );
@@ -148,17 +119,10 @@ class Employees extends React.Component {
 
     return(
       <div>
-<<<<<<< HEAD
-        <div className = 'employee-title'><h1>Volunteers</h1></div>
-        <div className='employees-container'>
-        { volunteers.map(v => (
-          <div className= "employee-box">
-=======
         <h1 className='employee-title'>Volunteers</h1>
         <div className='employees-container'>
         { volunteers.map(v => (
           <div className='employee-box'>
->>>>>>> d543380b71fcc877c77a085a956d714cc75be0e4
           <Volunteers
             key={ v.id }
             { ...v }
@@ -169,22 +133,16 @@ class Employees extends React.Component {
         ))}
         </div>
       </div>
-      </div>
+      
     );
   }
 
   render() {
     return (
       <div style={{padding: '5em'}}>
-<<<<<<< HEAD
-        <div className = 'employee-title'><AdminTitle><h1>Employees Page</h1></AdminTitle></div>
-        <div className='add-button'>
-          <button onClick={this.toggle}>
-=======
         <div className='employee-title'><AdminTitle><h1>Employees Page</h1></AdminTitle></div>
         <div className = 'add-button'>
           <button onClick={this.toggle} >
->>>>>>> d543380b71fcc877c77a085a956d714cc75be0e4
             Add New Employee
           </button>
         </div>

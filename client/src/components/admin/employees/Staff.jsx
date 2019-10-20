@@ -11,14 +11,9 @@ const Staff = ({ first_name, last_name, bio, title, email, phone, other, role, i
 
   return (
     <div>
-<<<<<<< HEAD
       <div>
         <AdminSubTitle><h3>Name: </h3><AdminData><h3> {first_name} {last_name} </h3> </AdminData></AdminSubTitle>
-        
-=======
-        <div>
-        <AdminSubTitle><h3>Name: </h3><AdminData><h3> {first_name} {last_name}</h3></AdminData></AdminSubTitle>
-      </div>
+        </div>
         <div>
         <AdminSubTitle><h3>Title: </h3><AdminData><h3>{title}</h3></AdminData></AdminSubTitle>
       </div>
@@ -29,7 +24,6 @@ const Staff = ({ first_name, last_name, bio, title, email, phone, other, role, i
       {/* <div>
         <AdminSubTitle>Staff First Name: </AdminSubTitle>
         <AdminData> {first_name}</AdminData>
->>>>>>> d543380b71fcc877c77a085a956d714cc75be0e4
       </div>
       {/* <div>
         <AdminSubTitle> Staff Last Name: </AdminSubTitle>
@@ -39,10 +33,10 @@ const Staff = ({ first_name, last_name, bio, title, email, phone, other, role, i
         <AdminSubTitle> Staff Bio: </AdminSubTitle>
         <AdminData> {bio}</AdminData>
       </div> */}
-      <div>
+      {/* <div>
         <AdminSubTitle><h3>Title: </h3> <AdminData><h3> {title}</h3></AdminData></AdminSubTitle>
         
-      </div>
+      </div> */}
       {/* <div>
         <AdminSubTitle> Email: </AdminSubTitle>
         <AdminData> {email}</AdminData>
@@ -55,10 +49,10 @@ const Staff = ({ first_name, last_name, bio, title, email, phone, other, role, i
         <AdminSubTitle> Other: </AdminSubTitle>
         <AdminData> {other}</AdminData>
       </div> */}
-      <div>
+      {/* <div>
         <AdminSubTitle><h3>Role: </h3><AdminData><h3> {role}</h3></AdminData></AdminSubTitle>
         
-      </div>
+      </div> */}
       {/* <div>
         <AdminSubTitle> Staff Image: </AdminSubTitle>
         <AdminData> {image}</AdminData>
