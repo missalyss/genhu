@@ -1,7 +1,5 @@
 .modal-container{
-
-  z-index: 5000000;
-  
+  z-index: 50000;
 }
 
 .modal-header{

@@ -86,30 +86,29 @@ class Staff extends React.Component {
 
   render () {
     return (
-      <>
-      <div>
-        <StaffModal/>
+
+      <div className='employee_page'>
         <div>
-        <StaffModal/>
-        <h1>Directors</h1>
-        {this.renderDirectors()}
+          <StaffModal />
+        </div>
+        <br /><br /><br /><br />
+        <div>
+          <h1>Directors</h1>
+          {this.renderDirectors()}
         </div>
         
         <br/>
         <div>
           <h1>Staff</h1>
-        {this.renderStaff()}
+          {this.renderStaff()}
         </div>
         <br/>
         <h1>Volunteers</h1>
         {this.renderVolunteers()}
-      </div>
       <Footer/>
-      </>
+      </div>
     )
-
   }
-  
 
 }
 
