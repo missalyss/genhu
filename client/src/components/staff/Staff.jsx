@@ -94,7 +94,7 @@ class Staff extends React.Component {
   render () {
     return (
       <>
-      <div style={{padding: '5em' }}>
+      <div>
         <StaffModal/>
         <div>
         <h1>Directors</h1>

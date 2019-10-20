@@ -34,7 +34,7 @@ class Homes extends React.Component {
     axios.post("/api/homes", home).then(res => {
       const { homes, centers, orphanages } = this.state;
       this.setState({ homes: [...homes, res.data], centers: [...centers, res.data], orphanages: [...orphanages, res.data] });
-      window.location.href = '/homes'
+      window.location.href = '/admin_homes'
     });
   };
 
@@ -50,7 +50,7 @@ class Homes extends React.Component {
         return home;
       });
       this.setState({ homes });
-      window.location.href = '/homes'
+      window.location.href = '/admin_homes'
     });
   };
 
@@ -58,7 +58,7 @@ class Homes extends React.Component {
     axios.delete(`/api/homes/${id}`).then(res => {
       const { homes, } = this.state;
       this.setState({ homes: homes.filter(h => h.id !== id) });
-      window.location.href = '/homes'
+      window.location.href = '/admin_homes'
 
     });
   };
@@ -127,7 +127,7 @@ class Homes extends React.Component {
       <div>
         <AdminTitle>Homes Page</AdminTitle>
         <div>
-          <button className="add-button" onClick={this.toggle}>
+          <button className="add-button" onClick={this.toggle} style={{padding: '4em 0em 2em 0em'}}>
             Add New Home
           </button>
         </div>
