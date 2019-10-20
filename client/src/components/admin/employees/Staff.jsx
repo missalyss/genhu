@@ -10,7 +10,17 @@ const Staff = ({ first_name, last_name, bio, title, email, phone, other, role, i
 
   return (
     <div>
-      <div>
+        <div>
+        <AdminSubTitle><h3>Name: </h3><AdminData><h3> {first_name} {last_name}</h3></AdminData></AdminSubTitle>
+      </div>
+        <div>
+        <AdminSubTitle><h3>Title: </h3><AdminData><h3>{title}</h3></AdminData></AdminSubTitle>
+      </div>
+        <div>
+        <AdminSubTitle><h3>Role: </h3><AdminData><h3>{role}</h3></AdminData></AdminSubTitle>
+      </div>
+
+      {/* <div>
         <AdminSubTitle>Staff First Name: </AdminSubTitle>
         <AdminData> {first_name}</AdminData>
       </div>
@@ -45,7 +55,7 @@ const Staff = ({ first_name, last_name, bio, title, email, phone, other, role, i
       <div>
         <AdminSubTitle> Staff Image: </AdminSubTitle>
         <AdminData> {image}</AdminData>
-      </div>
+      </div> */}
       <div>
         <button onClick={editToggle}>Edit</button>
         <button
