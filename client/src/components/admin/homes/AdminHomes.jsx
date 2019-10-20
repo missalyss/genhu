@@ -5,6 +5,7 @@ import Center from "./orphanages/Center";
 import HomeForm from "./AdminHomeForm";
 import { AdminTitle, AdminSubTitle } from "../Styles";
 import "../stats/AdminStats.css";
+import { Link } from 'react-router-dom';
 
 class Homes extends React.Component {
   state = { homes: [], orphanages: [], centers: [], toggleForm: false };
@@ -126,10 +127,15 @@ class Homes extends React.Component {
     return (
       <div>
         <AdminTitle>Homes Page</AdminTitle>
-        <div>
-          <button className="add-button" onClick={this.toggle} style={{padding: '4em 0em 2em 0em'}}>
+        <div className='homes-btn-cont'>
+          <button className="add-button" onClick={this.toggle}>
             Add New Home
           </button>
+          <Link to='/admin'>
+          <button className="add-button" onClick={this.toggle} >
+            Back
+          </button>
+          </Link>
         </div>
         {this.state.toggleForm ? (
           <div className='center'> <HomeForm addHome={this.addHome} toggle={this.toggle}/> </div>

@@ -5,6 +5,7 @@ import {AdminTitle} from "../Styles";
 import Staff from "./Staff";
 import Volunteers from "./Volunteers";
 import Directors from "./Directors";
+import './Employees.css'
 
 class Employees extends React.Component {
   state = { employees: [], volunteers: [], directors: [], staff: [], toggleForm: false };
@@ -73,14 +74,20 @@ class Employees extends React.Component {
 
     return(
       <div>
+        <h1 className='employee-title'>Staff</h1>
+        <div className='employees-container'>
         { staff.map(s => (
+          <div className='employee-box'>
           <Staff
+         
             key={ s.id }
             { ...s }
             editEmployee = { this.editEmployee }
             deleteEmployee = { this.deleteEmployee }
           />
+          </div>
         ))}
+        </div>
       </div>
     );
   }
@@ -89,15 +96,20 @@ class Employees extends React.Component {
     const { directors } = this.state;
 
     return(
-      <div>
+        <div>
+          <h1 className='employee-title'>Directors</h1>
+        <div className='employees-container'>
         { directors.map(d => (
+          <div className='employee-box'>
           <Directors
             key={ d.id }
             { ...d }
             editEmployee = { this.editEmployee }
             deleteEmployee = { this.deleteEmployee }
           />
+          </div>
         ))}
+      </div>
       </div>
     );
   }
@@ -107,24 +119,30 @@ class Employees extends React.Component {
 
     return(
       <div>
+        <h1 className='employee-title'>Volunteers</h1>
+        <div className='employees-container'>
         { volunteers.map(v => (
+          <div className='employee-box'>
           <Volunteers
             key={ v.id }
             { ...v }
             editEmployee = { this.editEmployee }
             deleteEmployee = { this.deleteEmployee }
           />
+          </div>
         ))}
+        </div>
       </div>
+      
     );
   }
 
   render() {
     return (
       <div style={{padding: '5em'}}>
-        <AdminTitle>Employees Page</AdminTitle>
-        <div>
-          <button onClick={this.toggle}>
+        <div className='employee-title'><AdminTitle><h1>Employees Page</h1></AdminTitle></div>
+        <div className = 'add-button'>
+          <button onClick={this.toggle} >
             Add New Employee
           </button>
         </div>
