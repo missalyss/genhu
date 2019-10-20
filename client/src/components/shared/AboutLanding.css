@@ -1,84 +1,97 @@
-.main {
+.about-container {
   display: flex;
-  height: 30em;
-  /* border: orange 1em solid; */
- 
+  padding-top: 2em;
 }
 
 .about-logo {
   background-size: cover;
   background-position: center;
   height: 100%;
-  width: 30%;
-  /* border: red 2px solid; */
-}
-
-
-.about-container {
-  display: flex;
-  padding-top: 2em;
-  /* border: purple 2/px solid; */
+  width: 35%;
+  padding-left: 6em;
 }
 
 .learn-section {
   width: 70%; 
-  /* border: blue 1em solid; */
-  
+  flex-direction: column;
+  padding-right: 3em;
 }
 
 .about-title {
-  font-size: 2.5em;
-  padding: 1em;
+  font-size: 40px;
+  padding-top: 2.5em;
+  padding-bottom: 2em;
+  padding-left: .8em;
 }
 
-.mission {
-  font-size: 2em;
-  padding: 1em;
+.mission-title {
+  color: #3C7473;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 1.8em;
+}
+
+.mission-line {
+  color: #3C7473;
+  font-size: 45px;
+  font-weight: 500;
+  padding-left: .8em;
+  padding-bottom: .3em;
 }
 
 .mission-paragraph {
   padding: 1.5em;
-  font-size: 1.2em;
-  
+  font-size: 14px;
+  line-height: 2;
+  padding-left: 2.6em;
+  padding-right: 5em;
 }
 
 .convert-container {
   display: flex;  
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 1em;
-  /* border: solid pink 1em; */
+  height: 65vh;
+  padding-left: 6em;
+}
+
+.converted-col {
+  width: 85%;
+}
+
+.converted-title {
+  color: #3C7473;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 4em;
+  padding-left: 0;
+}
+
+.converted-line {
+  color: #3C7473;
+  font-size: 45px;
+  font-weight: 500;
+  padding-bottom: .8em;
 }
 
 .converted-paragraph {
-  font-size: 17px;
-  width: 65%;
-  padding: 1em;
-  /* border: solid red 1em; */
+  font-size: 14px;
+  line-height: 2;
 }
 
-.about-carousel {
-  width: 50%;
-  padding: 1em;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  /* border: blue 2px solid; */
+.carousel-container {
+ width: 85%;
+ height: 100%;
+ padding-top: 2em;
+ padding-right: 7em;
+ padding-left: 4em;
 }
-.carousel-animation: {
-  /* -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out; */
-}
+
 .carousel-animation:hover {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-        transform: scale(1.2);
+  padding: 1em;
+  border: 2px solid #ddd;
+    -webkit-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+        transform: scale(1.04);
     box-shadow: 10px 15px 7px #C7C7C7;
-}
-.position {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 80px;
 }
 
 .about-pic1 {
