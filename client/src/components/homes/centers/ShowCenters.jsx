@@ -56,7 +56,7 @@ class ShowCenters extends React.Component {
         <div className='centers-single-stat'>
           <div className='centers-single-stat-col'>
             <div className='homes-stat-font'>
-            <CountUp end={100} />
+            <CountUp end={center.victims} />
             {center.victims}% </div>
             <p className='homes-stat-title'>Orhpans</p>
           </div>
@@ -72,7 +72,7 @@ class ShowCenters extends React.Component {
       <div className='cntr-content-home'>
         <div className='cntr-col'>
           <div>
-            <h3>About {center.name} Drop-In Center</h3>
+            <h1>About {center.name} Drop-In Center</h1>
             <p>Coming Soon...</p>
             <h4>Stay Tuned!</h4>
           </div>
