@@ -8,6 +8,7 @@ class Policy extends Component {
       <div class='policy-container'>
         <div class='pf-container-top'>
           <h1>Policy and Financial</h1>
+          <h4>IRS EXEMPTION LETTER</h4>
           <p>Generations Humanitarian (Genhu) is a 501(c)(3) public charity [170 (b)(1)(A)(vi)] organization incorporated in the State of Utah.  Read exemption letter here:  <a href= 'https://genhu.org/wp-content/uploads/2016/12/501c3-2-pages.pdf'>  501c3-2 pages</a></p>
           <br/>
           </div>
@@ -34,7 +35,8 @@ class Policy extends Component {
             </ul>
             </div>
           <Footer/>
-        </div> 
+        </div>
+ 
     )
   }
 }
