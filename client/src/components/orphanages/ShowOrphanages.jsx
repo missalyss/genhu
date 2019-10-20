@@ -66,7 +66,7 @@ class ShowOrphanages extends React.Component {
 
       </div>
       <div className='cntr-content-home'>
-        <div className='cntr-col-home'>
+        <div className='cntr-col'>
 
         <div>
           <h3>About {orphanage.name} </h3>
@@ -77,6 +77,8 @@ The {orphanage.home} has a basketball/volleyball court, two greenhouses, classro
 Beginning in 2017, we are launching an education fund for the full time residents of the home.  This includes private education, technical trade such as making pottery and ceramics, and university scholarships.</p>
           
         </div>
+        </div>
+        <div className='cntr-col'>
         <div>
           <h1>Image Coming Soon</h1>
         </div>
