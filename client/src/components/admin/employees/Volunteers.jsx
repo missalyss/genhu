@@ -19,6 +19,10 @@ const Volunteers = ({ first_name, last_name, bio, title, email, phone, other, ro
         <div>
         <AdminSubTitle><h3>Role: </h3><AdminData><h3>{role}</h3></AdminData></AdminSubTitle>
       </div>
+      <br />
+      <div>
+        <img className='employee_photo' src={image} />
+      </div>
       {/* <div>
         <AdminSubTitle>Volunteers First Name: </AdminSubTitle>
         <AdminData> {first_name}</AdminData>
