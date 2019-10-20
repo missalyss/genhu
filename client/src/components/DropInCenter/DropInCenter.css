@@ -13,7 +13,7 @@ column-count: 2;
 }
 
 .drop-container p{
-  line-height: 1.5;
+  line-height: 2.5
 }
            
 .drop-background {
@@ -41,6 +41,8 @@ column-count: 2;
   padding: 5em 3em 1em 3em;
   width: 50%;
   /* border: 2px solid red; */
+  font-size: 18px;
+  
   
 }
 .mid-drop-content-bottom {
@@ -48,7 +50,7 @@ column-count: 2;
   padding: 1em 9em 10em 8em;
   width: 100%;
   /* border: 2px solid red; */
-  
+  font-size: 18px;
 }
 
 
@@ -57,13 +59,13 @@ column-count: 2;
   padding: 1em 3em;
   width: 50%;
   /* border: 2px solid red; */
-  
+  font-size: 18px;
 }
 .mid-drop-content-full {
   /* flex-basis: 1; */
   padding: 1em 9em 1em 8em;
   width: 100%;
-  
+  font-size: 18px;
   /* border: 2px solid red; */
   
 }
@@ -80,9 +82,10 @@ column-count: 2;
 /* BOXES */
 
 .box1 {
-  padding: 200px;
+  padding: 300px;
   border: 1px solid #D5C54A;
   background-color: #D5C54A;
+  
 }
 .box2 {
   padding: 100px;
@@ -90,7 +93,7 @@ column-count: 2;
   background-color: #3C7473;
 }
 .box3 {
-  padding: 300px;
+  padding: 380px 300px;
   border: 1px solid #67385D;
   background-color: #67385D;
 }
@@ -107,7 +110,7 @@ column-count: 2;
 }
 
 .box6 {
-  padding: 100px;
+  padding: 130px;
   border: 1px solid #3C7473;
   background-color: #3C7473;
 }
@@ -119,7 +122,7 @@ column-count: 2;
 }
 
 .box8 {
-  padding: 100px;
+  padding: 150px;
   border: 1px solid #973A30;
   background-color: #973A30;
 }

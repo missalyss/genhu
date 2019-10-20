@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AdminSubTitle, AdminData } from "../Styles";
 import EmployeeForm from "./EmployeeForm";
+import './Employees.css'
 // import { Trash } from '../../../assets/Icons/TrashIcon.png'
 
 const Staff = ({ first_name, last_name, bio, title, email, phone, other, role, image, editEmployee, id, deleteEmployee }) => {
@@ -11,41 +12,41 @@ const Staff = ({ first_name, last_name, bio, title, email, phone, other, role, i
   return (
     <div>
       <div>
-        <AdminSubTitle>Staff First Name: </AdminSubTitle>
-        <AdminData> {first_name}</AdminData>
+        <AdminSubTitle><h3>Name: </h3><AdminData><h3> {first_name} {last_name} </h3> </AdminData></AdminSubTitle>
+        
       </div>
-      <div>
+      {/* <div>
         <AdminSubTitle> Staff Last Name: </AdminSubTitle>
         <AdminData> {last_name}</AdminData>
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <AdminSubTitle> Staff Bio: </AdminSubTitle>
         <AdminData> {bio}</AdminData>
-      </div>
+      </div> */}
       <div>
-        <AdminSubTitle> Staff Title: </AdminSubTitle>
-        <AdminData> {title}</AdminData>
+        <AdminSubTitle><h3>Title: </h3> <AdminData><h3> {title}</h3></AdminData></AdminSubTitle>
+        
       </div>
-      <div>
+      {/* <div>
         <AdminSubTitle> Email: </AdminSubTitle>
         <AdminData> {email}</AdminData>
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <AdminSubTitle>Phone: </AdminSubTitle>
         <AdminData> {phone}</AdminData>
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <AdminSubTitle> Other: </AdminSubTitle>
         <AdminData> {other}</AdminData>
-      </div>
+      </div> */}
       <div>
-        <AdminSubTitle> Staff Role: </AdminSubTitle>
-        <AdminData> {role}</AdminData>
+        <AdminSubTitle><h3>Role: </h3><AdminData><h3> {role}</h3></AdminData></AdminSubTitle>
+        
       </div>
-      <div>
+      {/* <div>
         <AdminSubTitle> Staff Image: </AdminSubTitle>
         <AdminData> {image}</AdminData>
-      </div>
+      </div> */}
       <div>
         <button onClick={editToggle}>Edit</button>
         <button
