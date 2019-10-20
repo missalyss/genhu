@@ -35,7 +35,7 @@ class Homes extends React.Component {
     axios.post("/api/homes", home).then(res => {
       const { homes, centers, orphanages } = this.state;
       this.setState({ homes: [...homes, res.data], centers: [...centers, res.data], orphanages: [...orphanages, res.data] });
-      window.location.href = '/homes'
+      window.location.href = '/admin_homes'
     });
   };
 

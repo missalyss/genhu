@@ -39,6 +39,10 @@ const Directors = ({ first_name, last_name, bio, title, email, phone, other, rol
       <div>
         <AdminSubTitle><h3>Role: </h3><AdminData><h3>{role}</h3> </AdminData></AdminSubTitle>
       </div>
+      <br />
+      <div>
+        <img className='employee_photo' src={image} />
+      </div>
       {/* <div>
         <AdminSubTitle> Directors Image: </AdminSubTitle>
         <AdminData> {image}</AdminData>

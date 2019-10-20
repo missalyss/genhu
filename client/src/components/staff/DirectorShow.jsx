@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
 import StaffModal from './StaffModal';
 
-
-
-
-
-const DirectorShow = ({ first_name, last_name, title, id, bio, email, phone, other, role }) => {
+const DirectorShow = ({ first_name, last_name, title, id, bio, email, phone, other, role, image }) => {
 
   const [ showModal, setShowModal ] = useState( false )
 
@@ -14,7 +10,7 @@ const DirectorShow = ({ first_name, last_name, title, id, bio, email, phone, oth
   return(
 
     <div>
-        <div className= 'staff-box' onClick = { toggleShow }>
+        <div className= 'staff-box' onClick = { toggleShow } style={{backgroundImage: `url(${image})`, backgroundRepeat: "no-repeat", backgroundPosition: "center"}}>
           <div className='staff-name'><h3>{first_name} {last_name}</h3></div>
           <div className='staff-title'><h4>{title}</h4></div>
         </div>
