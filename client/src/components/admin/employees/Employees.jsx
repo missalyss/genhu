@@ -6,6 +6,7 @@ import Staff from "./Staff";
 import Volunteers from "./Volunteers";
 import Directors from "./Directors";
 import './Employees.css'
+import { Link } from 'react-router-dom';
 
 class Employees extends React.Component {
   state = { employees: [], volunteers: [], directors: [], staff: [], toggleForm: false };
@@ -141,10 +142,17 @@ class Employees extends React.Component {
     return (
       <div style={{padding: '5em'}}>
         <div className='employee-title'><AdminTitle><h1>Employees Page</h1></AdminTitle></div>
+        <div className='emp-btn-flex'>
         <div className = 'add-button'>
           <button onClick={this.toggle} >
             Add New Employee
           </button>
+        </div>
+        <Link to='/admin'>
+          <button className="add-button" onClick={this.toggle} >
+            Back
+          </button>
+         </Link>
         </div>
         {this.state.toggleForm ? (
           <div> <EmployeeForm addEmployee={this.addEmployee} /> </div>

@@ -20,9 +20,11 @@ flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-end;
   margin: 1em 1em;
-  
+  position: relative;
+  overflow: hidden;
   
 
+  
   /* --------------- BACKGROUND ---------------- */
   background-color: teal;
   /* background-image: url('../../assets/Icons/profile.png');
@@ -30,9 +32,19 @@ flex-wrap: wrap;
   background-size: 65%;
   background-repeat: no-repeat; */
   /* border: 5px solid blue; */
-  
+}
 
-  
+.staff-box:hover {
+  cursor: pointer;
+  opacity: .8;
+  transform: scale(1.1);
+  transition: transform 3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+
+}
+
+.img-wrapper {
+  display: inline-block; /* change the default display type to inline-block */
+    overflow: hidden;
 }
 
 .staff-name { 

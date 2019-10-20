@@ -40,7 +40,7 @@ class Contact extends Component {
         <textarea name='message' />
         </div>
         <div>
-          <button type='submit' className='contact_submit' onClick={alert('Thank you!')}>Send Message</button>
+          <button type='submit' className='contact_submit'>Send Message</button>
         </div>
         </div>
         </form>
