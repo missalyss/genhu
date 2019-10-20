@@ -5,7 +5,8 @@
 .home-section-cont {
   display: flex;
   flex-wrap: wrap;
-  margin: em 5em 0em 5em;
+  margin: 2em 5em 0em 5em;
+  
 
 }
 
@@ -15,6 +16,7 @@
   width: 65%;
   justify-content: space-around;
   align-content: space-around;
+
 }
 
 .homes-form-cont {
@@ -23,7 +25,6 @@
   justify-content: center;
   width: 100%;
   border: red solid 2px;
-  
 }
 
 .homes-form {
