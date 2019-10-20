@@ -59,7 +59,7 @@ flex-wrap: wrap;
 }
 
 .employee_page h1 {
-  margin-left: 1em;
+  text-align: center;
   padding: 30px;
   font-size: 40px;
 }
