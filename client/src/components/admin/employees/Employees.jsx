@@ -79,6 +79,7 @@ class Employees extends React.Component {
         { staff.map(s => (
           <div className='employee-box'>
           <Staff
+         
             key={ s.id }
             { ...s }
             editEmployee = { this.editEmployee }
@@ -130,8 +131,9 @@ class Employees extends React.Component {
           />
           </div>
         ))}
+        </div>
       </div>
-      </div>
+      
     );
   }
 

@@ -11,7 +11,7 @@ const Volunteers = ({ first_name, last_name, bio, title, email, phone, other, ro
   return (
     <div>
       <div>
-        <AdminSubTitle><h3>Name: </h3><AdminData><h3> {first_name} {last_name}</h3></AdminData></AdminSubTitle>
+        <AdminSubTitle><h3>Name: </h3><AdminData> <h3>{first_name} {last_name}</h3></AdminData> </AdminSubTitle>
       </div>
         <div>
         <AdminSubTitle><h3>Title: </h3><AdminData><h3>{title}</h3></AdminData></AdminSubTitle>
@@ -23,35 +23,33 @@ const Volunteers = ({ first_name, last_name, bio, title, email, phone, other, ro
         <AdminSubTitle>Volunteers First Name: </AdminSubTitle>
         <AdminData> {first_name}</AdminData>
       </div>
-      <div>
+      {/* <div>
         <AdminSubTitle> Volunteers Last Name: </AdminSubTitle>
         <AdminData> {last_name}</AdminData>
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <AdminSubTitle> Volunteers Bio: </AdminSubTitle>
         <AdminData> {bio}</AdminData>
-      </div>
-      <div>
-        <AdminSubTitle> Volunteers Title: </AdminSubTitle>
-        <AdminData> {title}</AdminData>
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
+        <AdminSubTitle><h3>Title: </h3><AdminData><h3>{title}</h3> </AdminData></AdminSubTitle>
+      </div> */}
+      {/* <div>
         <AdminSubTitle> Email: </AdminSubTitle>
         <AdminData> {email}</AdminData>
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <AdminSubTitle>Phone: </AdminSubTitle>
         <AdminData> {phone}</AdminData>
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <AdminSubTitle> Other: </AdminSubTitle>
         <AdminData> {other}</AdminData>
-      </div>
-      <div>
-        <AdminSubTitle> Volunteers Role: </AdminSubTitle>
-        <AdminData> {role}</AdminData>
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
+        <AdminSubTitle><h3>Role: </h3><AdminData><h3> {role}</h3></AdminData></AdminSubTitle>
+      </div> */}
+      {/* <div>
         <AdminSubTitle> Volunteers Image: </AdminSubTitle>
         <AdminData> {image}</AdminData>
       </div> */}
