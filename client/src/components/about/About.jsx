@@ -5,9 +5,8 @@ import AboutUs from "./AboutUs.css";
 class About extends Component {
   render() {
     return (
-    <div>
       <div class='aboutUs-container'>
-        <div class='au-container'>
+        <div class='au-container-top'>
           <h1>About Us</h1>
           <p>Genhu is a team of loving, charitable, 
             educated, and dedicated men and women who care about changing the lives of others. 
@@ -69,9 +68,9 @@ class About extends Component {
               <li>Open and Transparent</li>
             </ul>
           </div>
-        </div>
           <Footer/>
-      </div>
+        </div>
+      
       
     )
   }
