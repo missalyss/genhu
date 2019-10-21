@@ -9,20 +9,20 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.admincontainer {
+.admin-container {
   padding: 0em;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
-
 }
 
 .admin-title {
   font-family: 'Oxygen', sans-serif;
   font-size: 2em;
   text-align: center;
+  padding-top: 2em;
 }
 
 .button-col,
