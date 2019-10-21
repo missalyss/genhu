@@ -6,7 +6,7 @@ import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 import { Switch, Route, } from 'react-router-dom';
 import ProtectedRoute from './components/auth/ProtectedRoute';
-import Calendar from './components/calendar/Calendar';
+import MyCalendar from './components/calendar/MyCalendar';
 import Navbar from './components/shared/Navbar';
 import About from './components/about/About';
 import Expeditions from './components/expeditions/Expeditions';
@@ -26,7 +26,7 @@ const App = () => (
         <Route exact path="/" component={Home} />
         <Route exact path="/admin" component={Login} />
         <Route exact path="/register" component={Register} />
-        <Route exact path="/calendar" component={Calendar} />
+        <Route exact path="/calendar" component={MyCalendar} />
         <Route exact path='/about' component={About} />
         <Route exact path='/expeditions' component={Expeditions} />
         <Route exact path='/homes' component={Homes} />
