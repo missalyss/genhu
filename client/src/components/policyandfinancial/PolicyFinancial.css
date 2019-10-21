@@ -11,6 +11,17 @@
   line-height: 2.5
 }
 
+a:link {
+  color: #3C7473;
+}
+
+a:visited {
+  color: #5B3450;
+}
+
+a:hover {
+  color: black;
+}
 
 .list-style{
   margin-left: 23px;
