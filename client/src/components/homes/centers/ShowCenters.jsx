@@ -15,8 +15,12 @@ class ShowCenters extends React.Component {
       this.setState({ center: res.data})
     })
   }
+
+  
   render() {
     const { center } = this.state;
+    
+
     return(
       <>
       <div className='centers-top-cont'>
