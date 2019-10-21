@@ -9,6 +9,7 @@ import ProtectedRoute from './components/auth/ProtectedRoute';
 import MyCalendar from './components/calendar/MyCalendar';
 import Navbar from './components/shared/Navbar';
 import About from './components/about/About';
+import PolicyFinancial from './components/policyandfinancial/PolicyFinancial';
 import Expeditions from './components/expeditions/Expeditions';
 // import Homes from './components/homes/Homes';
 import Contact from './components/contact/Contact';
@@ -35,6 +36,7 @@ const App = () => (
         <Route exact path="/register" component={Register} />
         <Route exact path="/calendar" component={MyCalendar} />
         <Route exact path='/about' component={About} />
+        <Route exact path='/policy' component={PolicyFinancial} />
         <Route exact path='/expeditions' component={Expeditions} />
         {/* <Route exact path='/homes' component={Homes} /> */}
         <Route exact path='/contact' component={Contact} />
