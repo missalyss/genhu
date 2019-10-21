@@ -9,7 +9,7 @@ const AdminHome = () => {
     <div>
       <AdminNav />
       <div className="admin-container">
-        <AdminTitle >GenHu Admin Home</AdminTitle>
+        <div className="admin-title"><AdminTitle >GenHu Admin Home</AdminTitle></div>
 
         <div className='papa'>
 
