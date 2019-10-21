@@ -1,0 +1,13 @@
+.modal-container{
+  z-index: 50000;
+}
+
+.modal-header{
+    background-color: #67385D; 
+    color: white;
+}
+.modal-button{
+    background-color: #67385D; 
+    color: white;
+    
+}

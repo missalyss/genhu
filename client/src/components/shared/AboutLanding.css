@@ -1,0 +1,114 @@
+.about-container {
+  display: flex;
+  padding-top: 2em;
+}
+
+.about-logo {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 35%;
+  padding-left: 6em;
+}
+
+.learn-section {
+  width: 70%; 
+  flex-direction: column;
+  padding-right: 3em;
+}
+
+.about-title {
+  font-size: 40px;
+  padding-top: 2.5em;
+  padding-bottom: 2em;
+  padding-left: .8em;
+}
+
+.mission-title {
+  color: #3C7473;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 1.8em;
+}
+
+.mission-line {
+  color: #3C7473;
+  font-size: 45px;
+  font-weight: 500;
+  padding-left: .8em;
+  padding-bottom: .3em;
+}
+
+.mission-paragraph {
+  padding: 1.5em;
+  font-size: 14px;
+  line-height: 2;
+  padding-left: 2.6em;
+  padding-right: 5em;
+}
+
+.convert-container {
+  display: flex;  
+  height: 65vh;
+  padding-left: 6em;
+}
+
+.converted-col {
+  width: 85%;
+}
+
+.converted-title {
+  color: #3C7473;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 4em;
+  padding-left: 0;
+}
+
+.converted-line {
+  color: #3C7473;
+  font-size: 45px;
+  font-weight: 500;
+  padding-bottom: .8em;
+}
+
+.converted-paragraph {
+  font-size: 14px;
+  line-height: 2;
+}
+
+.carousel-container {
+ width: 85%;
+ height: 100%;
+ padding-top: 2em;
+ padding-right: 7em;
+ padding-left: 4em;
+}
+
+.carousel-animation:hover {
+  padding: 1em;
+  border: 2px solid #ddd;
+    -webkit-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+        transform: scale(1.04);
+    box-shadow: 10px 15px 7px #C7C7C7;
+}
+
+.about-pic1 {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.about-pic2 {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.about-pic3 {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}

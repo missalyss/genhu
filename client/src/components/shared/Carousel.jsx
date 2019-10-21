@@ -26,7 +26,10 @@ const LandingCarousel = () => {
               <Title>Come to South America in 2019</Title>
               <SubHeading>Contact us for a group's custom expedition</SubHeading>
               {/* </Carousel.Caption> */}
+              <a href='.about-container'>
               <Button>Learn More</Button>
+              </a>
+              
           </div>
         </div>
       </Carousel.Item>

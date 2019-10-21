@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "devise-axios": "^1.0.24"
+    "devise-axios": "^1.0.24",
+    "react-countup": "^4.2.2"
   }
 }
