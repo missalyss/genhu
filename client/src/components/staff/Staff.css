@@ -56,6 +56,7 @@ flex-wrap: wrap;
 
 .staff-name h3 {
   font-size: 30px;
+  
 }
 
 .staff-title h4 {
@@ -71,7 +72,9 @@ flex-wrap: wrap;
 }
 
 .employee_page h1 {
-  margin-left: 1em;
-  padding: 30px;
-  font-size: 40px;
+  text-align: center;
+  padding: 20px;
+  font-size: 35px;
+  background-color: #67385D;
+  color: white;
 }

@@ -4,6 +4,11 @@ import styles from'../shared/Main.css';
 import Footer from '../shared/Footer';
 
 class Contact extends Component {
+
+  successMessage = () => {
+    alert("Submitted")
+  }
+
   render() {
     return (
       
@@ -40,7 +45,7 @@ class Contact extends Component {
         <textarea name='message' />
         </div>
         <div>
-          <button type='submit' className='contact_submit'>Send Message</button>
+          <button type='submit' className='contact_submit' onClick={ this.successMessage }>Send Message</button>
         </div>
         </div>
         </form>
