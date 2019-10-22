@@ -1,6 +1,7 @@
 import React from 'react';
 import "./ThreeStages.css";
 import Image from '../../assets/Images/city-buildings.jpg';
+import { NavLink } from 'react-router-dom';
 
 const ThreeStages = () => {
   return (
@@ -47,7 +48,7 @@ const ThreeStages = () => {
           <div className='ts-long-box'>
             <div className='ts-flex'>
               <h2>Help support Generations Humanitarian and our Causes</h2>
-              <button className='ts-button'>Discover More</button>
+              <button className='ts-button'><NavLink to='/expeditions'>Discover More</NavLink></button>
             </div>
           </div>
         </div>
