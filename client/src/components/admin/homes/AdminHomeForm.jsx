@@ -35,7 +35,8 @@ director: '', sponsor: ''  };
   render() {
     const { name, role, sheltered_children, victims, orphans, volunteers, director, sponsor } = this.state;
     return (
-      <div className='form-cont'>
+      // <div className='form-cont'>
+        <div>
         <form onSubmit={this.handleSubmit}>
           <label>Home Name:</label>
           <input

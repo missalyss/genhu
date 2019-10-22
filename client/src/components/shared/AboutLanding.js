@@ -11,7 +11,7 @@ import PicThree from '../../assets/carousel-pic3.jpg';
 const AboutLanding = () => {
 
   return (
-    <div className="about-container">
+    <div className="about-container" id='about'>
       <img src={Logo} className='about-logo'/>
       <div className='learn-section'>
       <div className="about-title">Learn More About Generation Humanitarian</div>
