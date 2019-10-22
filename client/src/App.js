@@ -23,6 +23,7 @@ import Stats from './components/admin/stats/Stats';
 import Staff from './components/staff/Staff';
 import AdminHomes from './components/admin/homes/AdminHomes';
 import Employees from './components/admin/employees/Employees'
+import Research from './components/Research/ResearchPage';
 
 
 const App = () => (
