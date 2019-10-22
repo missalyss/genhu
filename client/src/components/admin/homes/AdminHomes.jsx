@@ -93,6 +93,7 @@ class Homes extends React.Component {
     return (
       <div className='home-section-cont'>
         {orphanages.map(orphanage => (
+          <div className="home-box">
           <Orphanage
             key={orphanage.id}
             {...orphanage}
@@ -101,6 +102,7 @@ class Homes extends React.Component {
             editHome={this.editHome}
             deleteHome={this.deleteHome}
             />
+            </div>
             ))}
       </div>
     );
@@ -111,6 +113,7 @@ class Homes extends React.Component {
     return (
       <div className='home-section-cont'>
         {centers.map(center => (
+          <div className="home-box">
           <Center
           key={center.id}
           {...center}
@@ -119,15 +122,16 @@ class Homes extends React.Component {
             editHome={this.editHome}
             deleteHome={this.deleteHome}
             />
+            </div>
             ))}
       </div>
     );
   }
   render() {
     return (
-      <div>
-        <AdminTitle>Homes Page</AdminTitle>
-        <div className='homes-btn-cont'>
+      <div style={{padding: '5em'}}>
+        <h1 className="homes-title">Homes Page</h1>
+        <div className="home-btn-flex">
           <button className="add-button" onClick={this.toggle}>
             Add New Home
           </button>
@@ -144,11 +148,11 @@ class Homes extends React.Component {
           )}
           <div>
           <div>
-          <AdminSubTitle className='sa-title'>Orphanages</AdminSubTitle>
+          <h1 className='homes-title'>Orphanages</h1>
             {this.renderOrphanages()}
           </div>
           <div>
-          <AdminSubTitle className='sa-title'>Centers</AdminSubTitle>
+          <h1 className='homes-title'>Centers</h1>
             {this.renderCenters()}
           </div>
           </div>
