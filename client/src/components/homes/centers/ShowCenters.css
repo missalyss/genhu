@@ -2,7 +2,7 @@
 
 .centers-top-cont {
   display: flex;
-  height: 70vh;
+  height: 75vh;
   width: 100%;
   /* margin-top: 5em; */
   /* border: green 2px solid; */
@@ -59,6 +59,8 @@
   /* border: blue 2px solid */
 }
 
+/* ------------ Stats Container --------------- */
+
 .centers-stats-cont {
   display: flex;
   justify-content: space-between;
@@ -95,8 +97,9 @@
   padding-bottom: .5em;
 }
 .homes-stat-title {
-  font-size: .75em;
-  color: color
+  font-size: .7em;
+  color: color;
+  font-weight: lighter;
 }
 
 /* ----------------- Content Portion ----------------- */
@@ -106,17 +109,34 @@
   flex-direction: row;
   height: 100vh;
   width: 100%;
-  border: red solid 2px;
+  /* border: red solid 2px; */
 }
 
 .cntr-content-home div {
-  border: blue solid 2px;
-  width: 50%
+  /* border: blue solid 2px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+  padding: 0em 3em;
+  
+
+  /* width: 50% */
 }
 
 .cntr-col {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: green solid 2px;
+  /* border: green solid 2px; */
+  width: 50%;
+  /* height: 80%; */
+}
+
+.cntr-col h1 {
+  font-size: 2.5em;
+}
+.cntr-col p {
+  font-size: 1.05em;
+  line-height: 1.70em;
 }
