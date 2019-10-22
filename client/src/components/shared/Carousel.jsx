@@ -2,6 +2,7 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { Title, SubHeading, Button } from '../styles/StyledComponents';
 import './Carousel.css';
+import { HashLink as Link } from 'react-router-hash-link';
 
 // style={{border: 'solid 1px blue'}}
 
@@ -15,7 +16,11 @@ const LandingCarousel = () => {
               <Title>Welcome to Generations Humanitarian</Title>
               <SubHeading>We build and operate orphanages and drop-in centers for street children in Latin America</SubHeading>
               {/* </Carousel.Caption> */}
+              <Link
+              smooth to='/#about'
+              >
               <Button>Learn More</Button>
+              </Link>
           </div>
         </div>
       </Carousel.Item>
@@ -26,9 +31,11 @@ const LandingCarousel = () => {
               <Title>Come to South America in 2019</Title>
               <SubHeading>Contact us for a group's custom expedition</SubHeading>
               {/* </Carousel.Caption> */}
-              <a href='.about-container'>
-              <Button>Learn More</Button>
-              </a>
+              <Link
+              smooth to='/#about'
+              >
+              <Button >Learn More</Button>
+              </Link>
               
           </div>
         </div>
@@ -38,9 +45,13 @@ const LandingCarousel = () => {
             <div className='hero-align_col' >
               {/* <Carousel.Caption> */}
               <Title>Refuge Crisis</Title>
-              <SubHeading>Help Venezuela Refuge Children</SubHeading>
+              <SubHeading>Help Venezuela Refugee Children</SubHeading>
               {/* </Carousel.Caption> */}
+              <Link
+              smooth to='/#about'
+              >
               <Button>Learn More</Button>
+              </Link>
           </div>
         </div>
       </Carousel.Item>
@@ -52,7 +63,11 @@ const LandingCarousel = () => {
               <SubHeading>We are creating self-sustaining, scalable, water efficient, organice greenhouses 
                 that teach children a work ethic, give them price in their produce, and funds their home.</SubHeading>
               {/* </Carousel.Caption> */}
+              <Link
+              smooth to='/#about'
+              >
               <Button>Learn More</Button>
+              </Link>
           </div>
         </div>
       </Carousel.Item>
