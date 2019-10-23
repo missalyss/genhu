@@ -14,6 +14,12 @@ const Stats = () => {
              hope, and loving homes—thereby breaking the cycle of scarcity for generations to come. 
              This is done through broad research, novel development, strengthening nonprofit entities in development, 
              and individual nurturing in a home environment.</p>
+
+          <br/>
+          <br/>   
+          <NavLink to ='/login' className='NavLink'>
+            <h2 className='header'>Admin</h2>
+          </NavLink>
             
         </div>
         <div class="column">

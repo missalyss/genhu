@@ -30,6 +30,9 @@ const AdminHome = () => {
               <button>Homes</button>
               </Link>
               <button>Calendar Page</button>
+            <Link to='/login'>
+              <button>Log Out</button>
+              </Link>
             </div>
         </div>
         </div>
