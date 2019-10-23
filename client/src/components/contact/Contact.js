@@ -6,7 +6,7 @@ import Footer from '../shared/Footer';
 class Contact extends Component {
 
   successMessage = () => {
-    alert("Submitted")
+    alert("Thanks for your Submission")
   }
 
   render() {

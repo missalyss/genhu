@@ -1,6 +1,7 @@
 import React from 'react';
 import "./ThreeStages.css";
 import Image from '../../assets/Images/city-buildings.jpg';
+import { NavLink } from 'react-router-dom';
 
 const ThreeStages = () => {
   return (
@@ -47,7 +48,7 @@ const ThreeStages = () => {
           <div className='ts-long-box'>
             <div className='ts-flex'>
               <h2>Help support Generations Humanitarian and our Causes</h2>
-              <button className='ts-button'>Discover More</button>
+              <button className='ts-button'><NavLink style={{textDecoration:'none'}} to='/expeditions'>Discover More</NavLink></button>
             </div>
           </div>
         </div>
@@ -58,26 +59,3 @@ const ThreeStages = () => {
 }
 
 export default ThreeStages;
-
-
-{/* <div className='content'>
-
-<h3>Children at High Risk</h3>
-<span className='hr'></span>
-<p>(In Absolute Poverty)</p>
-<h4>PRIMARY PREVENTION</h4>
-</div >
-<div className='content'>
-<h3>Children IN the Street</h3>
-<span className='hr'></span>
-<p>(Street Workers)</p>
-<h4>SECONDARY PREVENTION</h4>
-
-</div>
-<div className='content'>
-<h3>Children OF the Street</h3>
-<span className='hr'></span>
-<p>(Gamines / Disposables)</p>
-<h4>TERTIARY PREVENTION</h4>
-
-</div> */}
