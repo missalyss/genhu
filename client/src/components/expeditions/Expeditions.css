@@ -73,8 +73,9 @@
 
 .exp-content p {
   /* display: inline-block; */
-  padding: 2em;
+  padding: 1.7em;
   font-size: 1.1em;
+  line-height: 1.7em;
 }
 
 .title {
@@ -97,7 +98,7 @@
   display: inline-block;
 }
 
-                         /* MID */
+                  /* ----------------MID -----------------*/
 
 .mid-exp-container {
   display: flex;
@@ -172,7 +173,7 @@
   line-height: 1.5;
 }
 
-              /* PURPLE CONTAINER */
+              /* --------PURPLE CONTAINER ------------ */
 
 .purple-container {
   display: flex;
@@ -209,6 +210,7 @@
   display: flex;
   flex-flow: row wrap;
   width: 40%;
+  padding-top: 1.7em;
 }
 
 .purp-img-flex {

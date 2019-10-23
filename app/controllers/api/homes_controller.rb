@@ -6,8 +6,8 @@ class Api::HomesController < ApplicationController
   end
   
   def orphanages
-    render json: Home.where(role: 'orphanage').all
     # binding.pry
+    render json: Home.where(role: 'orphanage').all
   end
   
   def centers

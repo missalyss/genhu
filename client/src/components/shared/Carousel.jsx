@@ -14,8 +14,10 @@ const LandingCarousel = () => {
             <div className='hero-align_col' >
               {/* <Carousel.Caption> */}
               <Title>Welcome to Generations Humanitarian</Title>
+              <br></br>
               <SubHeading>We build and operate orphanages and drop-in centers for street children in Latin America</SubHeading>
               {/* </Carousel.Caption> */}
+              <br></br>
               <Link
               smooth to='/#about'
               >
@@ -29,8 +31,10 @@ const LandingCarousel = () => {
             <div className='hero-align_col' >
               {/* <Carousel.Caption> */}
               <Title>Come to South America in 2019</Title>
+              <br></br>
               <SubHeading>Contact us for a group's custom expedition</SubHeading>
               {/* </Carousel.Caption> */}
+              <br></br>
               <Link
               smooth to='/#about'
               >
@@ -45,8 +49,10 @@ const LandingCarousel = () => {
             <div className='hero-align_col' >
               {/* <Carousel.Caption> */}
               <Title>Refuge Crisis</Title>
+              <br></br>
               <SubHeading>Help Venezuela Refugee Children</SubHeading>
               {/* </Carousel.Caption> */}
+              <br></br>
               <Link
               smooth to='/#about'
               >
@@ -60,9 +66,11 @@ const LandingCarousel = () => {
             <div className='hero-align_col'>
               {/* <Carousel.Caption> */}
               <Title>Greenhouse & Hydroponics Project</Title>
+              <br></br>
               <SubHeading>We are creating self-sustaining, scalable, water efficient, organice greenhouses 
                 that teach children a work ethic, give them price in their produce, and funds their home.</SubHeading>
               {/* </Carousel.Caption> */}
+              <br></br>
               <Link
               smooth to='/#about'
               >

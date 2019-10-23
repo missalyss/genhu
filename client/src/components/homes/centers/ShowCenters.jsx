@@ -60,7 +60,7 @@ class ShowCenters extends React.Component {
         <div className='centers-single-stat'>
           <div className='centers-single-stat-col'>
             <div className='homes-stat-font'>
-            <CountUp end={center.victims} />
+            <CountUp end={100} />
             {center.victims}% </div>
             <p className='homes-stat-title'>Orhpans</p>
           </div>
