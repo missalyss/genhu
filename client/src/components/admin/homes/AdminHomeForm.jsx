@@ -69,7 +69,8 @@ class HomeForm extends React.Component {
       sponsor
     } = this.state;
     return (
-      <div className="form-cont">
+      // <div className='form-cont'>
+        <div>
         <form onSubmit={this.handleSubmit}>
           <label>Home Name:</label>
           <input

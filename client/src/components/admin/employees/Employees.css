@@ -3,6 +3,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin: 2em 0em 5em 8em;
   }
 
   .employee-box {

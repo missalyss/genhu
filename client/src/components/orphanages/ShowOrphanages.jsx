@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Footer from '../shared/Footer';
+import CountUp from 'react-countup';
 
 
 class ShowOrphanages extends React.Component {
@@ -13,6 +14,41 @@ class ShowOrphanages extends React.Component {
       this.setState({ orphanage: res.data})
     })
   }
+
+  componentDidUpdate() {
+    this.componentDidMount()
+  }
+
+  renderCountUpShelteredO = () => {
+    if (this.state.orphanage.sheltered_children) {
+      return(
+        <CountUp end={this.state.orphanage.sheltered_children} />
+      )
+    }
+  }
+  renderCountUpOrphansO = () => {
+    if (this.state.orphanage.orphans) {
+      return(
+        <CountUp end={this.state.orphanage.orphans} />
+      )
+    }
+  }
+  renderCountUpVictimsO = () => {
+    if (this.state.orphanage.victims) {
+      return(
+        <CountUp end={this.state.orphanage.victims} />
+      )
+    }
+  }
+  renderCountUpVolunteersO = () => {
+    if (this.state.orphanage.volunteers) {
+      return(
+        <CountUp end={this.state.orphanage.volunteers} />
+      )
+    }
+  }
+
+
   render() {
     const { orphanage } = this.state;
     return(
@@ -41,25 +77,25 @@ class ShowOrphanages extends React.Component {
       <div className='centers-stats-cont'>
         <div className='centers-single-stat'>
           <div className='centers-single-stat-col'>
-            <div className='homes-stat-font'>{orphanage.sheltered_children} </div>
+            <div className='homes-stat-font'>{ this.renderCountUpShelteredO() } </div>
             <p className='homes-stat-title'>Sheltered Children</p>
           </div>
         </div>
         <div className='centers-single-stat'>
           <div className='centers-single-stat-col'>
-            <div className='homes-stat-font'>{orphanage.sheltered_children}% </div>
+            <div className='homes-stat-font'>{ this.renderCountUpVictimsO() }% </div>
             <p className='homes-stat-title'>Victims of Armed Conflict</p>
           </div>
         </div>
         <div className='centers-single-stat'>
           <div className='centers-single-stat-col'>
-            <div className='homes-stat-font'>{orphanage.victims}% </div>
+            <div className='homes-stat-font'>{ this.renderCountUpOrphansO() }% </div>
             <p className='homes-stat-title'>Orhpans</p>
           </div>
         </div>
         <div className='centers-single-stat'>
           <div className='centers-single-stat-col'>
-            <div className='homes-stat-font'>{orphanage.volunteers}</div> 
+            <div className='homes-stat-font'>{ this.renderCountUpVolunteersO() }</div> 
             <p className='homes-stat-title'>Regular Volunteers</p>
           </div>
         </div>

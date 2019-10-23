@@ -199,3 +199,11 @@
   background: white;
   color: black;
 }
+
+.NavLink {
+  color: white;
+}
+
+.NavLink:hover {
+  color: white;
+}

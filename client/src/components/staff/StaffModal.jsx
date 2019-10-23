@@ -12,7 +12,7 @@ import './StaffModal.css';
     render() {
       return (
         <div >
-          <Modal 
+           <Modal 
           className = 'modal-container'
           center
           autoFocus

@@ -92,19 +92,21 @@ class Staff extends React.Component {
           <StaffModal />
         </div>
         <br /><br /><br /><br />
-        <div>
+        <div id='directors'>
           <h1>Directors</h1>
           {this.renderDirectors()}
         </div>
         
         <br/>
-        <div>
+        <div id='staff'>
           <h1>Staff</h1>
           {this.renderStaff()}
         </div>
         <br/>
+        <div id='volunteers'>
         <h1>Volunteers</h1>
         {this.renderVolunteers()}
+        </div>
       <Footer/>
       </div>
     )
