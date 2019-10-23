@@ -13,6 +13,10 @@ class ShowOrphanages extends React.Component {
       this.setState({ orphanage: res.data})
     })
   }
+
+  componentDidUpdate() {
+    this.componentDidMount()
+  }
   render() {
     const { orphanage } = this.state;
     return(
