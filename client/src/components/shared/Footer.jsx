@@ -17,7 +17,7 @@ const Stats = () => {
 
           <br/>
           <br/>   
-          <NavLink to ='/login' className='NavLink'>
+          <NavLink to ='/admin' className='NavLink'>
             <h2 className='header'>Admin</h2>
           </NavLink>
             

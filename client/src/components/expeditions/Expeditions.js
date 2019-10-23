@@ -3,7 +3,7 @@ import Footer from '../shared/Footer';
 import './Expeditions.css';
 
 const Expeditions = () => (
-      <>
+      <div >
       <div className='hero-exp-container'>
       <div className='hero-exp-bg'>
       <div className='exp-content-wrapper'>
@@ -79,7 +79,7 @@ Download the Expedition Application</p>
         </div>
       </div>
       <Footer/>
-      </>
+      </div>
 )
   
   
