@@ -48,7 +48,7 @@ const ThreeStages = () => {
           <div className='ts-long-box'>
             <div className='ts-flex'>
               <h2>Help support Generations Humanitarian and our Causes</h2>
-              <button className='ts-button'><NavLink to='/expeditions'>Discover More</NavLink></button>
+              <button className='ts-button'><NavLink to='/expeditions' className='NavLink'>Discover More</NavLink></button>
             </div>
           </div>
         </div>
