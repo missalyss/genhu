@@ -5,7 +5,8 @@ import { Image } from 'semantic-ui-react';
 import Logo from "../../assets/Images/GENHU-logo-fake.png";
 import Facebook from "../../assets/Images/facebook.png";
 import axios from 'axios';
-
+import { withRouter } from "react-router-dom";
+import ScrollToTop from '../shared/ScrollToTop'
 
 class Navbar extends React.Component {
   state = {orphanages: [], centers: []}
@@ -57,9 +58,9 @@ class Navbar extends React.Component {
   render() {
   return(
     <div className='main-nav'>
-      <div className='nav-home'>
+      <ScrollToTop><div className='nav-home'>
         <NavLink to="/"><Image src={Logo} className='logo-image' alt='logo'/></NavLink>
-      </div>
+      </div></ScrollToTop>
       <div className='right_nav'>
         <NavLink to="/calendar" className='nav-item'>Calendar</NavLink>
         <div className='dropdown'>
