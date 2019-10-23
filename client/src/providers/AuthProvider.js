@@ -11,7 +11,7 @@ export class AuthProvider extends Component {
     axios.post("/api/auth", user)
       .then( res => {
         this.setState({ user: res.data.data, });
-        history.push("/login");
+        history.push("/admin");
       })
     .catch( res => {
       console.log(res);
