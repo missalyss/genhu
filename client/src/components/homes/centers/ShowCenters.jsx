@@ -8,7 +8,7 @@ import './ShowCenters.css';
 class ShowCenters extends React.Component {
  state = { center: {} }
 
-  componentDidMount() {
+ componentDidMount() {
     const { id } = this.props.match.params;
     axios.get(`/api/homes/${id}`)
     .then(res => {
@@ -16,12 +16,21 @@ class ShowCenters extends React.Component {
     })
   }
 
+  componentDidUpdate() {
+    this.componentDidMount()
+  }
+
+  renderCountUp = () => {
+    if (this.state.center.victims) {
+      return(
+        <CountUp end={this.state.center.victims} />
+      )
+    }
+  }
   
   render() {
     const { center } = this.state;
-    
-
-    return(
+        return(
       <>
       <div className='centers-top-cont'>
       {/* <h1>SHOW ME</h1> */}
@@ -60,8 +69,7 @@ class ShowCenters extends React.Component {
         <div className='centers-single-stat'>
           <div className='centers-single-stat-col'>
             <div className='homes-stat-font'>
-            <CountUp end={100} />
-            {center.victims}% </div>
+              { this.renderCountUp() }% </div>
             <p className='homes-stat-title'>Orhpans</p>
           </div>
         </div>
