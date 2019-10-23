@@ -1,12 +1,28 @@
 import React from "react";
 
 class HomeForm extends React.Component {
-  state = { name: '', role: '', sheltered_children: '', victims: '', orphans: '', volunteers: '', 
-director: '', sponsor: ''  };
+  state = {
+    name: "",
+    role: "",
+    sheltered_children: "",
+    victims: "",
+    orphans: "",
+    volunteers: "",
+    director: "",
+    sponsor: ""
+  };
 
   componentDidMount() {
     if (this.props.id) {
-      const { deleteHome, editHome, editToggle, created_at, updated_at, id, ...rest } = this.props 
+      const {
+        deleteHome,
+        editHome,
+        editToggle,
+        created_at,
+        updated_at,
+        id,
+        ...rest
+      } = this.props;
 
       this.setState({
         ...rest
@@ -22,8 +38,17 @@ director: '', sponsor: ''  };
     } else {
       this.props.addHome({ ...this.state });
     }
-    this.setState({name: '', role: '', shelter: '', sheltered_children: '', victims: '', orphans: '', volunteers: '', 
-    director: '', sponsor: '' });
+    this.setState({
+      name: "",
+      role: "",
+      shelter: "",
+      sheltered_children: "",
+      victims: "",
+      orphans: "",
+      volunteers: "",
+      director: "",
+      sponsor: ""
+    });
     // this.props.renderHomes();
   };
 
@@ -33,9 +58,18 @@ director: '', sponsor: ''  };
   };
 
   render() {
-    const { name, role, sheltered_children, victims, orphans, volunteers, director, sponsor } = this.state;
+    const {
+      name,
+      role,
+      sheltered_children,
+      victims,
+      orphans,
+      volunteers,
+      director,
+      sponsor
+    } = this.state;
     return (
-      <div className='form-cont'>
+      <div className="form-cont">
         <form onSubmit={this.handleSubmit}>
           <label>Home Name:</label>
           <input
@@ -48,13 +82,17 @@ director: '', sponsor: ''  };
           <label>Home Role:</label>
           <select
             required
-            name='role'
+            name="role"
             onChange={this.handleChange}
             value={role}
           >
-            <option value='' name=''></option>
-            <option value='orphanage' name='orphanage'>Orphanage</option>
-            <option value='center' name='center'>Drop-In Center</option>
+            <option value="" name=""></option>
+            <option value="orphanage" name="orphanage">
+              Orphanage
+            </option>
+            <option value="center" name="center">
+              Drop-In Center
+            </option>
           </select>
           <label>Sheltered Children:</label>
           <input
@@ -68,7 +106,7 @@ director: '', sponsor: ''  };
           <input
             name="victims"
             value={victims}
-            placeholder='Number of victims'
+            placeholder="Number of victims"
             required
             onChange={this.handleChange}
           />
@@ -105,7 +143,7 @@ director: '', sponsor: ''  };
             onChange={this.handleChange}
           />
           <div className="button-cont-stat">
-          <button type="submit">Submit</button>
+            <button type="submit">Submit</button>
           </div>
         </form>
       </div>
