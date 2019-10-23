@@ -5,9 +5,9 @@ import PolicyFinancial from './PolicyFinancial.css';
 class Privacy extends Component {
   render() {
     return (
-      <div class='policy-container'>
-        <div class='pf-container-top'>
+      <div class='privacy-container'>
           <h1>Privacy Policy</h1>
+          <br />
           <p>Thank you for visiting the Genhu.org Web site. Genhu.org looks at statistics from website visits, which tell us, among other things, how many visitors we have and which pages are of interest to them. We use this information to make improvements to our site, and hopefully your experience with us. However, we do not use this information in any way that personally identifies you.</p>
           <br/>
           <p>Genhu.org does NOT:</p>
@@ -53,12 +53,15 @@ All data, information, text, graphics, links and other material on Genhu.org’s
           <br />
           <p>Requests for Information</p>
           <p>Genhu.org names and logos and all related product and service names, design marks and slogans are the trademarks of service marks of Genhu.org. All rights are reserved. You are not authorized to use any Genhu.org name or mark in any advertisement, publicity or in any other commercial manner without prior written consent of Genhu.org. All other trademarks appearing on the Web site are the property of their respective owners.</p>
-          </div>
-          <div class='pf-container'>
-          <h4 >Charitable Solicitations Permit</h4>
-          <p><a href='https://genhu.org/wp-content/uploads/2018/06/Charitable-solicitations-permit2018.pdf'>Charitable Solicitations Permit</a></p>
-          <br/>
-          </div>
+          <br />
+          <p>
+While we take all reasonable measures to protect the confidentiality of your information, no one can give absolute assurance that all information will remain secure. By submitting information to Genhu.org you agree that you are aware of these risks. If you do not wish to submit your information electronically, please telephone us at +1 801-682-0344.</p>
+          <br />
+          <p>Links to Other Web Sites</p>
+          <p>Genhu.org provides links to other Web sites that provide information or services, which may be of help to you. Genhu.org provides these links for you convenience only. It is not responsible for the content of these sites or the programs, agencies, or businesses they describe. Genhu.org does not guarantee that these sites will meet your particular purposes.</p>
+          <br />
+          <p>Genhu.org is not responsible for the content or privacy practices of non-Genhu.org Web sites to which our Web site may link. Please review the privacy policy of such sites before using them.</p>
+          <br />
           <Footer/>
         </div>
  
