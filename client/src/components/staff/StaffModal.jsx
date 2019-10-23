@@ -12,8 +12,8 @@ import './StaffModal.css';
     render() {
       return (
         <div >
-          <Modal 
-          className = 'modal-container modal-dialog-centered 	.modal-xl'
+           <Modal 
+          className = 'modal-container'
           center
           autoFocus
             {...this.props}
