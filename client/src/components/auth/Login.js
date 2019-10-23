@@ -1,6 +1,7 @@
 import React from 'react';
 import { AuthConsumer, } from "../../providers/AuthProvider";
 import { Button, Form, Segment, Header, } from 'semantic-ui-react';
+import { NavLink } from 'react-router-dom';
 
 class Login extends React.Component {
   state = { email: '', password: '' }
@@ -43,6 +44,7 @@ class Login extends React.Component {
           />
           <Segment textAlign='center' basic>
             <Button primary type='submit'>Submit</Button>
+            <NavLink to='/register'><Button primary type='submit'>Register</Button></NavLink>
           </Segment>
         </Form>
       </Segment>
