@@ -48,22 +48,12 @@ const App = () => (
         <Route exact path='/orphanages/:id' component={ShowOrphanages} />
         <Route exact path='/centers/:id' component={ShowCenters} />
         <Route exact path='/privacy' component={ Privacy } />
-<<<<<<< HEAD
-        <Route exact path='/proven_souls' component={ ProvenSouls } />
-        <FetchUser>
-          <ProtectedRoute exact path="/admin" component={Admin} />
-          <ProtectedRoute exact path="/datastats" component={Stats} />
-          <ProtectedRoute exact path="/admin_homes" component={AdminHomes} />
-          <ProtectedRoute exact path="/admin_employee" component={Employees} />
-        </FetchUser>
-=======
         {/* <FetchUser> */}
           <Route exact path="/admin" component={Admin} />
           <Route exact path="/datastats" component={Stats} />
           <Route exact path="/admin_homes" component={AdminHomes} />
           <Route exact path="/admin_employee" component={Employees} />
         {/* </FetchUser> */}
->>>>>>> c19f603fb5300de598b5bd1e8d23bc359643b64f
         <Route component={Nomatch} />
       </Switch>
       </>
