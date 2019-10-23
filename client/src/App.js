@@ -26,7 +26,6 @@ import Employees from './components/admin/employees/Employees'
 import { HashLink as Link } from 'react-router-hash-link';
 import Privacy from './components/policyandfinancial/Privacy';
 
-
 const App = () => (
   // if the screen size changes show this:
   <Fragment>

@@ -153,11 +153,12 @@ h1 {
   color: black;
   position: relative; 
   display: inline-block;
-
+  text-decoration: none;
 }
 
 .nav-item:hover {
   color:black;
+  text-decoration: none;
 }
 
 .nav-item:after {    
@@ -165,7 +166,7 @@ h1 {
   bottom: 20px;
   content: "";
   display: block;
-  height: .18vh;
+  height: .2vh;
   position: absolute;
   background: teal;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
@@ -212,6 +213,7 @@ h1 {
 
 .dropdown-content a:hover {
   color: teal;
+  text-decoration: none;
 }
 
 .dropdown:hover .dropdown-content {
