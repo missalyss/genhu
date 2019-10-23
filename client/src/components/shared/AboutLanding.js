@@ -2,10 +2,9 @@ import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
 import './AboutLanding.css';
 import Logo from '../../assets/Images/LogoSymbol.png';
-import PicOne from '../../assets/carousel-pic.jpg';
-import PicTwo from '../../assets/carousel-pic2.jpg';
-import PicThree from '../../assets/carousel-pic3.jpg';
-
+import PicOne from '../../assets/Images/ablanding1.jpeg';
+import PicTwo from '../../assets/Images/ablanding2.jpeg';
+import PicThree from '../../assets/Images/ablanding3.jpeg';
 
 
 const AboutLanding = () => {
