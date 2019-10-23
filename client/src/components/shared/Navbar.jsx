@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, } from "react-router-dom";
+import { NavLink, Redirect} from "react-router-dom";
 import styles from'./Main.css';
 import { Image } from 'semantic-ui-react';
 import Logo from "../../assets/Images/GENHU-logo-fake.png";
@@ -12,25 +12,29 @@ class Navbar extends React.Component {
 
   componentDidMount() {
     axios.get('api/orphanages')
-      .then(res => {
-        this.setState({ orphanages: res.data })
-      })
+    .then(res => {
+      this.setState({ orphanages: res.data })
+    })
+    debugger
     axios.get('api/centers')
-      .then(res => {
-        this.setState({ centers: res.data })
-      })
+    .then(res => {
+      this.setState({ centers: res.data })
+    })
+    debugger
   }
-
+  
   renderO = () => {
     const { orphanages } = this.state;
-
+    
     return (
       <>
         {orphanages.map(o => (
           <div
             key={o.id}
             {...o}
-            ><NavLink to={{ pathname: `/orphanages/${o.id}` }} {...o}>{o.name}</NavLink></div>
+            >
+              <NavLink to={{ pathname: `/orphanages/${o.id}` }} {...o}>{o.name}</NavLink></div>
+              // {/* <Redirect to={{ pathname: `/orphanages/${o.id}` }} {...o}>{o.name}</Redirect></div> */}
             ))}
       </>
     );
@@ -68,7 +72,7 @@ class Navbar extends React.Component {
         </div>
         <NavLink to="/expeditions" className='nav-item'>Expeditions</NavLink>
         <div className='dropdown'>
-        <NavLink to="/homes" className='nav-item'>Homes & Projects</NavLink>
+        <NavLink to="#" className='nav-item'>Homes & Projects</NavLink>
         <div className='dropdown-content'>
 
         <NavLink to='/orphanages'>Orphanages</NavLink>

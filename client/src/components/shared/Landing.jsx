@@ -17,8 +17,8 @@ const Landing = () => {
     <div>
      <LandingCarousel />
      <ProvenSouls />
-     <Stats/>
-    <AboutLanding />
+      <Stats/>
+      <AboutLanding />
       <AboutCarousel />
     <ThreeStages />
     <Footer/>

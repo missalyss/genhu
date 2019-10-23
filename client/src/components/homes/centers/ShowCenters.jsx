@@ -15,8 +15,12 @@ class ShowCenters extends React.Component {
       this.setState({ center: res.data})
     })
   }
+
+  
   render() {
     const { center } = this.state;
+    
+
     return(
       <>
       <div className='centers-top-cont'>
@@ -72,7 +76,7 @@ class ShowCenters extends React.Component {
       <div className='cntr-content-home'>
         <div className='cntr-col'>
           <div>
-            <h3>About {center.name} Drop-In Center</h3>
+            <h1>About {center.name} Drop-In Center</h1>
             <p>Coming Soon...</p>
             <h4>Stay Tuned!</h4>
           </div>

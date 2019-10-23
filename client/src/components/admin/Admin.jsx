@@ -9,7 +9,7 @@ const AdminHome = () => {
     <div>
       <AdminNav />
       <div className="admin-container">
-        <AdminTitle >GenHu Admin Home</AdminTitle>
+        <div className="admin-title"><AdminTitle >GenHu Admin Home</AdminTitle></div>
 
         <div className='papa'>
 
@@ -30,6 +30,9 @@ const AdminHome = () => {
               <button>Homes</button>
               </Link>
               <button>Calendar Page</button>
+            <Link to='/login'>
+              <button>Log Out</button>
+              </Link>
             </div>
         </div>
         </div>
