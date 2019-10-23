@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Footer from '../shared/Footer';
 import AboutUs from "./AboutUs.css";
+import { NavLink, Link, Redirect} from "react-router-dom";
+
 
 class About extends Component {
   render() {
@@ -13,9 +15,10 @@ class About extends Component {
             Some volunteer their time, others are paid.</p>
 
             <ul class='list-style'>
-              <a href= ''><li>Board of Directors</li></a>
-              <a href= ''><li>Management & Staff</li></a>
-              <a href= ''><li>Volunteers</li></a>
+            
+              <NavLink to='/staff'><li>Board of Directors</li></NavLink>
+              <NavLink to='/staff'><li>Management & Staff</li></NavLink>
+              <NavLink to='/staff'><li>Volunteers</li></NavLink>
             </ul>
             <br/>
           </div>
