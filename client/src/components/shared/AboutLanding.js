@@ -7,6 +7,7 @@ import PicTwo from '../../assets/Images/ablanding2.jpeg';
 import PicThree from '../../assets/Images/ablanding3.jpeg';
 
 
+
 const AboutLanding = () => {
 
   return (
