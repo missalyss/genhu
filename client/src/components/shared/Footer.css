@@ -31,10 +31,10 @@
   font-size: small;
 }
 
-.footer-link {
+.NavLink {
   color: black;
 }
-.footer-link:hover {
+.NavLink:hover {
   color: #5B5B5B;
   text-decoration: none;
 }
