@@ -27,13 +27,15 @@
   font-size: small;
 }
 
-.header{
+.header {
   font-size: small;
 }
 
-.NavLink {
+.footer-link {
   color: black;
 }
-.NavLink:hover {
-  color: black;
+.footer-link:hover {
+  color: #5B5B5B;
+  text-decoration: none;
 }
+

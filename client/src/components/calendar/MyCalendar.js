@@ -33,7 +33,7 @@ const MyCalendar = props => {
   }
   
   return (
-    <div>
+    <div style={{paddingTop: "80px"}}>
       {testFunc()}
       <Paper className={classes.paper} >
         <Calendar

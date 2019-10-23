@@ -17,7 +17,7 @@ const Stats = () => {
             
         </div>
         <div class="column">
-        <NavLink to='/expeditions' className='NavLink'>
+        <NavLink to='/expeditions' className='footer-link'>
           <h2 class= 'header'>GET INVOLVED</h2>
           <p>Go on an expedition</p>
           <p>Gift Levels:</p>
@@ -29,8 +29,8 @@ const Stats = () => {
         </div>
         <div class="column">
           <h2 class= 'header'>LEGAL STUFF</h2>
-          <NavLink to='/policy' className='NavLink'><p>Policy and Financial</p></NavLink>
-          <NavLink to='/privacy' className='NavLink'><p>Privacy</p></NavLink>
+          <NavLink to='/policy' className='footer-link'><p>Policy and Financial</p></NavLink>
+          <NavLink to='/privacy' className='footer-link'><p>Privacy</p></NavLink>
         </div>
         <div class="column">
           <h2 class= 'header'>CONTACT US</h2>
