@@ -12,6 +12,7 @@
 .orph-title {
   font-size: 60px;
   height: 7vh;
+  text-shadow: 1px 1px black;
 }
 .orph-word {
   font-size: 60px;
