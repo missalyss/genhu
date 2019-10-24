@@ -47,3 +47,11 @@
     /* width: 15%; */
     
   }
+
+  .add-button:hover {
+    text-decoration: none;
+  }
+
+  .employee-edit-page button {
+    margin: 0em 1em 0em 0em;
+  }
