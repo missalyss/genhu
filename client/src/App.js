@@ -48,6 +48,7 @@ const App = () => (
         <Route exact path='/orphanages/:id' component={ShowOrphanages} />
         <Route exact path='/centers/:id' component={ShowCenters} />
         <Route exact path='/privacy' component={ Privacy } />
+        <Route exact path='/proven_souls' component={ProvenSouls} />
         {/* <FetchUser> */}
           <Route exact path="/admin" component={Admin} />
           <Route exact path="/datastats" component={Stats} />
