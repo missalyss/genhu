@@ -4,6 +4,7 @@ import Stat from "./Stat";
 import StatForm from "./StatForm";
 import { AdminTitle } from "../Styles";
 import "./AdminStats.css";
+import { Link } from 'react-router-dom';
 
 class Stats extends React.Component {
   state = { stats: [], toggleForm: false };
@@ -73,6 +74,11 @@ class Stats extends React.Component {
           <button className="add-button" onClick={this.toggle}>
             Add New Stat
           </button>
+          <Link to='/admin'>
+          <button className="add-button" onClick={this.toggle} >
+            Back
+          </button>
+          </Link>
         </div>
         {this.state.toggleForm ? (
           <div className='center'> <StatForm addStat={this.addStat} /> </div>

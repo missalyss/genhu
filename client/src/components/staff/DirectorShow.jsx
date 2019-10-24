@@ -22,6 +22,7 @@ const DirectorShow = ({ first_name, last_name, title, id, bio, email, phone, oth
           lastName={last_name}
           bio={bio}
           title={title}
+          email={email}
           show={showModal} 
           staffId={id} 
           onHide={ toggleShow } 
