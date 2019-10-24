@@ -58,7 +58,7 @@ class ShowCenters extends React.Component {
       {/* <h1>SHOW ME</h1> */}
       <div className='centers-img'>
         <div className='centers-dir'>
-          <h1 className='dir-title'>{center.name}</h1>
+          <h1 className='dir-title'>{center.name} Drop-in Center</h1>
           <div className='centers-dir-flex'>
             <div className='centers-dir-col'>
               <h1>{center.director}</h1>
@@ -66,7 +66,7 @@ class ShowCenters extends React.Component {
             </div>
             <div className='centers-dir-col'>
               <h1>{center.sponsor}</h1>
-              <p>Sponsor</p>
+              <p>Center Sponsor</p>
             </div>
           </div>
         </div>
