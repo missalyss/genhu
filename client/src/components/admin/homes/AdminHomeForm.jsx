@@ -99,7 +99,7 @@ class HomeForm extends React.Component {
           <input
             name="sheltered_children"
             value={sheltered_children}
-            placeholder="How many children?"
+            placeholder="Number of children"
             required
             onChange={this.handleChange}
           />
@@ -107,7 +107,7 @@ class HomeForm extends React.Component {
           <input
             name="victims"
             value={victims}
-            placeholder="Number of victims"
+            placeholder="Percent of victims"
             required
             onChange={this.handleChange}
           />
@@ -123,7 +123,7 @@ class HomeForm extends React.Component {
           <input
             name="volunteers"
             value={volunteers}
-            placeholder="Name"
+            placeholder="Number of volunteers"
             required
             onChange={this.handleChange}
           />
@@ -139,7 +139,7 @@ class HomeForm extends React.Component {
           <input
             name="sponsor"
             value={sponsor}
-            placeholder="Name of sponson"
+            placeholder="Name of sponsor"
             required
             onChange={this.handleChange}
           />

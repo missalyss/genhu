@@ -10,12 +10,13 @@
 }
 
 .centers-img {
-  background-image: url('../../../assets/expeditionAssets/exp-girls.jpg');
+  background-image: url('../../../assets/Images/homes1.jpg');
   background-position: center;
   background-size: cover;
   /* opacity: 0.7; */
   /* filter: brightness(50%); */
   width: 50%;
+  z-index: -1;
 
 
 }
@@ -27,14 +28,19 @@
   color: white;
   height: 100%;
   /* border: red 2px solid; */
+  background-color: rgba(0, 0, 0, .2);
 }
 
 .dir-title {
-  font-size: 3em !important;
+  font-size: 3.5em !important;
+  /* filter: brightness(100%) !important; */
 }
 
 .centers-dir h1 {
   font-size: 2em;
+}
+.centers-dir p {
+  font-size: 1.5em;
 }
 
 .centers-dir-flex {

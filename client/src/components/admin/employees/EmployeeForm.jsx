@@ -61,7 +61,7 @@ class EmployeeForm extends React.Component {
             name="phone"
             value={phone}
             placeholder="Phone"
-            required
+            
             onChange={this.handleChange}
           />
           <label>Email:</label>
@@ -78,7 +78,7 @@ class EmployeeForm extends React.Component {
             name="bio"
             value={bio}
             placeholder="Bio"
-            required
+            
             onChange={this.handleChange}
           />
           <label>Title:</label>
@@ -93,6 +93,7 @@ class EmployeeForm extends React.Component {
           <select
             name='role'
             value={ role }
+            required
             onChange={this.handleChange}
           >
             <option></option>
