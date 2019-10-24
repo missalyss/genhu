@@ -5,12 +5,6 @@
   margin-bottom: 1.5em;
   margin-left: 7em;
   margin-right: 7em;
-  font-size: calc(16px + 0.5vw);
-  
-  /* // Line-height based on font-size,
-  // with addition viewport-relative growth */
-  line-height: calc(1.1em + 0.5vw);
-  margin: .5em;
 }
 
 
