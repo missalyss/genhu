@@ -148,11 +148,13 @@ class Employees extends React.Component {
             Add New Employee
           </button>
         </div>
+        <div className='employee-buttons'>
         <Link to='/admin'>
           <button className="add-button" onClick={this.toggle} >
             Back
           </button>
          </Link>
+         </div>
         </div>
         {this.state.toggleForm ? (
           <div> <EmployeeForm addEmployee={this.addEmployee} /> </div>
