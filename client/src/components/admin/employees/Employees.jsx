@@ -143,14 +143,14 @@ class Employees extends React.Component {
       <div style={{padding: '5em'}} className='employee-edit-page'>
         <div className='employee-title'><AdminTitle><h1>Employees Page</h1></AdminTitle></div>
         <div className='emp-btn-flex'>
+        <div className='employee-buttons'>
         <div className = 'add-button'>
           <button onClick={this.toggle} >
             Add New Employee
           </button>
         </div>
-        <div className='employee-buttons'>
         <Link to='/admin'>
-          <button className="add-button" onClick={this.toggle} >
+          <button className="back-button" onClick={this.toggle} >
             Back
           </button>
          </Link>
