@@ -7,6 +7,7 @@ import { NavLink, Link, Redirect} from "react-router-dom";
 class About extends Component {
   render() {
     return (
+      <div>
       <div class='aboutUs-container'>
         <div class='au-container-top'>
           <h1>About Us</h1>
@@ -70,6 +71,8 @@ class About extends Component {
               <li>Accountable</li>
               <li>Open and Transparent</li>
             </ul>
+            <br />
+          </div>
           </div>
           <Footer/>
         </div>
