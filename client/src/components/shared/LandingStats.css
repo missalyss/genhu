@@ -8,6 +8,8 @@
   width: 100%;
   opacity: 0.75;
   font-size: xx-large;
+  font-size: calc(8px + 0.5vw);
+  
 }
 
 .stats-container {
@@ -18,6 +20,12 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 0em 2em 2em;
+  font-size: calc(8px + 0.5vw);
+  
+  /* // Line-height based on font-size,
+  // with addition viewport-relative growth */
+  line-height: calc(1.1em + 0.5vw);
+  margin: .5em;
 }
 
 .la-single-stat {
