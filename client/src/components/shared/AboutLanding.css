@@ -88,7 +88,7 @@
  padding-left: 4em;
 }
 
-.carousel-animation:hover {
+.carousel-animation {
   padding: 1em;
   border: 2px solid #ddd;
     -webkit-transform: scale(1.04);
