@@ -21,11 +21,14 @@ import './StaffModal.css';
           >
             <Modal.Header className = 'modal-header'>
               <Modal.Title >{this.props.firstName} {this.props.lastName}</Modal.Title>
+              {this.props.email}
               <Modal.Title>{this.props.title}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
               <div className='modal-body-cont'>
+              <Modal.Title>Bio</Modal.Title>  
               {this.props.bio}
+              {/* <Modal.Title>Phone</Modal.Title> */}
               
               </div>
               </Modal.Body>
