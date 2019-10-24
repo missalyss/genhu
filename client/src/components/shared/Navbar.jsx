@@ -73,7 +73,7 @@ class Navbar extends React.Component {
         </div>
         <NavLink to="/expeditions" className='nav-item'>Expeditions</NavLink>
         <div className='dropdown'>
-        <NavLink to="#" className='nav-item'>Homes & Projects</NavLink>
+        <NavLink to="#" className='nav-item' style={{cursor: "default"}}>Homes & Projects</NavLink>
         <div className='dropdown-content'>
 
         <NavLink to='/orphanages'>Orphanages</NavLink>
