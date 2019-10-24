@@ -140,7 +140,7 @@ class Employees extends React.Component {
 
   render() {
     return (
-      <div style={{padding: '5em'}}>
+      <div style={{padding: '5em'}} className='employee-edit-page'>
         <div className='employee-title'><AdminTitle><h1>Employees Page</h1></AdminTitle></div>
         <div className='emp-btn-flex'>
         <div className = 'add-button'>
