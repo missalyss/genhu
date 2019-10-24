@@ -7,7 +7,7 @@
 } */
 
 .hero-pic1 {
-  background-image: url('../../assets/carousel-pic.jpg');
+  background-image: url('../../assets/carousel-pic2.jpg');
   background-position: center;
   background-size: cover;
   width: 100vw;
@@ -15,7 +15,7 @@
   padding: 0em 1em;
 }
 .hero-pic2 {
-  background-image: url('../../assets/carousel-pic2.jpg');
+  background-image: url('../../assets/carousel-pic.jpg');
   background-position: center;
   background-size: cover;
   width: 100vw;
@@ -51,9 +51,12 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  /* width: 100%; */
   height: 100%;
   text-align: center;
   color: white;
+  /* background-color: rgba(0, 0, 0, .3); */
+
 
 }
 

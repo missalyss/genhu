@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import Footer from '../shared/Footer';
 import CountUp from 'react-countup';
+import './ShowOrphanages.css';
 
 
 class ShowOrphanages extends React.Component {
@@ -55,7 +56,7 @@ class ShowOrphanages extends React.Component {
       <>
       <div className='centers-top-cont'>
       {/* <h1>SHOW ME</h1> */}
-      <div className='centers-img'>
+      <div className='orphanage-img'>
         <div className='centers-dir'>
           <h1 className='dir-title'>{orphanage.name}</h1>
           <div className='centers-dir-flex'>
@@ -65,7 +66,7 @@ class ShowOrphanages extends React.Component {
             </div>
             <div className='centers-dir-col'>
               <h1>{orphanage.sponsor}</h1>
-              <p>Sponsor</p>
+              <p>Home Sponsor</p>
             </div>
           </div>
         </div>
