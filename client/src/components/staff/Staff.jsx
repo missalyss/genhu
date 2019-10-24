@@ -99,7 +99,7 @@ class Staff extends React.Component {
         
         <br/>
         <div id='staff'>
-          <h1>Staff</h1>
+          <h1>Developers</h1>
           {this.renderStaff()}
         </div>
         <br/>
