@@ -11,10 +11,12 @@ const GlobalStyles = createGlobalStyle`;
 export const Title = styled.h1`
   font-family: 'Oxygen', sans-serif;
   font-size: 4em;
+  text-shadow: 1px 1px black;
 `
 export const SubHeading = styled.h3`
   font-family: 'Raleway', sans-serif;
   font-size: 2em;
+  text-shadow: 1px 1px black;
 `
 export const Button = styled.button`
   cursor: pointer;

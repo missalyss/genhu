@@ -5,6 +5,7 @@ import PolicyFinancial from './PolicyFinancial.css';
 class Policy extends Component {
   render() {
     return (
+      <div>
       <div class='policy-container'>
         <div class='pf-container-top'>
           <h1>Policy and Financial</h1>
@@ -35,6 +36,8 @@ class Policy extends Component {
               <a href= 'https://genhu.org/wp-content/uploads/2018/09/GENERATIONSHUMANITARIANCopy1.pdf' target="_blank"><li>2017</li></a>
               <br/>
             </ul>
+            <br />
+            </div>
             </div>
           <Footer/>
         </div>

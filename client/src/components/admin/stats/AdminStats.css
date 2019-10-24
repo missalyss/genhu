@@ -60,12 +60,20 @@
   height: 15px;
 }
 
-button.add-button {
+button.back-button {
   background-color: #D2AA31;
 }
 
-button.add-button:hover {
+button.back-button:hover {
   background-color: rgb(192, 153, 37);
+}
+
+button.add-button {
+  background-color: #3C7473;
+}
+
+button.add-button:hover {
+  background-color: rgb(40, 78, 78);
 }
 
 b.b {
@@ -102,4 +110,11 @@ form {
 input {
   padding: .5em 0em;
 
+}
+
+.employee-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
 }

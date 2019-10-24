@@ -71,7 +71,7 @@
 
 .content {
   height: 38em;
-  width: 30em;
+  width: 28em;
   padding: 0 25px;
   display: flex;
   flex-direction: column;
@@ -114,6 +114,8 @@
 
 .ts-background-image:hover {
   transform: scale(1.02);
+  transition: transform 1s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+
 }
 
 
@@ -129,6 +131,8 @@
 
 .ts-background-image2:hover {
   transform: scale(1.02);
+    transition: transform 1s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+
 }
 
 .ts-color-opacity2 {
@@ -142,6 +146,8 @@
 }
 .ts-background-image3:hover {
   transform: scale(1.02);
+  transition: transform 1s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+
 }
 
 .ts-color-opacity3 {
@@ -185,14 +191,20 @@
   font-size: 1.75em;
   border: 2px solid white;
   /* border: 2px solid white; */
-  margin: 0 auto;
-  margin-top: 1em;
+  /* margin: 0 auto; */
+  margin: 1em 0em;
   /* padding: 0.5em 1em; */
   width: 20rem;
   transition: 0.5s all ease-out;
   padding: .65em 1.30em;
-  margin-left: 0 auto;
-  margin-bottom: 1em;
+  /* margin-left: 0 auto; */
+
+}
+
+.ts-btn-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .ts-button:hover {
