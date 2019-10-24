@@ -28,7 +28,7 @@ const ThreeStages = () => {
           <div className='ts-background-image2'>
             <div className='ts-color-opacity2'>
               <div className='content'>
-                <h3>Children IN the Street</h3>
+                <h3>Children in the Street</h3>
                 <span className='hr'></span>
                 <p>(Street Workers)</p>
                 <h4>SECONDARY PREVENTION</h4>
@@ -38,7 +38,7 @@ const ThreeStages = () => {
           <div className='ts-background-image3'>
             <div className='ts-color-opacity3'>
               <div className='content'>
-                <h3>Children OF the Street</h3>
+                <h3>Children of the Street</h3>
                 <span className='hr'></span>
                 <p>(Gamines / Disposables)</p>
                 <h4>TERTIARY PREVENTION</h4>
@@ -48,7 +48,9 @@ const ThreeStages = () => {
           <div className='ts-long-box'>
             <div className='ts-flex'>
               <h2>Help support Generations Humanitarian and our Causes</h2>
+              <div className='ts-btn-row'>
               <button className='ts-button'><NavLink style={{textDecoration:'none'}} to='/expeditions'>Discover More</NavLink></button>
+              </div>
             </div>
           </div>
         </div>
