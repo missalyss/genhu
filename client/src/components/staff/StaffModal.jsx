@@ -2,6 +2,7 @@ import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import './StaffModal.css';
 
+
 // const StaffModal = ({toggleShow, staffId}) => {
   class StaffModal extends React.Component {
     constructor(props){
@@ -20,8 +21,10 @@ import './StaffModal.css';
             size='lg'
           >
             <Modal.Header className = 'modal-header'>
-              <Modal.Title >{this.props.firstName} {this.props.lastName}</Modal.Title>
+              <div className='modal-col'>
+              <Modal.Title >{this.props.firstName} {this.props.lastName} </Modal.Title>
               {this.props.email}
+              </div>
               <Modal.Title>{this.props.title}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
