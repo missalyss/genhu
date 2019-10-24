@@ -86,9 +86,11 @@
  padding-top: 2em;
  padding-right: 7em;
  padding-left: 4em;
+ padding-bottom: 1em;
+ /* border: 2px solid #ddd; */
 }
 
-.carousel-animation {
+.carousel-animation:hover {
   padding: 1em;
   border: 2px solid #ddd;
     -webkit-transform: scale(1.04);
