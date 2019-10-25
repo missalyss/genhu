@@ -46,6 +46,10 @@
   filter: grayscale(100%);
 }
 
+.ts-button a {
+  color: white;
+}
+
 
 .ts-content-wrapper {
   width: 100%;
