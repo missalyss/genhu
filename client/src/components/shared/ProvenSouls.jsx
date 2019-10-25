@@ -1,15 +1,19 @@
 import React from 'react';
+import Footer from '../shared/Footer';
 import { Title, SubHeading, Button } from '../styles/StyledComponents';
 
 
-const ProvenSouls = () => {
+const ProvenSoulsPage = () => {
   return (
   <>
-    <div style={{padding: "100px 0px 0px 50px"}}>
+  <div className='souls-container'>
+    <div style={{padding: "100px 0px 500px 100px"}}>
       <h1>Coming Soon!</h1>
     </div>
+      <Footer />
+  </div>
   </>
   )
 }
 
-export default ProvenSouls;
+export default ProvenSoulsPage;
