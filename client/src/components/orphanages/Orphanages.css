@@ -9,13 +9,17 @@
  background-size: cover;
  color: white;
 }
+
 .orph-title {
   font-size: 60px;
   height: 7vh;
   text-shadow: 1px 1px black;
+  flex-wrap: wrap;
 }
 .orph-word {
   font-size: 60px;
+  text-shadow: 1px 1px black;
+  flex-wrap: wrap;
 }
 
 .mid-col {

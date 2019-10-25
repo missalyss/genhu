@@ -8,6 +8,7 @@ const Orphanages = () => {
     <div>
       <div className="orph-background">
         <div className="orph-title">About Generations Humanitarian</div>
+        <br />
         <div className="orph-word">Orphanages</div>
       </div>
 
