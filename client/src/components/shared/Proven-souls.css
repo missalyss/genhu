@@ -53,4 +53,11 @@
 }
 .proven-button:hover {
   opacity: 0.8;
+
 }
+
+.proven-button a, .proven-button a:hover {
+  color: white;
+  text-decoration: none;
+}
+

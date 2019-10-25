@@ -33,14 +33,23 @@
 
 .dir-title {
   font-size: 3.5em !important;
+  text-shadow: 1px 1px black;
   /* filter: brightness(100%) !important; */
 }
 
 .centers-dir h1 {
   font-size: 2em;
+  padding-bottom: .45em;
+  text-shadow: 1px 1px black;
+}
+.centers-span {
+    border-top: white 1px solid;
+    width: 3em;
 }
 .centers-dir p {
   font-size: 1.5em;
+  font-weight: lighter;
+  font-style: italic;
 }
 
 .centers-dir-flex {
@@ -141,6 +150,7 @@
 
 .cntr-col h1 {
   font-size: 2.5em;
+  padding-bottom: .7em;
 }
 .cntr-col p {
   font-size: 1.05em;

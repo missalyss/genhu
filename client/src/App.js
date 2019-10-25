@@ -25,7 +25,7 @@ import AdminHomes from './components/admin/homes/AdminHomes';
 import Employees from './components/admin/employees/Employees'
 import { HashLink as Link } from 'react-router-hash-link';
 import Privacy from './components/policyandfinancial/Privacy';
-import ProvenSouls from './components/shared/ProvenSouls';
+import ProvenSoulsPage from './components/shared/ProvenSoulsPage';
 
 const App = () => (
   // if the screen size changes show this:
@@ -45,10 +45,12 @@ const App = () => (
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/staff' component={Staff} />
         <Route exact path='/orphanages' component={Orphanages} />
+        <Route exact path='/proven_souls' component={ProvenSouls} />
         <Route exact path='/drop_in_centers' component={DropInCenters} />
         <Route exact path='/orphanages/:id' component={ShowOrphanages} />
         <Route exact path='/centers/:id' component={ShowCenters} />
         <Route exact path='/privacy' component={ Privacy } />
+        <Route exact path='/proven_souls' component={ ProvenSoulsPage } />
         <FetchUser>
           <ProtectedRoute exact path="/admin" component={Admin} />
           <ProtectedRoute exact path="/datastats" component={Stats} />

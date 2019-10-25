@@ -13,3 +13,9 @@
     color: white;
     
 }
+
+.modal-col {
+  display: flex;
+  flex-direction: column;
+  
+}
