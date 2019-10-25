@@ -1,15 +1,17 @@
 import React from 'react';
-import { Title, SubHeading, Button } from '../styles/StyledComponents';
 import Footer from '../shared/Footer';
+import { Title, SubHeading, Button } from '../styles/StyledComponents';
 
 
 const ProvenSoulsPage = () => {
   return (
   <>
-    <div style={{padding: "100px 0px 600px 50px"}}>
+  <div className='souls-container'>
+    <div style={{padding: "100px 0px 500px 100px"}}>
       <h1>Coming Soon!</h1>
     </div>
-    <Footer />
+      <Footer />
+  </div>
   </>
   )
 }
