@@ -225,4 +225,13 @@ h1 {
   padding-left: 2em;
 }
 
+li {
+  cursor: pointer;
+  }
+
+  .souls-container {
+    height: 100vh;
+    padding-bottom: 50em;
+  }
+
 

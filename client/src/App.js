@@ -44,6 +44,7 @@ const App = () => (
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/staff' component={Staff} />
         <Route exact path='/orphanages' component={Orphanages} />
+        <Route exact path='/proven_souls' component={ProvenSouls} />
         <Route exact path='/drop_in_centers' component={DropInCenters} />
         <Route exact path='/orphanages/:id' component={ShowOrphanages} />
         <Route exact path='/centers/:id' component={ShowCenters} />
