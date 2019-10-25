@@ -205,6 +205,14 @@
 
 }
 
+.ts-button a {
+  color: white;
+}
+
+.ts-button:hover a {
+  color: black;
+}
+
 .ts-btn-row {
   display: flex;
   flex-direction: row;
