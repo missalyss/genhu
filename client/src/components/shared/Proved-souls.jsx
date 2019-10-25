@@ -1,6 +1,7 @@
 import React from 'react';
 import { Title, SubHeading, Button } from '../styles/StyledComponents';
 import './Proven-souls.css';
+import { NavLink } from 'react-router-dom';
 
 const ProvenSouls = () => {
   return (
@@ -10,7 +11,7 @@ const ProvenSouls = () => {
       <div className='ps-para'>Our oldest aged-out kids have flourished off the streets. 
         They are productive members of Peruvian, Bolivian, and Colombian society. 
         Follow them in their lives. Enjoy payback days from your gifts.</div>
-        <button className='proven-button'>Discover More</button>
+        <button className='proven-button'><NavLink to='/proven_souls'>Discover More</NavLink></button>
     </div>
   </>
   )

@@ -96,17 +96,16 @@ class Staff extends React.Component {
           <h1>Directors</h1>
           {this.renderDirectors()}
         </div>
-        
-        <br/>
-        <div id='staff'>
-          <h1>Staff</h1>
-          {this.renderStaff()}
-        </div>
-        <br/>
         <div id='volunteers'>
         <h1>Volunteers</h1>
         {this.renderVolunteers()}
         </div>
+        <br/>
+        <div id='staff'>
+          <h1>Developers</h1>
+          {this.renderStaff()}
+        </div>
+        <br/>
       <Footer/>
       </div>
     )

@@ -21,6 +21,7 @@ const StaffShow = ({ first_name, last_name, title, id, bio, email, phone, other,
           lastName={last_name}
           bio={bio}
           title={title}
+          email={email}
           show={showModal} 
           staffId={id} 
           onHide={ toggleShow } 

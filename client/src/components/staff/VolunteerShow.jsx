@@ -22,6 +22,7 @@ const VolunteerShow = ({ first_name, last_name, title, id, bio, email, phone, ot
           lastName={last_name}
           bio={bio}
           title={title}
+          email={email}
           show={showModal} 
           staffId={id} 
           onHide={ toggleShow } 

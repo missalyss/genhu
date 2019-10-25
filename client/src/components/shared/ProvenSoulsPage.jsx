@@ -3,7 +3,7 @@ import Footer from '../shared/Footer';
 import { Title, SubHeading, Button } from '../styles/StyledComponents';
 
 
-const ProvenSouls = () => {
+const ProvenSoulsPage = () => {
   return (
   <>
   <div className='souls-container'>
@@ -16,4 +16,4 @@ const ProvenSouls = () => {
   )
 }
 
-export default ProvenSouls;
+export default ProvenSoulsPage;
