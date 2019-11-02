@@ -8,7 +8,15 @@
   width: 100%;
   /* opacity: 0.75; */
   font-size: xx-large;
-  
+}
+
+.stats-line {
+  opacity: 0.7;
+  border: 1px solid white;
+  width: 18%;
+  margin: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .stats-container {
@@ -27,17 +35,24 @@
   text-align: center;
   width: 33%;
   height: 100%;
-  padding: .5em 0em;
+  /* padding: .5em 0em; */
+  padding-top: .5em;
+  padding-bottom: .5em;
+  /* border: 2px orange solid; */
 }
 
 .stat-name {
   font-size: .85em;
-  padding: .5em;
+  /* padding: .5em; */
   font-weight: 250;
+  /* border: 2px purple solid; */
 }
 
 .stat-value {
-  font-size: 2.25em;
+  /* font-size: 2.25em; */
+  font-size: 63px;
+  line-height: 1.2;
+  /* border: 2px pink solid; */
   /* padding: em; */
 
 }
@@ -46,4 +61,5 @@
   font-size: 2rem;
   color: white;
   padding-top: 2rem;
+  /* border: 2px red solid; */
 }
