@@ -6,7 +6,6 @@
   background-size: cover;
   height: 100%;
   width: 100%;
-  /* opacity: 0.75; */
   font-size: xx-large;
 }
 
@@ -35,31 +34,22 @@
   text-align: center;
   width: 33%;
   height: 100%;
-  /* padding: .5em 0em; */
   padding-top: .5em;
   padding-bottom: .5em;
-  /* border: 2px orange solid; */
 }
 
 .stat-name {
   font-size: .85em;
-  /* padding: .5em; */
   font-weight: 250;
-  /* border: 2px purple solid; */
 }
 
 .stat-value {
-  /* font-size: 2.25em; */
   font-size: 63px;
   line-height: 1.2;
-  /* border: 2px pink solid; */
-  /* padding: em; */
-
 }
 .statsHeader {
   text-align: center;
   font-size: 2rem;
   color: white;
   padding-top: 2rem;
-  /* border: 2px red solid; */
 }
