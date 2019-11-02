@@ -170,8 +170,8 @@ h1 {
   height: .2vh;
   position: absolute;
   background: teal;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 .nav-item:hover:after { 
   width: 100%; 
@@ -224,5 +224,14 @@ h1 {
 .homes-tab {
   padding-left: 2em;
 }
+
+li {
+  cursor: pointer;
+  }
+
+  .souls-container {
+    height: 100vh;
+    padding-bottom: 50em;
+  }
 
 
