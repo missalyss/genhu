@@ -19,6 +19,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 0em 2em 2em;
+  text-shadow: 2px 2px black;
 }
 
 .la-single-stat {
