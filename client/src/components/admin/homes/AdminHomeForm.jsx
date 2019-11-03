@@ -17,7 +17,7 @@ class HomeForm extends React.Component {
   componentDidMount() {
     if (this.props.id) {
       const {
-        addHome,
+        
         deleteHome,
         editHome,
         editToggle,
@@ -35,8 +35,8 @@ class HomeForm extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
+    debugger
     if (this.props.id) {
-      debugger
       this.props.editHome(this.props.id, this.state);
       this.props.editToggle();
     } else {

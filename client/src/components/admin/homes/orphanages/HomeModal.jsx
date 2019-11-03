@@ -5,7 +5,7 @@ import './HomeModal.css';
 
 
 // const StaffModal = ({toggleShow, staffId}) => {
-  class StaffModal extends React.Component {
+  class HomeModal extends React.Component {
     constructor(props){
       super(props);
     }
@@ -18,6 +18,7 @@ import './HomeModal.css';
           className = 'home-modal-cont'
           center
           autoFocus
+          scrollable
             {...this.props}
             size='md'
           >
@@ -26,7 +27,7 @@ import './HomeModal.css';
               
               
               </div>
-              <Modal.Title>{this.props.title}</Modal.Title>
+              <Modal.Title>{this.props.name}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
               <div className='modal-body-cont'>
@@ -46,4 +47,4 @@ import './HomeModal.css';
 }
 
 
-export default StaffModal;
+export default HomeModal;
