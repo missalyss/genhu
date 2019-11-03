@@ -38,7 +38,7 @@ class LandingStats extends React.Component {
           <h1 style={{ marginTop: "4rem", fontSize: '2em' }}>SUCCESS </h1>
           <h1>Since 2008. You have cared. We did the math.</h1>
           <br />
-          <br />
+         
           <div className="stats-container">{this.renderStats()}</div>
         </div>
       </div>

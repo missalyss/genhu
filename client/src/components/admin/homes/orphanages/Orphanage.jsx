@@ -2,21 +2,23 @@ import React, { useState } from "react";
 import { AdminSubTitle, AdminData } from "../../Styles";
 import HomeForm from "../AdminHomeForm";
 import '../Homes.css';
+import HomeModal from './HomeModal';
 
-const Orphanage = ({ editHome, id, deleteHome, ...orest }) => {
-  const [toggleEdit, setToggleEdit] = useState(false);
 
-  const editToggle = () => setToggleEdit(!toggleEdit);
+const Orphanage = ({ show, onHide, editHome, id, deleteHome, ...orest }) => {
+  const [toggleModal, setToggleModal] = useState(false);
+
+  const toggle = () => setToggleModal(!toggleModal);
 
   return (
    
-    <div className="single-stat">
+    <div className="single-stat-home">
       <div className="stat-data">
         <AdminSubTitle>Orphanage Name: </AdminSubTitle>
         <AdminData> {orest.name}</AdminData>
       </div>
       <div className="button-cont-stat">
-        <button onClick={editToggle}>Edit</button>
+        <button onClick={toggle}>Edit</button>
         <button
           style={{ backgroundColor: "#863A2A" }}
           onClick={() => deleteHome(id)}
@@ -24,12 +26,15 @@ const Orphanage = ({ editHome, id, deleteHome, ...orest }) => {
           Delete
         </button>
       </div>
-      {toggleEdit ? (
-        <HomeForm
-          editHome={editHome}
-          editToggle={editToggle}
-          {...orest}
-          id={id}
+      {toggleModal ? (
+        <HomeModal
+        show={show} 
+        onHide={ toggle } 
+        toggleShow = { toggle }
+        editHome={editHome}
+        editToggle={toggle}
+        {...orest}          
+        id={id}
         />
       ) : (
         <div></div>

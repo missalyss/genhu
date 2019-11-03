@@ -45,7 +45,7 @@ class Api::HomesController < ApplicationController
   private
 
   def home_params
-    params.require(:home).permit(:name, :role, :sheltered_children, :victims, :orphans, :volunteers, :director, :sponsor)
+    params.require(:home).permit(:name, :role, :sheltered_children, :victims, :orphans, :volunteers, :director, :sponsor, :description)
   end
 
 end

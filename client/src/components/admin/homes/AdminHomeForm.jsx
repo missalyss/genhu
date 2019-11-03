@@ -1,4 +1,5 @@
 import React from "react";
+import Editor from '../quill/Editor';
 
 class HomeForm extends React.Component {
   state = {
@@ -9,12 +10,14 @@ class HomeForm extends React.Component {
     orphans: "",
     volunteers: "",
     director: "",
-    sponsor: ""
+    sponsor: "",
+    description: ""
   };
 
   componentDidMount() {
     if (this.props.id) {
       const {
+        addHome,
         deleteHome,
         editHome,
         editToggle,
@@ -33,6 +36,7 @@ class HomeForm extends React.Component {
   handleSubmit = e => {
     e.preventDefault();
     if (this.props.id) {
+      debugger
       this.props.editHome(this.props.id, this.state);
       this.props.editToggle();
     } else {
@@ -47,7 +51,8 @@ class HomeForm extends React.Component {
       orphans: "",
       volunteers: "",
       director: "",
-      sponsor: ""
+      sponsor: "",
+      description: "",
     });
     // this.props.renderHomes();
   };
@@ -66,12 +71,13 @@ class HomeForm extends React.Component {
       orphans,
       volunteers,
       director,
-      sponsor
+      sponsor,
+      description
     } = this.state;
     return (
       // <div className='form-cont'>
         <div>
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit} className='home-form'>
           <label>Home Name:</label>
           <input
             name="name"
@@ -143,6 +149,13 @@ class HomeForm extends React.Component {
             required
             onChange={this.handleChange}
           />
+           <label>Home Description:</label>
+         <Editor 
+            name="description"
+            value={description}
+            placeholder="Home description"
+            // required
+            onChange={this.handleChange}/>
           <div className="button-cont-stat">
             <button type="submit">Submit</button>
           </div>
