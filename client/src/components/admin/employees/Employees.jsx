@@ -42,7 +42,6 @@ class Employees extends React.Component {
     axios.post("/api/employees", employee).then(res => {
       const { employees } = this.state;
       this.setState({ employees: [...employees, res.data] });
-      window.location.href = '/admin_employee'
     });
   };
 
@@ -52,13 +51,14 @@ class Employees extends React.Component {
   };
 
   editEmployee = (id, employee) => {
-    axios.put(`api/employees/${id}`, { employee }).then(res => {
+    let data = new FormData();
+    Object.keys(employee).forEach(key => data.append(key, employee[key]));
+    axios.put(`api/employees/${id}`, data).then(res => {
       const { employees } = this.state.employees.map(employee => {
         if (employee.id === id) return res.data;
           return employee;
       });
       this.setState({ employees });
-      window.location.href = '/admin_employee'
     })
   }
 
@@ -67,7 +67,6 @@ class Employees extends React.Component {
       const { employees } = this.state;
       this.setState({ employees: employees.filter(e => e.id !== id) });
     });
-    window.location.href = '/admin_employee'
   };
 
   renderStaff() {
@@ -78,7 +77,7 @@ class Employees extends React.Component {
         <h1 className='employee-title'>Staff</h1>
         <div className='employees-container'>
         { staff.map(s => (
-          <div className='employee-box'>
+          <div key={ s.id } className='employee-box'>
           <Staff
          
             key={ s.id }
@@ -101,7 +100,7 @@ class Employees extends React.Component {
           <h1 className='employee-title'>Directors</h1>
         <div className='employees-container'>
         { directors.map(d => (
-          <div className='employee-box'>
+          <div key={ d.id } className='employee-box'>
           <Directors
             key={ d.id }
             { ...d }
@@ -123,7 +122,7 @@ class Employees extends React.Component {
         <h1 className='employee-title'>Volunteers</h1>
         <div className='employees-container'>
         { volunteers.map(v => (
-          <div className='employee-box'>
+          <div key={ v.id } className='employee-box'>
           <Volunteers
             key={ v.id }
             { ...v }
@@ -141,7 +140,7 @@ class Employees extends React.Component {
   render() {
     return (
       <div style={{padding: '5em'}} className='employee-edit-page'>
-        <div className='employee-title'><AdminTitle><h1>Employees Page</h1></AdminTitle></div>
+        <div className='employee-title'><AdminTitle>Employees Page</AdminTitle></div>
         <div className='emp-btn-flex'>
         <div className='employee-buttons'>
         <div className = 'add-button'>

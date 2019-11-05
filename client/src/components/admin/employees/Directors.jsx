@@ -11,7 +11,7 @@ const Directors = ({ first_name, last_name, bio, title, email, phone, other, rol
   return (
     <div>
       <div>
-        <AdminSubTitle><h3>Name: </h3><AdminData><h3> {first_name} {last_name}</h3></AdminData></AdminSubTitle>
+        <AdminSubTitle>Name: <AdminData> {first_name} {last_name}</AdminData></AdminSubTitle>
       </div>
       {/* <div>
         <AdminSubTitle> Directors Last Name: </AdminSubTitle>
@@ -22,7 +22,7 @@ const Directors = ({ first_name, last_name, bio, title, email, phone, other, rol
         <AdminData> {bio}</AdminData>
       </div> */}
       <div>
-        <AdminSubTitle><h3>Title: </h3><AdminData><h3> {title}</h3></AdminData> </AdminSubTitle>
+        <AdminSubTitle>Title: <AdminData> {title}</AdminData> </AdminSubTitle>
       </div>
       {/* <div>
         <AdminSubTitle> Email: </AdminSubTitle>
@@ -37,7 +37,7 @@ const Directors = ({ first_name, last_name, bio, title, email, phone, other, rol
         <AdminData> {other}</AdminData>
       </div> */}
       <div>
-        <AdminSubTitle><h3>Role: </h3><AdminData><h3>{role}</h3> </AdminData></AdminSubTitle>
+        <AdminSubTitle>Role: <AdminData>{role} </AdminData></AdminSubTitle>
       </div>
       <br />
       <div>

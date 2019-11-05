@@ -11,13 +11,13 @@ const Volunteers = ({ first_name, last_name, bio, title, email, phone, other, ro
   return (
     <div>
       <div>
-        <AdminSubTitle><h3>Name: </h3><AdminData> <h3>{first_name} {last_name}</h3></AdminData> </AdminSubTitle>
+        <AdminSubTitle>Name: {first_name} {last_name} </AdminSubTitle>
       </div>
         <div>
-        <AdminSubTitle><h3>Title: </h3><AdminData><h3>{title}</h3></AdminData></AdminSubTitle>
+        <AdminSubTitle>Title: {title}</AdminSubTitle>
       </div>
         <div>
-        <AdminSubTitle><h3>Role: </h3><AdminData><h3>{role}</h3></AdminData></AdminSubTitle>
+        <AdminSubTitle>Role: {role}</AdminSubTitle>
       </div>
       <br />
       <div>

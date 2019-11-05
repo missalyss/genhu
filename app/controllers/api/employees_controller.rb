@@ -26,11 +26,21 @@ class Api::EmployeesController < ApplicationController
 
   def update
     employee = Employee.find(params[:id])
-    if employee.update(employee_params)
+    image = params[:image]
+    ep = employee_params;
+    
+    if image
+      ext = File.extname(image.tempfile)
+      cloud_image = Cloudinary::Uploader.upload(image, public_id: image.original_filename, secure: true)
+      ep[:image] = cloud_image['secure_url']
+    end
+
+    if employee.update(ep)
       render json: employee
     else
       render json: { errors: employee.errors }, status: :unprocessable_entity
     end
+
   end
 
   def destroy
@@ -41,6 +51,6 @@ class Api::EmployeesController < ApplicationController
   private
 
   def employee_params
-    params.require(:employee).permit(:first_name, :last_name, :phone, :email, :bio, :title, :role, :image, :other)
+    params.permit(:first_name, :last_name, :phone, :email, :bio, :title, :role, :image, :other)
   end
 end
