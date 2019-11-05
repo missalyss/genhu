@@ -54,6 +54,9 @@
   width: 100vw;
   height: 100%;
   text-align: center;
+  padding-left: 11em;
+  padding-right: 11em;
+  padding-bottom: 0em;
   color: white;
   background-color: rgba(0, 0, 0, .3);
 

@@ -6,9 +6,16 @@
   background-size: cover;
   height: 100%;
   width: 100%;
-  /* opacity: 0.75; */
   font-size: xx-large;
-  
+}
+
+.stats-line {
+  opacity: 0.7;
+  border: 1px solid white;
+  width: 18%;
+  margin: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .stats-container {
@@ -19,6 +26,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 0em 2em 2em;
+  text-shadow: 2px 2px black;
 }
 
 .la-single-stat {
@@ -26,19 +34,18 @@
   text-align: center;
   width: 33%;
   height: 100%;
-  padding: .5em 0em;
+  padding-top: .5em;
+  padding-bottom: .5em;
 }
 
 .stat-name {
   font-size: .85em;
-  padding: .5em;
   font-weight: 250;
 }
 
 .stat-value {
-  font-size: 2.25em;
-  /* padding: em; */
-
+  font-size: 63px;
+  line-height: 1.2;
 }
 .statsHeader {
   text-align: center;
