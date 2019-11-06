@@ -2,9 +2,7 @@ import React from "react";
 import axios from "axios";
 import EmployeeForm from "./EmployeeForm";
 import {AdminTitle} from "../Styles";
-import Staff from "./Staff";
-import Volunteers from "./Volunteers";
-import Directors from "./Directors";
+import Show from "./Show";
 import './Employees.css'
 import { Link } from 'react-router-dom';
 
@@ -39,9 +37,14 @@ class Employees extends React.Component {
   }
 
   addEmployee = employee => {
-    axios.post("/api/employees", employee).then(res => {
+    console.log(employee)
+    let data = new FormData();
+    Object.keys(employee).forEach(key => data.append(key, employee[key]));
+    axios.post("/api/employees", data).then(res => {
       const { employees } = this.state;
       this.setState({ employees: [...employees, res.data] });
+      // this.setState({ employees: [...employees, res.data], staff: [...staff, res.data], volunteers: [...volunteers, res.data], directors: [...directors, res.data] });
+      // would need to pass staff, volunteers, and directors in the const as well
     });
   };
 
@@ -51,19 +54,18 @@ class Employees extends React.Component {
   };
 
   editEmployee = (id, employee) => {
+    console.log(employee)
     let data = new FormData();
     Object.keys(employee).forEach(key => data.append(key, employee[key]));
     axios.put(`api/employees/${id}`, data).then(res => {
       const employees = this.state.employees.map(employee => {
         if (employee.id === id) {
-          console.log(res.data)
           return res.data;
         } else {
           return employee;
         }
       });
       this.setState({ employees });
-      console.log(this.state.employees)
     })  
   }
 
@@ -74,7 +76,9 @@ class Employees extends React.Component {
     });
   };
 
-  renderStaff() {
+  renderShow() {
+    const volunteers = this.state.employees.filter(e => e.role === 'volunteer');
+    const directors = this.state.employees.filter(e => e.role === 'director');
     const staff = this.state.employees.filter(e => e.role === 'staff');
 
     return(
@@ -83,8 +87,7 @@ class Employees extends React.Component {
         <div className='employees-container'>
         { staff.map(s => (
           <div key={ s.id } className='employee-box'>
-          <Staff
-         
+          <Show
             key={ s.id }
             { ...s }
             editEmployee = { this.editEmployee }
@@ -93,42 +96,12 @@ class Employees extends React.Component {
           </div>
         ))}
         </div>
-      </div>
-    );
-  }
 
-  renderDirectors() {
-    const directors = this.state.employees.filter(e => e.role === 'director');
-
-    return(
-        <div>
-          <h1 className='employee-title'>Directors</h1>
-        <div className='employees-container'>
-        { directors.map(d => (
-          <div key={ d.id } className='employee-box'>
-          <Directors
-            key={ d.id }
-            { ...d }
-            editEmployee = { this.editEmployee }
-            deleteEmployee = { this.deleteEmployee }
-          />
-          </div>
-        ))}
-      </div>
-      </div>
-    );
-  }
-
-  renderVolunteers() {
-    const volunteers = this.state.employees.filter(e => e.role === 'volunteer');
-
-    return(
-      <div>
         <h1 className='employee-title'>Volunteers</h1>
         <div className='employees-container'>
         { volunteers.map(v => (
           <div key={ v.id } className='employee-box'>
-          <Volunteers
+          <Show
             key={ v.id }
             { ...v }
             editEmployee = { this.editEmployee }
@@ -137,8 +110,21 @@ class Employees extends React.Component {
           </div>
         ))}
         </div>
+
+        <h1 className='employee-title'>Directors</h1>
+        <div className='employees-container'>
+        { directors.map(d => (
+          <div key={ d.id } className='employee-box'>
+          <Show
+            key={ d.id }
+            { ...d }
+            editEmployee = { this.editEmployee }
+            deleteEmployee = { this.deleteEmployee }
+          />
+          </div>
+        ))}
+        </div>
       </div>
-      
     );
   }
 
@@ -165,9 +151,7 @@ class Employees extends React.Component {
         ) : (
           <div></div>
         )}
-        {this.renderStaff()}
-        {this.renderVolunteers()}
-        {this.renderDirectors()}
+        {this.renderShow()}
       </div>
     );
   }

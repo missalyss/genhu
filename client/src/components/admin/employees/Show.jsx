@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { AdminSubTitle, AdminData } from "../Styles";
+import { AdminSubTitle,  } from "../Styles";
 import EmployeeForm from "./EmployeeForm";
 const defaultImage = 'http://www.tolmayenterprises.com/images/Person.png';
 // import { Trash } from '../../../assets/Icons/TrashIcon.png'
 
-const Volunteers = ({ first_name, last_name, bio, title, email, phone, other, role, image, editEmployee, id, deleteEmployee }) => {
+const Show = ({ first_name, last_name, bio, title, email, phone, other, role, image, editEmployee, id, deleteEmployee }) => {
   const [toggleEdit, setToggleEdit] = useState(false);
 
   const editToggle = () => setToggleEdit(!toggleEdit);
@@ -24,40 +24,6 @@ const Volunteers = ({ first_name, last_name, bio, title, email, phone, other, ro
       <div>
         <img className='employee_photo' src={image || defaultImage} />
       </div>
-      {/* <div>
-        <AdminSubTitle>Volunteers First Name: </AdminSubTitle>
-        <AdminData> {first_name}</AdminData>
-      </div>
-      {/* <div>
-        <AdminSubTitle> Volunteers Last Name: </AdminSubTitle>
-        <AdminData> {last_name}</AdminData>
-      </div> */}
-      {/* <div>
-        <AdminSubTitle> Volunteers Bio: </AdminSubTitle>
-        <AdminData> {bio}</AdminData>
-      </div> */}
-      {/* <div>
-        <AdminSubTitle><h3>Title: </h3><AdminData><h3>{title}</h3> </AdminData></AdminSubTitle>
-      </div> */}
-      {/* <div>
-        <AdminSubTitle> Email: </AdminSubTitle>
-        <AdminData> {email}</AdminData>
-      </div> */}
-      {/* <div>
-        <AdminSubTitle>Phone: </AdminSubTitle>
-        <AdminData> {phone}</AdminData>
-      </div> */}
-      {/* <div>
-        <AdminSubTitle> Other: </AdminSubTitle>
-        <AdminData> {other}</AdminData>
-      </div> */}
-      {/* <div>
-        <AdminSubTitle><h3>Role: </h3><AdminData><h3> {role}</h3></AdminData></AdminSubTitle>
-      </div> */}
-      {/* <div>
-        <AdminSubTitle> Volunteers Image: </AdminSubTitle>
-        <AdminData> {image}</AdminData>
-      </div> */}
       <div>
         <button onClick={editToggle}>Edit</button>
         <button
@@ -89,4 +55,4 @@ const Volunteers = ({ first_name, last_name, bio, title, email, phone, other, ro
   );
 };
 
-export default Volunteers;
+export default Show;
