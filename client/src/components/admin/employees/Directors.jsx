@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AdminSubTitle, AdminData } from "../Styles";
 import EmployeeForm from "./EmployeeForm";
+const defaultImage = 'http://www.tolmayenterprises.com/images/Person.png';
 // import { Trash } from '../../../assets/Icons/TrashIcon.png'
 
 const Directors = ({ first_name, last_name, bio, title, email, phone, other, role, image, editEmployee, id, deleteEmployee }) => {
@@ -41,7 +42,7 @@ const Directors = ({ first_name, last_name, bio, title, email, phone, other, rol
       </div>
       <br />
       <div>
-        <img className='employee_photo' src={image} />
+        <img className='employee_photo' src={image || defaultImage} />
       </div>
       {/* <div>
         <AdminSubTitle> Directors Image: </AdminSubTitle>

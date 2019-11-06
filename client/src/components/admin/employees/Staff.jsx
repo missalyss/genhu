@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { AdminSubTitle, AdminData } from "../Styles";
 import EmployeeForm from "./EmployeeForm";
 import './Employees.css'
+
+const defaultImage = 'http://www.tolmayenterprises.com/images/Person.png';
 // import { Trash } from '../../../assets/Icons/TrashIcon.png'
 
 const Staff = ({ first_name, last_name, bio, title, email, phone, other, role, image, editEmployee, id, deleteEmployee }) => {
@@ -22,7 +24,7 @@ const Staff = ({ first_name, last_name, bio, title, email, phone, other, role, i
       </div>
       <br />
       <div>
-        <img className='employee_photo' src={image} />
+        <img className='employee_photo' src={image || defaultImage} />
       </div>
       <div>
         <button onClick={editToggle}>Edit</button>

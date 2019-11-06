@@ -54,12 +54,17 @@ class Employees extends React.Component {
     let data = new FormData();
     Object.keys(employee).forEach(key => data.append(key, employee[key]));
     axios.put(`api/employees/${id}`, data).then(res => {
-      const { employees } = this.state.employees.map(employee => {
-        if (employee.id === id) return res.data;
+      const employees = this.state.employees.map(employee => {
+        if (employee.id === id) {
+          console.log(res.data)
+          return res.data;
+        } else {
           return employee;
+        }
       });
       this.setState({ employees });
-    })
+      console.log(this.state.employees)
+    })  
   }
 
   deleteEmployee = (id) => {
@@ -70,7 +75,7 @@ class Employees extends React.Component {
   };
 
   renderStaff() {
-    const { staff } = this.state;
+    const staff = this.state.employees.filter(e => e.role === 'staff');
 
     return(
       <div>
@@ -93,7 +98,7 @@ class Employees extends React.Component {
   }
 
   renderDirectors() {
-    const { directors } = this.state;
+    const directors = this.state.employees.filter(e => e.role === 'director');
 
     return(
         <div>
@@ -115,7 +120,7 @@ class Employees extends React.Component {
   }
 
   renderVolunteers() {
-    const { volunteers } = this.state;
+    const volunteers = this.state.employees.filter(e => e.role === 'volunteer');
 
     return(
       <div>
