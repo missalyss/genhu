@@ -1,18 +1,42 @@
 import React from "react";
-import Editor from '../quill/Editor';
+import ReactQuill from "react-quill";
+import '../quill/EditorStyles.css';
+import 'react-quill/dist/quill.snow.css'
+
 
 class HomeForm extends React.Component {
-  state = {
-    name: "",
-    role: "",
-    sheltered_children: "",
-    victims: "",
-    orphans: "",
-    volunteers: "",
-    director: "",
-    sponsor: "",
-    description: ""
-  };
+  constructor(props){ 
+    super(props)  
+    this.state = {
+      name: "",
+      role: "",
+      sheltered_children: "",
+      victims: "",
+      orphans: "",
+      volunteers: "",
+      director: "",
+      sponsor: "",
+      description: ""
+    };
+  }
+
+  static modules = {
+    toolbar: [
+      [{ 'header': [1, 2, 3, false] }],
+
+      ['bold', 'italic', 'underline','strike', 'blockquote'],
+      [{'list': 'ordered'}, {'list': 'bullet'}, {'indent': '-1'}, {'indent': '+1'}],
+      ['link', 'image'],
+      ['clean']
+    ],
+  }
+ 
+  static formats = [
+    'header',
+    'bold', 'italic', 'underline', 'strike', 'blockquote',
+    'list', 'bullet', 'indent',
+    'link', 'image'
+  ]
 
   componentDidMount() {
     if (this.props.id) {
@@ -24,22 +48,23 @@ class HomeForm extends React.Component {
         created_at,
         updated_at,
         id,
-        ...rest
+        ...orest
       } = this.props;
 
       this.setState({
-        ...rest
+        ...orest
       });
     }
   }
 
   handleSubmit = e => {
     e.preventDefault();
-    debugger
     if (this.props.id) {
+      // debugger
       this.props.editHome(this.props.id, this.state);
       this.props.editToggle();
     } else {
+      // debugger
       this.props.addHome({ ...this.state });
     }
     this.setState({
@@ -61,6 +86,10 @@ class HomeForm extends React.Component {
     const { name, value } = e.target;
     this.setState({ [name]: value });
   };
+
+  handleContentChange = (value) => {
+    this.setState({ description: value})
+  }
 
   render() {
     const {
@@ -149,13 +178,20 @@ class HomeForm extends React.Component {
             required
             onChange={this.handleChange}
           />
+          <div>
            <label>Home Description:</label>
-         <Editor 
+         <ReactQuill className='text-editor'
             name="description"
             value={description}
-            placeholder="Home description"
+            placeholder="Write about the home here"
+            theme="snow"
+            modules={this.modules}
+            formats={this.formats}
             // required
-            onChange={this.handleChange}/>
+            onChange={this.handleContentChange}
+            />
+          
+          </div>
           <div className="button-cont-stat">
             <button type="submit">Submit</button>
           </div>

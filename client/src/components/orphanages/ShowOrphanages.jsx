@@ -104,20 +104,11 @@ class ShowOrphanages extends React.Component {
       </div>
       <div className='cntr-content-home'>
         <div className='cntr-col'>
-
-        <div>
+          <div style={{height: '25%'}}>
           <h1>About {orphanage.name} </h1>
-          <p> Just 45 minutes west of Cusco, the {orphanage.home} is snuggled against a hillside in the town of Izcuchaca. Founded by a Catholic nun decades ago, it is home to about 25 girls or have been orphaned or abandoned. In addition many children who attend elementary school in Izcuchaca live in the surrounding villages atop the mountains surrounding the home.  The nuns feed these children lunch (school lunch is not provided) as they leave school to return to their homes.  Some of them live a 1-2 hour hike away and have had nothing to eat all day. These children live in improverish peasant homes made of adobe and dirt floors.
-              </p>
-            <p>  
-            The bishop of the local diocese donates approximately $300 USD monthly, and Generations Humanitarian pays the rest. The home is run by three nuns, who love and care for the children and are very frugal.
-            </p>
-            <p>
-            The {orphanage.home} has a basketball/volleyball court, two greenhouses, classrooms, a multipurpose room, kitchen, laundry area (done by hand), and dorms.
-            </p>
-            <p>
-            Beginning in 2017, we are launching an education fund for the full time residents of the home.  This includes private education, technical trade such as making pottery and ceramics, and university scholarships.
-            </p>
+          </div>
+        <div style={{height: '100%', border: '1px solid green'}}>
+          <p dangerouslySetInnerHTML={{__html: orphanage.description}}></p>
         </div>
         </div>
         <div className='cntr-col'>

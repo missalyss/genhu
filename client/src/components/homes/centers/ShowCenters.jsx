@@ -106,7 +106,12 @@ class ShowCenters extends React.Component {
       <div className='cntr-content-home'>
         <div className='cntr-col'>
           <div>
-            <h1>About {center.name} Drop-In Center</h1>
+          <div style={{height: '25%'}}>
+          <h1>About {center.name} </h1>
+          </div>
+        <div style={{height: '10%', border: '1px solid green'}}>
+          <p dangerouslySetInnerHTML={{__html: center.description}}></p>
+        </div>
             <p>Coming Soon...</p>
             <h4>Stay Tuned!</h4>
           </div>

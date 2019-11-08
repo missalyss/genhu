@@ -31,7 +31,7 @@ import './HomeModal.css';
             </Modal.Header>
             <Modal.Body>
               <div className='modal-body-cont'>
-              <AdminHomeForm />
+              <AdminHomeForm {...this.props}/>
               
               </div>
               </Modal.Body>
