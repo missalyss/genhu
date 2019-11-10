@@ -62,7 +62,13 @@ class Employees extends React.Component {
   editEmployee = (id, employee) => {
     console.log(employee)
     let data = new FormData();
-    Object.keys(employee).forEach(key => data.append(key, employee[key]));
+    Object.keys(employee).forEach(key => {
+      if(!employee[key] || employee[key] === ''){
+        return;
+      }
+      data.append(key, employee[key])
+    });
+    // Object.keys(employee).forEach(key => data.append(key, employee[key]));
     axios.put(`api/employees/${id}`, data).then(res => {
       const employees = this.state.employees.map(employee => {
         if (employee.id === id) {
@@ -136,8 +142,8 @@ class Employees extends React.Component {
 
   render() {
     return (
-      <div style={{padding: '5em'}} className='employee-edit-page'>
-        <div className='employee-title'><AdminTitle>Employees Page</AdminTitle></div>
+      <div className='employee-edit-page'>
+        <div className='employee-title'>Employees Page</div>
         <div className='emp-btn-flex'>
         <div className='employee-buttons'>
         <div className = 'add-button'>

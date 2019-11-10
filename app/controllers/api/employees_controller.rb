@@ -56,13 +56,15 @@ class Api::EmployeesController < ApplicationController
     employee.other = params[:other] ? params[:other] : employee.other
     image = params[:image]
     
-    if image
+    if image && image != ''
       begin
         ext = File.extname(image.tempfile)
         cloud_image = Cloudinary::Uploader.upload(image, public_id: image.original_filename, secure: true)
         employee[:image] = cloud_image['secure_url']
-      rescue => e
-        render json: { errors: e }, status: 422
+      # rescue => e
+      #   render json: { errors: e }, status: 422
+      rescue
+        
       end
     end
 
