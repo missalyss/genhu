@@ -43,12 +43,14 @@ class EmployeeForm extends React.Component {
     } else {
       this.props.addEmployee({ ...this.state.form_fields });
     }
-    this.setState({form_fields: {first_name: "", last_name: "", bio: "", title: "", email: "", phone: "", other: "", role: "", image: "" }});
+    this.setState({form_fields: {first_name: "", last_name: "", bio: "", title: "", email: "", phone: "", other: "", role: "", image: "", }});
   };
 
   handleChange = e => {
     const { name, value } = e.target;
-    this.setState({ form_fields: { [name]: value }});
+    let fields = { ...this.state.form_fields }
+    fields [name] = value
+    this.setState({ form_fields: fields });
   };
 
   render() {
@@ -131,8 +133,8 @@ class EmployeeForm extends React.Component {
                 <input {...getInputProps()} />
                 {
                   isDragActive ?
-                    <p>Drop files here...</p> :
-                    <img src={this.state.imgSrc} className='img-preview'/>
+                  <p>Drop files here...</p> :
+                  <img src={this.state.imgSrc} className='img-preview'/> 
                 }
               </div>
             )

@@ -36,15 +36,21 @@ class Employees extends React.Component {
 
   }
 
-  addEmployee = employee => {
+  addEmployee = (employee) => {
     console.log(employee)
     let data = new FormData();
-    Object.keys(employee).forEach(key => data.append(key, employee[key]));
+    Object.keys(employee).forEach(key => {
+      if(!employee[key] || employee[key] === ''){
+        return;
+      }
+      data.append(key, employee[key])
+    });
     axios.post("/api/employees", data).then(res => {
-      const { employees } = this.state;
+      const { employees, } = this.state;
       this.setState({ employees: [...employees, res.data] });
       // this.setState({ employees: [...employees, res.data], staff: [...staff, res.data], volunteers: [...volunteers, res.data], directors: [...directors, res.data] });
       // would need to pass staff, volunteers, and directors in the const as well
+      this.toggle();
     });
   };
 
