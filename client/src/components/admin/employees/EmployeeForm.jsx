@@ -1,42 +1,60 @@
 import React from "react";
+import Dropzone from 'react-dropzone';
+import './EmployeeForm.css';
 
 class EmployeeForm extends React.Component {
-  state = { first_name: "", last_name: "", bio: "", title: "", email: "", phone: "", other: "", role: "", image: ""};
+  state = { form_fields: { first_name: "", last_name: "", bio: "", title: "", email: "", phone: "", other: "", role: "", image: ""}, imgSrc: "", };
 
   componentDidMount() {
     if (this.props.id) {
       this.setState({
-        first_name: this.props.firstName,
-        last_name: this.props.lastName,
-        bio: this.props.bio,
-        title: this.props.title,
-        email: this.props.email,
-        phone: this.props.phone,
-        other: this.props.other,
-        role: this.props.role,
-        image: this.props.image
+        form_fields: {
+          first_name: this.props.firstName,
+          last_name: this.props.lastName,
+          bio: this.props.bio,
+          title: this.props.title,
+          email: this.props.email,
+          phone: this.props.phone,
+          other: this.props.other,
+          role: this.props.role,
+          image: this.props.image
+        }
       });
     }
+  }
+
+  onDrop = (files) => {
+    this.setState({ form_fields: { ...this.state.form_fields, image: files[0] }});
+    let reader = new FileReader();
+    reader.readAsDataURL(files[0]);
+
+    reader.onloadend = function () {
+      this.setState({
+        imgSrc: [reader.result]
+      })
+    }.bind(this);
   }
 
   handleSubmit = e => {
     e.preventDefault();
     if (this.props.id) {
-      this.props.editEmployee(this.props.id, this.state);
+      this.props.editEmployee(this.props.id, this.state.form_fields);
       this.props.editToggle();
     } else {
-      this.props.addEmployee({ ...this.state });
+      this.props.addEmployee({ ...this.state.form_fields });
     }
-    this.setState({first_name: "", last_name: "", bio: "", title: "", email: "", phone: "", other: "", role: "", image: "" });
+    this.setState({form_fields: {first_name: "", last_name: "", bio: "", title: "", email: "", phone: "", other: "", role: "", image: "", }});
   };
 
   handleChange = e => {
     const { name, value } = e.target;
-    this.setState({ [name]: value });
+    let fields = { ...this.state.form_fields }
+    fields [name] = value
+    this.setState({ form_fields: fields });
   };
 
   render() {
-    const { first_name, last_name, bio, title, email, phone, other, role, image } = this.state;
+    const { first_name, last_name, bio, title, email, phone, other, role, image } = this.state.form_fields;
     return (
       <div className='form-cont'>
         <form onSubmit={this.handleSubmit}>
@@ -102,12 +120,26 @@ class EmployeeForm extends React.Component {
             <option value='volunteer'>Volunteer</option>
           </select>
           <label>Image:</label>
-          <input
-            name="image"
-            value={image}
-            placeholder="Add URL"
-            onChange={this.handleChange}
-          />
+          <Dropzone
+            onDrop={this.onDrop}
+            multiple={false}
+          >
+            {({ getRootProps, getInputProps, isDragActive }) => {
+            return (
+              <div
+                {...getRootProps()}
+                className='dropzone'
+              >
+                <input {...getInputProps()} />
+                {
+                  isDragActive ?
+                  <p>Drop files here...</p> :
+                  <img src={this.state.imgSrc} className='img-preview'/> 
+                }
+              </div>
+            )
+          }}
+        </Dropzone>
           <label>Other:</label>
           <input
             name="other"

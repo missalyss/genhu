@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { AdminSubTitle, AdminData } from "../Styles";
+import { AdminSubTitle,  } from "../Styles";
 import EmployeeForm from "./EmployeeForm";
-import './Employees.css'
+const defaultImage = 'http://www.tolmayenterprises.com/images/Person.png';
 // import { Trash } from '../../../assets/Icons/TrashIcon.png'
 
-const Staff = ({ first_name, last_name, bio, title, email, phone, other, role, image, editEmployee, id, deleteEmployee }) => {
+const Show = ({ first_name, last_name, bio, title, email, phone, other, role, image, editEmployee, id, deleteEmployee }) => {
   const [toggleEdit, setToggleEdit] = useState(false);
 
   const editToggle = () => setToggleEdit(!toggleEdit);
@@ -12,17 +12,17 @@ const Staff = ({ first_name, last_name, bio, title, email, phone, other, role, i
   return (
     <div>
       <div>
-        <AdminSubTitle><h3>Name: </h3><AdminData><h3> {first_name} {last_name} </h3> </AdminData></AdminSubTitle>
+        <AdminSubTitle>Name: {first_name} {last_name} </AdminSubTitle>
       </div>
-      <div>
-        <AdminSubTitle><h3>Title: </h3><AdminData><h3>{title}</h3></AdminData></AdminSubTitle>
+        <div>
+        <AdminSubTitle>Title: {title}</AdminSubTitle>
       </div>
-      <div>
-        <AdminSubTitle><h3>Role: </h3><AdminData><h3>{role}</h3></AdminData></AdminSubTitle>
+        <div>
+        <AdminSubTitle>Role: {role}</AdminSubTitle>
       </div>
       <br />
       <div>
-        <img className='employee_photo' src={image} />
+        <img className='employee_photo' src={image || defaultImage} />
       </div>
       <div>
         <button onClick={editToggle}>Edit</button>
@@ -55,4 +55,4 @@ const Staff = ({ first_name, last_name, bio, title, email, phone, other, role, i
   );
 };
 
-export default Staff;
+export default Show;
