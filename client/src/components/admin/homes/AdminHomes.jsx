@@ -6,9 +6,11 @@ import HomeForm from "./AdminHomeForm";
 import { AdminTitle, AdminSubTitle } from "../Styles";
 import "../stats/AdminStats.css";
 import { Link } from 'react-router-dom';
+import HomeModal from './orphanages/HomeModal';
+import '../../staff/StaffModal.css';
 
 class Homes extends React.Component {
-  state = { homes: [], orphanages: [], centers: [], toggleForm: false };
+  state = { homes: [], orphanages: [], centers: [], toggleModal: false };
 
   componentDidMount() {
     axios
@@ -40,8 +42,8 @@ class Homes extends React.Component {
   };
 
   toggle = () => {
-    const { toggleForm } = this.state;
-    this.setState({ toggleForm: !toggleForm });
+    const { toggleModal } = this.state;
+    this.setState({ toggleModal: !toggleModal });
   };
 
   editHome = (id, home) => {
@@ -98,9 +100,12 @@ class Homes extends React.Component {
             key={orphanage.id}
             {...orphanage}
 
+            addHome={this.addHome}
+            show={this.toggle}
             toggle={this.toggle}
             editHome={this.editHome}
             deleteHome={this.deleteHome}
+            onHide={this.toggle}
             />
             </div>
             ))}
@@ -117,10 +122,11 @@ class Homes extends React.Component {
           <Center
           key={center.id}
           {...center}
-          
+            show={this.toggle}
             toggle={this.toggle}
             editHome={this.editHome}
             deleteHome={this.deleteHome}
+            onHide={this.toggle}
             />
             </div>
             ))}
@@ -141,8 +147,16 @@ class Homes extends React.Component {
           </button>
           </Link>
         </div>
-        {this.state.toggleForm ? (
-          <div className='center'> <HomeForm addHome={this.addHome} toggle={this.toggle}/> </div>
+        {this.state.toggleModal ? (
+          <div className='center'> 
+          <HomeModal 
+          show={this.toggle} 
+          addHome={this.addHome} 
+          toggle={this.toggle} 
+          onHide={ this.toggle } 
+          toggleShow = { this.toggle }
+          /> 
+          </div>
         ) : (
             <div></div>
           )}

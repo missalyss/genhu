@@ -20,6 +20,7 @@ class Api::HomesController < ApplicationController
   end
 
   def create
+    # binding.pry
     home = Home.new(home_params)
     if home.save
       render json: home
@@ -29,6 +30,7 @@ class Api::HomesController < ApplicationController
   end
 
   def update
+    # binding.pry
    home = Home.find(params[:id])
     if home.update(home_params)
       render json: home
@@ -45,7 +47,7 @@ class Api::HomesController < ApplicationController
   private
 
   def home_params
-    params.require(:home).permit(:name, :role, :sheltered_children, :victims, :orphans, :volunteers, :director, :sponsor)
+    params.require(:home).permit(:name, :role, :sheltered_children, :victims, :orphans, :volunteers, :director, :sponsor, :description)
   end
 
 end

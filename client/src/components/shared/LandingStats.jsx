@@ -39,7 +39,7 @@ class LandingStats extends React.Component {
           <div className="stats-line"></div>
           <h1>Since 2008. You have cared. We did the math.</h1>
           <br />
-          <br />
+         
           <div className="stats-container">{this.renderStats()}</div>
         </div>
       </div>

@@ -1,20 +1,24 @@
 import React, { useState } from "react";
 import { AdminSubTitle, AdminData } from "../../Styles";
 import HomeForm from "../AdminHomeForm";
+import HomeModal from './HomeModal';
 
-const Center = ({ editHome, id, deleteHome, ...orest }) => {
-  const [toggleEdit, setToggleEdit] = useState(false);
+const Center = ({ show, onHide, editHome, id, deleteHome, addHome, ...orest }) => {
+  const [toggleModal, setToggleModal] = useState(false);
 
-  const editToggle = () => setToggleEdit(!toggleEdit);
+  // const editToggle = () => setToggleEdit(!toggleEdit);
+
+  const toggle = () => setToggleModal(!toggleModal);
+   
 
   return (
-    <div className="single-stat">
+    <div className="single-stat-home" style={{width: '10em'}}>
       <div className="stat-data">
         <AdminSubTitle>Center Name: </AdminSubTitle>
         <AdminData> {orest.name}</AdminData>
       </div>
       <div className="button-cont-stat">
-        <button onClick={editToggle}>Edit</button>
+        <button onClick={toggle}>Edit</button>
         <button
           style={{ backgroundColor: "#863A2A" }}
           onClick={() => deleteHome(id)}
@@ -22,10 +26,14 @@ const Center = ({ editHome, id, deleteHome, ...orest }) => {
           Delete
         </button>
       </div>
-      {toggleEdit ? (
-        <HomeForm
+      {toggleModal ? (
+        <HomeModal
+          addHome={addHome}
+          show={show} 
+          onHide={ toggle } 
+          toggleShow = { toggle }
           editHome={editHome}
-          editToggle={editToggle}
+          editToggle={toggle}
           {...orest}          
           id={id}
         />

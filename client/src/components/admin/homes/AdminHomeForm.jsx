@@ -1,31 +1,58 @@
 import React from "react";
+import ReactQuill from "react-quill";
+import '../quill/EditorStyles.css';
+import 'react-quill/dist/quill.snow.css'
+
 
 class HomeForm extends React.Component {
-  state = {
-    name: "",
-    role: "",
-    sheltered_children: "",
-    victims: "",
-    orphans: "",
-    volunteers: "",
-    director: "",
-    sponsor: ""
-  };
+  constructor(props){ 
+    super(props)  
+    this.state = {
+      name: "",
+      role: "",
+      sheltered_children: "",
+      victims: "",
+      orphans: "",
+      volunteers: "",
+      director: "",
+      sponsor: "",
+      description: ""
+    };
+  }
+
+  static modules = {
+    toolbar: [
+      [{ 'header': [1, 2, 3, false] }],
+
+      ['bold', 'italic', 'underline','strike', 'blockquote'],
+      [{'list': 'ordered'}, {'list': 'bullet'}, {'indent': '-1'}, {'indent': '+1'}],
+      ['link', 'image'],
+      ['clean']
+    ],
+  }
+ 
+  static formats = [
+    'header',
+    'bold', 'italic', 'underline', 'strike', 'blockquote',
+    'list', 'bullet', 'indent',
+    'link', 'image'
+  ]
 
   componentDidMount() {
     if (this.props.id) {
       const {
+        
         deleteHome,
         editHome,
         editToggle,
         created_at,
         updated_at,
         id,
-        ...rest
+        ...orest
       } = this.props;
 
       this.setState({
-        ...rest
+        ...orest
       });
     }
   }
@@ -33,9 +60,11 @@ class HomeForm extends React.Component {
   handleSubmit = e => {
     e.preventDefault();
     if (this.props.id) {
+      // debugger
       this.props.editHome(this.props.id, this.state);
       this.props.editToggle();
     } else {
+      // debugger
       this.props.addHome({ ...this.state });
     }
     this.setState({
@@ -47,7 +76,8 @@ class HomeForm extends React.Component {
       orphans: "",
       volunteers: "",
       director: "",
-      sponsor: ""
+      sponsor: "",
+      description: "",
     });
     // this.props.renderHomes();
   };
@@ -56,6 +86,10 @@ class HomeForm extends React.Component {
     const { name, value } = e.target;
     this.setState({ [name]: value });
   };
+
+  handleContentChange = (value) => {
+    this.setState({ description: value})
+  }
 
   render() {
     const {
@@ -66,12 +100,13 @@ class HomeForm extends React.Component {
       orphans,
       volunteers,
       director,
-      sponsor
+      sponsor,
+      description
     } = this.state;
     return (
       // <div className='form-cont'>
         <div>
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit} className='home-form'>
           <label>Home Name:</label>
           <input
             name="name"
@@ -143,6 +178,20 @@ class HomeForm extends React.Component {
             required
             onChange={this.handleChange}
           />
+          <div>
+           <label>Home Description:</label>
+         <ReactQuill className='text-editor'
+            name="description"
+            value={description}
+            placeholder="Write about the home here"
+            theme="snow"
+            modules={this.modules}
+            formats={this.formats}
+            // required
+            onChange={this.handleContentChange}
+            />
+          
+          </div>
           <div className="button-cont-stat">
             <button type="submit">Submit</button>
           </div>
