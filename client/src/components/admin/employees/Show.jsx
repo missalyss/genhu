@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AdminSubTitle,  } from "../Styles";
 import EmployeeForm from "./EmployeeForm";
+import EmployeeModal from './EmployeeModal';
 const defaultImage = 'http://www.tolmayenterprises.com/images/Person.png';
 // import { Trash } from '../../../assets/Icons/TrashIcon.png'
 
@@ -34,7 +35,9 @@ const Show = ({ first_name, last_name, bio, title, email, phone, other, role, im
         </button>
       </div>
       {toggleEdit ? (
-        <EmployeeForm
+        <EmployeeModal
+          show={editToggle}
+          onHide={editToggle}
           editEmployee={editEmployee}
           editToggle={editToggle}
           firstName={first_name}
