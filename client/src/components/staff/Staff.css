@@ -1,37 +1,27 @@
-
 .staff-container {
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-/* border: 2px solid red; */
-/* width: 100%;
-height: 100%; */
-/* text-align: center */
-flex-wrap: wrap;
-/* padding: 0em 2em 2em; */
-/* border: 5px solid red; */
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+  /* width: 100%;
+  height: 100%; */
+  /* text-align: center */
+  flex-wrap: wrap;
+  /* padding: 0em 2em 2em; */
+  /* border: 5px solid red; */
+  }
 
 .staff-box{
   border: 2px solid black;
-  width: 400px;
-  height: 400px;
+  height: 300px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin: 1em 1em;
+  margin: 1em;
   position: relative;
   overflow: hidden;
-  
-
-  
-  /* --------------- BACKGROUND ---------------- */
-  background-color: teal;
-  /* background-image: url('../../assets/Icons/profile.png');
-  background-position: top;
-  background-size: 65%;
-  background-repeat: no-repeat; */
-  /* border: 5px solid blue; */
 }
 
 .staff-box:hover {
@@ -75,6 +65,31 @@ flex-wrap: wrap;
   text-align: center;
   padding: 20px;
   font-size: 35px;
-  background-color: #67385D;
+
   color: white;
+
+}
+
+.bump_nav {
+  padding-top: 30px;
+}
+
+.main_headers {
+  margin: 10px 0px;
+  background-color: #67385D;
+
+}
+
+
+
+@media screen and (min-width:600px) {
+  
+  .staff-box{
+    width: 400px;
+    height: 400px;
+  }
+
+  .bump_nav {
+    padding-top: 5vw;
+  }
 }

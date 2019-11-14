@@ -27,6 +27,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import Privacy from './components/policyandfinancial/Privacy';
 import ProvenSoulsPage from './components/shared/ProvenSoulsPage';
 
+
 const App = () => (
   // if the screen size changes show this:
   <Fragment>
