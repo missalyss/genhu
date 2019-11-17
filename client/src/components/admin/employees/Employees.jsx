@@ -5,9 +5,10 @@ import {AdminTitle} from "../Styles";
 import Show from "./Show";
 import './Employees.css'
 import { Link } from 'react-router-dom';
+import EmployeeModal from './EmployeeModal';
 
 class Employees extends React.Component {
-  state = { employees: [], volunteers: [], directors: [], staff: [], toggleForm: false };
+  state = { employees: [], volunteers: [], directors: [], staff: [], toggleModal: false };
 
   componentDidMount() {
     axios
@@ -55,8 +56,8 @@ class Employees extends React.Component {
   };
 
   toggle = () => {
-    const { toggleForm } = this.state;
-    this.setState({ toggleForm: !toggleForm });
+    const { toggleModal } = this.state;
+    this.setState({ toggleModal: !toggleModal });
   };
 
   editEmployee = (id, employee) => {
@@ -158,8 +159,8 @@ class Employees extends React.Component {
          </Link>
          </div>
         </div>
-        {this.state.toggleForm ? (
-          <div> <EmployeeForm addEmployee={this.addEmployee} /> </div>
+        {this.state.toggleModal ? (
+          <div> <EmployeeModal show={this.toggle} onHide={this.toggle} toggleShow={this.toggle} addEmployee={this.addEmployee}/> </div>
         ) : (
           <div></div>
         )}
