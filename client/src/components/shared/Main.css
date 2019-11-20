@@ -117,16 +117,16 @@ h1 {
 
 
 /* --------------- NAV ---------------- */
-.logo-image {
-  width: 20em;
+.main-nav {
+  font-size: 17px;
 }
 
 .right_nav {
-  display: none;
-}
-
-.logo-image:hover {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0px 5px;
 }
 
 .dropdown {
@@ -141,7 +141,7 @@ h1 {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 5000;
-  font-size: 0.8vw;
+  font-size: 15px;
 }
 
 .dropdown-content a {
@@ -159,10 +159,41 @@ h1 {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.nav-item {
+  color: black;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
 
+.nav-item:hover {
+  color: teal;
+  text-decoration: none;
+}
 
+.facebook-image {
+  width: 2em;
+  padding-top: .3em;
+}
 
-@media screen and (min-width:600px) {
+.logo-image {
+  width: 23em;
+  padding-bottom: 20px;
+}
+
+.homes-tab {
+  padding-left: 2em;
+}
+
+li {
+  cursor: pointer;
+  }
+
+  .souls-container {
+    height: 100vh;
+    padding-bottom: 50em;
+  }
+
+@media screen and (min-width:1274px) {
   .main-nav {
     display:-webkit-flex;
     display: flex;
@@ -170,13 +201,14 @@ h1 {
     width: 100vw;
     height: 5.5em;
     background-color: white;
-    font-size: 1vw;
+    font-size: 20px;
     align-items: center;
     margin-left: 0;
     padding-left: 2em;
     position: fixed;
     z-index: 10000;
     box-shadow: 0px 8px 16px 0px rgba(214, 213, 213, 0.2);
+    text-align: center;
   } 
   
   .nav-home {
@@ -191,6 +223,7 @@ h1 {
     flex-direction: row;
     justify-content: space-evenly;
     width: 50%;
+    flex-wrap: nowrap;
     margin-right: 3%;
   }
   
@@ -224,14 +257,15 @@ h1 {
   }
   
   .logo-image {
-    margin: 1em 0em 1em 0em;
+    margin: 30px 0em 1em 0em;
     width: 20em;
     
   }
   
   .facebook-image {
-    width: 2em;
-    margin: 2em 0em 0em 0em;
+    /* width: 60px;
+    margin: 45px 0px 0px 0px; */
+    
   
   }
   
