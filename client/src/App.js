@@ -66,6 +66,7 @@ class App extends Component {
       {/* <NavMobile toggleModal={this.togglemodal} />
       {menuLoaded === true ? <Modal toggleModal={this.toggleModal} /> : <></>} */}
       {/* <Switch> */}
+      <Navbar />
       <Route exact path="/" component={LandingMob} />
       <Route exact path='/staff' component={Staff} />
           {/* <Route exact path="/login" component={LoginMob} /> */}
