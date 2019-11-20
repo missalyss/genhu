@@ -1,4 +1,4 @@
-import React, { Fragment, } from 'react';
+import React, { Fragment, Component } from 'react';
 import Home from './components/shared/Landing';
 import Nomatch from './components/shared/Nomatch';
 import FetchUser from './components/auth/FetchUser';
@@ -27,39 +27,99 @@ import { HashLink as Link } from 'react-router-hash-link';
 import Privacy from './components/policyandfinancial/Privacy';
 import ProvenSoulsPage from './components/shared/ProvenSoulsPage';
 
+class App extends Component {
+  state= { 
+    pageLoaded: false, 
+    width: window.innerWidth, 
+    menuLoaded: false
+  };
 
-const App = () => (
-  // if the screen size changes show this:
-  <Fragment>
-    <Navbar />
-    <>
+  toggleModal = () => {
+    // const { menuLoaded } = this.state;
+    this.setState({ menuloaded: !this.state.menuloaded })
+  };
+
+  componentDidMount = () => {
+    window.addEventListener("resize", this.handleWindowSizeChange);
+  };
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.handleWindowSizeChange);
+  };
+
+  handleWindowSizeChange = () => {
+    this.setState({ width: window.innerWidth });
+  }
+
+  render() {
+    const { width, menuLoaded } = this.state
+    const isMobile = width <= 600;
+
+    // if (isMobile) {
+    //   this.return(
+    //     <>
+      {/* <NavMobile toggleModal={this.togglemodal} />
+      {menuLoaded === true ? <Modal toggleModal={this.toggleModal} /> : <></>}
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/register" component={Register} />
-        <Route exact path="/calendar" component={MyCalendar} />
-        <Route exact path='/about' component={About} />
-        <Route exact path='/policy' component={PolicyFinancial} />
-        <Route exact path='/expeditions' component={Expeditions} />
-        {/* <Route exact path='/homes' component={Homes} /> */}
-        <Route exact path='/contact' component={Contact} />
-        <Route exact path='/staff' component={Staff} />
-        <Route exact path='/orphanages' component={Orphanages} />
-        <Route exact path='/drop_in_centers' component={DropInCenters} />
-        <Route exact path='/orphanages/:id' component={ShowOrphanages} />
-        <Route exact path='/centers/:id' component={ShowCenters} />
-        <Route exact path='/privacy' component={ Privacy } />
-        <Route exact path='/proven_souls' component={ ProvenSoulsPage } />
-        <FetchUser>
-          <ProtectedRoute exact path="/admin" component={Admin} />
-          <ProtectedRoute exact path="/datastats" component={Stats} />
-          <ProtectedRoute exact path="/admin_homes" component={AdminHomes} />
-          <ProtectedRoute exact path="/admin_employee" component={Employees} />
-        </FetchUser>
-        <Route component={Nomatch} />
-      </Switch>
+      <Route exact path="/" component={HomeMob} />
+          <Route exact path="/login" component={LoginMob} />
+          <Route exact path="/register" component={RegisterMob} />
+          <Route exact path="/calendar" component={MyCalendarMob} />
+          <Route exact path='/about' component={AboutMob} />
+          <Route exact path='/policy' component={PolicyFinancialMob} />
+          <Route exact path='/expeditions' component={ExpeditionsMob} />
+          <Route exact path='/contact' component={ContactMob} />
+          <Route exact path='/staff' component={StaffMob} />
+          <Route exact path='/orphanages' component={OrphanagesMob} />
+          <Route exact path='/drop_in_centers' component={DropInCentersMob} />
+          <Route exact path='/orphanages/:id' component={ShowOrphanagesMob} />
+          <Route exact path='/centers/:id' component={ShowCentersMob} />
+          <Route exact path='/privacy' component={ PrivacyMob } />
+          <Route exact path='/proven_souls' component={ ProvenSoulsPageMob } />
+          <FetchUser>
+            <ProtectedRoute exact path="/admin" component={AdminMob} />
+            <ProtectedRoute exact path="/datastats" component={StatsMob} />
+            <ProtectedRoute exact path="/admin_homes" component={AdminHomesMob} />
+            <ProtectedRoute exact path="/admin_employee" component={EmployeesMob} />
+          </FetchUser>
+          <Route component={NomatchMob} />
+      </Switch> */}
+    //   </>
+    //   );
+    // } else {
+    return (
+    <>
+      <Navbar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/register" component={Register} />
+          <Route exact path="/calendar" component={MyCalendar} />
+          <Route exact path='/about' component={About} />
+          <Route exact path='/policy' component={PolicyFinancial} />
+          <Route exact path='/expeditions' component={Expeditions} />
+          {/* <Route exact path='/homes' component={Homes} /> */}
+          <Route exact path='/contact' component={Contact} />
+          <Route exact path='/staff' component={Staff} />
+          <Route exact path='/orphanages' component={Orphanages} />
+          <Route exact path='/drop_in_centers' component={DropInCenters} />
+          <Route exact path='/orphanages/:id' component={ShowOrphanages} />
+          <Route exact path='/centers/:id' component={ShowCenters} />
+          <Route exact path='/privacy' component={ Privacy } />
+          <Route exact path='/proven_souls' component={ ProvenSoulsPage } />
+          <FetchUser>
+            <ProtectedRoute exact path="/admin" component={Admin} />
+            <ProtectedRoute exact path="/datastats" component={Stats} />
+            <ProtectedRoute exact path="/admin_homes" component={AdminHomes} />
+            <ProtectedRoute exact path="/admin_employee" component={Employees} />
+          </FetchUser>
+          <Route component={Nomatch} />
+        </Switch>
       </>
-  </Fragment>
-);
+     
+    )
+    // }
+  }
+};
 
 export default App;
