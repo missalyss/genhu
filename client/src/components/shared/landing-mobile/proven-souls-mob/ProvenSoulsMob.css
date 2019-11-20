@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen|Raleway&display=swap');
+@font-face {
+  src: url('https://fonts.googleapis.com/css?family=Oxygen|Raleway&display=swap');
+  /* TITle */
+  font-family: 'Oxygen', sans-serif;
+  /* Text */
+  font-family: 'Raleway', sans-serif;
+}
+
+
+.ps-container-mob {
+  width: 65%;
+  margin: 4em 5em;
+  margin-left: 6em;
+  font-weight: none;
+  /* border: 1px red solid; */
+}
+
+.ps-title-mob {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  /* flex-shrink: -1; */
+}
+.ps-para-mob {
+  
+  font-family: 'Raleway', sans-serif;
+  line-height: 2em;
+  font-size: 1.25em;
+  margin-bottom: .50em;
+  }
+
+.btn-div-mob {
+  display: flex;
+  justify-content: center;
+}
+
+.proven-button-mob {
+  
+  cursor: pointer;
+  background: #3C7473;
+  font-size: 1em;
+  border-radius: 5px;
+  align-content: center;
+  color: white;
+  font-size: 1.75em;
+  
+  /* border: 2px solid white; */
+  /* margin: 0 auto; */
+ margin-top: 1em;
+  /* padding: 0.5em 1em; */
+  width: 23rem;
+  transition: 0.5s all ease-out;
+  padding: .75em 1.25em;
+  margin-right: .75em;
+  margin-bottom: 1em;
+}
+.proven-button-mob:hover {
+  opacity: 0.8;
+
+}
+
+.proven-button-mob a, .proven-button-mob a:hover {
+  color: white;
+  text-decoration: none;
+}
+
