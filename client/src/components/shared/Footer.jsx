@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Footer.css"
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 
 const Stats = () => {
@@ -13,10 +13,7 @@ const Stats = () => {
           <p class='mission'>Generations Humanitarian is committed to transform street children toward an abundance of health,
              hope, and loving homes—thereby breaking the cycle of scarcity for generations to come. 
              This is done through broad research, novel development, strengthening nonprofit entities in development, 
-             and individual nurturing in a home environment.</p>
-
-          <br/>
-          <br/>   
+             and individual nurturing in a home environment.</p> 
             
         </div>
         <div class="column">
@@ -36,12 +33,7 @@ const Stats = () => {
           <NavLink to='/privacy' className='NavLink'><p>Privacy</p></NavLink>
         </div>
         <div class="column">
-          <h2 class= 'header'>CONTACT US</h2>
-          <p>2607 Casto Lane,</p>
-          <p>Salt Lake City, Utah 84117</p>
-          <p>Phone: +1 801-859-1033</p>
-          <p>E-mail: van@genhu.org</p>
-          <p>Website: www.genhu.org</p>
+          <h2 class= 'header'><Link>CONTACT US</Link></h2>
         </div>
         </div>
     </div>
