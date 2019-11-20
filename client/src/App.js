@@ -27,6 +27,11 @@ import { HashLink as Link } from 'react-router-hash-link';
 import Privacy from './components/policyandfinancial/Privacy';
 import ProvenSoulsPage from './components/shared/ProvenSoulsPage';
 
+// Mobile Page
+
+import LandingMob from './components/shared/landing-mobile/LandingMob';
+
+
 class App extends Component {
   state= { 
     pageLoaded: false, 
@@ -55,38 +60,39 @@ class App extends Component {
     const { width, menuLoaded } = this.state
     const isMobile = width <= 600;
 
-    // if (isMobile) {
-    //   this.return(
-    //     <>
+    if (isMobile) {
+      return(
+        <>
       {/* <NavMobile toggleModal={this.togglemodal} />
-      {menuLoaded === true ? <Modal toggleModal={this.toggleModal} /> : <></>}
-      <Switch>
-      <Route exact path="/" component={HomeMob} />
-          <Route exact path="/login" component={LoginMob} />
-          <Route exact path="/register" component={RegisterMob} />
-          <Route exact path="/calendar" component={MyCalendarMob} />
-          <Route exact path='/about' component={AboutMob} />
-          <Route exact path='/policy' component={PolicyFinancialMob} />
-          <Route exact path='/expeditions' component={ExpeditionsMob} />
-          <Route exact path='/contact' component={ContactMob} />
-          <Route exact path='/staff' component={StaffMob} />
-          <Route exact path='/orphanages' component={OrphanagesMob} />
-          <Route exact path='/drop_in_centers' component={DropInCentersMob} />
-          <Route exact path='/orphanages/:id' component={ShowOrphanagesMob} />
-          <Route exact path='/centers/:id' component={ShowCentersMob} />
-          <Route exact path='/privacy' component={ PrivacyMob } />
-          <Route exact path='/proven_souls' component={ ProvenSoulsPageMob } />
-          <FetchUser>
-            <ProtectedRoute exact path="/admin" component={AdminMob} />
-            <ProtectedRoute exact path="/datastats" component={StatsMob} />
-            <ProtectedRoute exact path="/admin_homes" component={AdminHomesMob} />
-            <ProtectedRoute exact path="/admin_employee" component={EmployeesMob} />
-          </FetchUser>
-          <Route component={NomatchMob} />
-      </Switch> */}
-    //   </>
-    //   );
-    // } else {
+      {menuLoaded === true ? <Modal toggleModal={this.toggleModal} /> : <></>} */}
+      {/* <Switch> */}
+      <Route exact path="/" component={LandingMob} />
+      <Route exact path='/staff' component={Staff} />
+          {/* <Route exact path="/login" component={LoginMob} /> */}
+          {/* <Route exact path="/register" component={RegisterMob} /> */}
+          {/* <Route exact path="/calendar" component={MyCalendarMob} /> */}
+          {/* <Route exact path='/about' component={AboutMob} /> */}
+          {/* <Route exact path='/policy' component={PolicyFinancialMob} /> */}
+          {/* <Route exact path='/expeditions' component={ExpeditionsMob} /> */}
+          {/* <Route exact path='/contact' component={ContactMob} /> */}
+          {/* <Route exact path='/staff' component={StaffMob} /> */}
+          {/* <Route exact path='/orphanages' component={OrphanagesMob} /> */}
+          {/* <Route exact path='/drop_in_centers' component={DropInCentersMob} /> */}
+          {/* <Route exact path='/orphanages/:id' component={ShowOrphanagesMob} /> */}
+          {/* <Route exact path='/centers/:id' component={ShowCentersMob} /> */}
+          {/* <Route exact path='/privacy' component={ PrivacyMob } /> */}
+          {/* <Route exact path='/proven_souls' component={ ProvenSoulsPageMob } /> */}
+          {/* <FetchUser> */}
+            {/* <ProtectedRoute exact path="/admin" component={AdminMob} /> */}
+            {/* <ProtectedRoute exact path="/datastats" component={StatsMob} /> */}
+            {/* <ProtectedRoute exact path="/admin_homes" component={AdminHomesMob} /> */}
+            {/* <ProtectedRoute exact path="/admin_employee" component={EmployeesMob} /> */}
+          {/* </FetchUser> */}
+          {/* <Route component={NomatchMob} /> */}
+      {/* </Switch> */}
+      </>
+      );
+    } else {
     return (
     <>
       <Navbar />
@@ -118,7 +124,7 @@ class App extends Component {
       </>
      
     )
-    // }
+    }
   }
 };
 
