@@ -1,6 +1,10 @@
-@media (max-width: 600px) {
 
 
+* {
+  padding: 0;
+  margin: 0;
+  
+}
 
 .hero-pic1-mob {
   background-image: url('../../../../assets/Images/GenhuHeroImage.bmp');
@@ -34,7 +38,7 @@
   }
 
   .title-car-mob.title-car-mob {
-    font-size: 4em;
+    font-size: 3em;
     
   }
   
@@ -70,4 +74,4 @@
   }
   
 
-  }
+

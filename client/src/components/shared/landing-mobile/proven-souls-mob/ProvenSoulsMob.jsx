@@ -1,11 +1,13 @@
 import React from 'react';
 import './ProvenSoulsMob.css';
 import { NavLink } from 'react-router-dom';
+import { Fade } from "react-reveal";
 
 const ProvenSoulsMob = () => {
   return (
   <>
     <div className='ps-container-mob'>
+      <Fade duration={2000}>
       <div className='ps-title-mob'>Proven Souls. Proven Results.</div>
       <div className='ps-para-mob'>Our oldest aged-out kids have flourished off the streets. 
         They are productive members of Peruvian, Bolivian, and Colombian society. 
@@ -15,6 +17,7 @@ const ProvenSoulsMob = () => {
             <NavLink to='/proven_souls'>Discover More</NavLink>
           </button>
         </div>
+        </Fade>
     </div>
   </>
   )

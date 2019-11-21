@@ -17,11 +17,11 @@ const Landing = () => {
     <div>
      <LandingCarousel />
      <ProvenSouls />
-      <Stats/>
-      <AboutLanding />
-      <AboutCarousel />
-    <ThreeStages />
-    <Footer/>
+     <Stats/>
+     <AboutLanding />
+     <AboutCarousel />
+     <ThreeStages />
+     <Footer/>
     </div>
   )
 }

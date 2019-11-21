@@ -24,6 +24,7 @@ const LandingCarousel = () => {
               <Button>Learn More</Button>
               </Link>
           </div>
+          
         </div>
       </Carousel.Item>
       <Carousel.Item className='hero-pic2-mob'>
