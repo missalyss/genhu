@@ -117,7 +117,6 @@ h1 {
 
 
 /* --------------- NAV ---------------- */
-
 .main-nav {
   display:-webkit-flex;
   display: flex;
@@ -203,6 +202,7 @@ h1 {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 5000;
   font-size: 0.8vw;
+  padding: 10px;
 }
 
 .dropdown-content a {
@@ -210,6 +210,7 @@ h1 {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+
 }
 
 .dropdown-content a:hover {
@@ -233,5 +234,4 @@ li {
     height: 100vh;
     padding-bottom: 50em;
   }
-
 

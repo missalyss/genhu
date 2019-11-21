@@ -1,5 +1,35 @@
 /* --------------- FOOTER ---------------- */
+.footer-container{
+  margin: 0 auto;
+  width: 100vw;
+  padding: 4em;
+  box-shadow: 0px 0px 20px 0px rgba(214, 213, 213, 0.3);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 
+.mission {
+  line-height: 36px;
+}
+
+.column {
+  width: 100%;
+}
+
+.header {
+  font-size: 20px;
+}
+
+.NavLink {
+  color: black;
+}
+.NavLink:hover {
+  color: rgb(128, 126, 126);
+  text-decoration: none;
+}
+
+@media screen and (min-width:800px) {
 .footer-container{
   margin: 0 auto;
   width: 100vw;
@@ -12,6 +42,8 @@
   float: left;
   width: 25%;
   padding: 2em;
+  margin-right: 0 auto;
+  flex-direction: row;
   /* outline: solid;
   outline-color: red; */
 }
@@ -28,14 +60,15 @@
 }
 
 .header {
-  font-size: small;
+  font-size: 1.3em;
 }
 
 .NavLink {
   color: black;
 }
 .NavLink:hover {
-  color: #5B5B5B;
+  color: rgb(128, 126, 126);
   text-decoration: none;
+}
 }
 
