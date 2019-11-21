@@ -4,9 +4,11 @@ import Footer from '../shared/Footer';
 import { Link } from 'react-router-dom';
 import './Staff.css';
 import StaffModal from './StaffModal';
-import StaffShow from './StaffShow';
-import DirectorShow from './DirectorShow';
-import VolunteerShow from './VolunteerShow';
+// import StaffShow from './StaffShow';
+// import DirectorShow from './DirectorShow';
+// import VolunteerShow from './VolunteerShow';
+import EmployeeShow from './EmployeeShow';
+
 
 class Staff extends React.Component {
   
@@ -38,47 +40,50 @@ class Staff extends React.Component {
     this.setState({ toggleModal: !toggleModal });
   };
 
-  renderStaff() {
+  renderEmployee() {
 
-    const { staff } = this.state;
+    const { staff, volunteers, directors } = this.state;
     return (
-      <div className = 'staff-container'>
+      <div>
+      <div className='bump_nav'>
+        <div className='main_headers'>
+          <h1>Directors</h1>
+        </div>
+        <div className='staff-container'>
+        { directors.map(d => (
+          <EmployeeShow
+            key = { d.id } 
+            {...d}
+          />
+        ))}
+        </div>
+      </div>
+      <div>
+        <div className='main_headers'>
+          <h1>Volunteers</h1>
+        </div>
+        <div className='staff-container'>
+        { volunteers.map(v => (
+          <EmployeeShow
+            key = { v.id } 
+            {...v}
+          />
+        ))}
+        </div>
+      </div>
+      <div>
+      <div className='main_headers'>
+          <h1>Staff</h1>
+        </div>
+        <div className='staff-container'>
         { staff.map(s => (
-          <StaffShow
+          <EmployeeShow
             key = { s.id } 
             {...s}
           />
         ))}
+        </div>
       </div>
-        );
-
-  }
-  renderDirectors() {
-
-    const { directors } = this.state;
-    return (
-      <div className = 'staff-container'>
-        { directors.map(d => (
-          <DirectorShow
-          key = { d.id }
-          {...d}
-          />
-        ))}
-      </div>
-        );
-
-  }
-  renderVolunteers() {
-
-    const { volunteers } = this.state;
-    return (
-      <div className = 'staff-container'>
-        { volunteers.map(v => (
-          <VolunteerShow
-          key = { v.id }
-          {...v}
-          />
-        ))}
       </div>
         );
 
@@ -91,20 +96,9 @@ class Staff extends React.Component {
         <div>
           <StaffModal />
         </div>
-        <br /><br /><br /><br />
-        <div id='directors'>
-          <h1>Directors</h1>
-          {this.renderDirectors()}
-        </div>
-        <div id='volunteers'>
-        <h1>Volunteers</h1>
-        {this.renderVolunteers()}
-        </div>
-        <br/>
-        <div id='staff'>
-          <h1>Developers</h1>
-          {this.renderStaff()}
-        </div>
+        <div>
+          {this.renderEmployee()}
+          </div>
         <br/>
       <Footer/>
       </div>

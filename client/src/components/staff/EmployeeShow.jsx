@@ -1,21 +1,22 @@
 import React, { useState } from 'react';
 import StaffModal from './StaffModal';
+const defaultImage = 'http://www.tolmayenterprises.com/images/Person.png';
 
-const VolunteerShow = ({ first_name, last_name, title, id, bio, email, phone, other, role, image }) => {
+const EmployeeShow = ({ first_name, last_name, title, id, bio, email, phone, other, role, image }) => {
 
   const [ showModal, setShowModal ] = useState( false )
 
-  const toggleShow = () => {
-    setShowModal(!showModal)
-  }
+  const toggleShow = () => { setShowModal(!showModal) }
 
   return(
-
+<>
     <div>
-        <div className= 'staff-box' onClick = { toggleShow } style={{backgroundImage: `url(${image})`, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", borderRadius: "3px"}} >
+        <div className= 'staff-box' onClick = { toggleShow } style={{backgroundImage: `url(${image || defaultImage})`, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", borderRadius: "3px"}}>
           <div className='staff-name'><h3>{first_name} {last_name}</h3></div>
           <div className='staff-title'><h4>{title}</h4></div>
         </div>
+      </div>
+   
         {showModal ?
           <StaffModal 
           firstName={first_name} 
@@ -28,8 +29,8 @@ const VolunteerShow = ({ first_name, last_name, title, id, bio, email, phone, ot
           onHide={ toggleShow } 
           toggleShow = { toggleShow }/> : <div> </div>
         }
-    </div>
+        </>
   )
 }
 
-export default VolunteerShow;
+export default EmployeeShow;
