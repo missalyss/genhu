@@ -38,8 +38,6 @@ Beginning in 2017, we are launching an education fund for the full time resident
         </div>
         </div>
       </div>
-    
-      <Footer />
     </div>
     
     

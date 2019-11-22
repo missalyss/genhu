@@ -78,7 +78,6 @@ Download the Expedition Application</p>
           </div>
         </div>
       </div>
-      <Footer/>
       </div>
 )
   

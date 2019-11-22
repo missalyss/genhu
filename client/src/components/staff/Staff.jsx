@@ -100,7 +100,6 @@ class Staff extends React.Component {
           {this.renderEmployee()}
           </div>
         <br/>
-      <Footer/>
       </div>
     )
   }

@@ -26,7 +26,7 @@ import Employees from './components/admin/employees/Employees'
 import { HashLink as Link } from 'react-router-hash-link';
 import Privacy from './components/policyandfinancial/Privacy';
 import ProvenSoulsPage from './components/shared/ProvenSoulsPage';
-
+import Footer from './components/shared/Footer';
 // Mobile Page
 
 import LandingMob from './components/shared/landing-mobile/LandingMob';
@@ -122,6 +122,7 @@ class App extends Component {
           </FetchUser>
           <Route component={Nomatch} />
         </Switch>
+        <Footer/>
       </>
      
     )

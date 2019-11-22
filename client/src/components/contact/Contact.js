@@ -51,8 +51,6 @@ class Contact extends Component {
         </form>
       </div>
       </div>
-
-      <Footer />
       </>
       
   
