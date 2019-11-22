@@ -1,15 +1,15 @@
 import React from 'react';
 import "./FooterMob.css"
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 
 const FooterMob = () => {
   return(
     <div class='footer-container-mob'>
-      <div class="row">
-        <div class="column">
+      <div class="row-mob">
+        <div class="column-mob">
           
-          <h2 class= 'header'>OUR MISSION</h2>
+          <h2 class= 'header-mob'>OUR MISSION</h2>
           <span className="footer-underline"></span>
           <p>Generations Humanitarian is committed to transform street children toward an abundance of health,
              hope, and loving homes—thereby breaking the cycle of scarcity for generations to come. 
@@ -20,9 +20,9 @@ const FooterMob = () => {
           <br/>   
             
         </div>
-        <div class="column">
-        <NavLink to='/expeditions' className='NavLink'>
-          <h2 class= 'header'>GET INVOLVED</h2>
+        <div class="column-mob">
+        <NavLink to='/expeditions' className='NavLink-mob'>
+          <h2 class= 'header-mob'>GET INVOLVED</h2>
           <span className="footer-underline"></span>
           <p>Go on an expedition</p>
           <p>Gift Levels:</p>
@@ -32,20 +32,15 @@ const FooterMob = () => {
           <p>Volunteer and Fundraise</p>
           </NavLink>
         </div>
-        <div class="column">
-          <h2 class= 'header'>LEGAL STUFF</h2>
+        <div class="column-mob">
+          <h2 class= 'header-mob'>LEGAL STUFF</h2>
           <span className="footer-underline"></span>
-          <NavLink to='/policy' className='NavLink'><p>Policy and Financial</p></NavLink>
-          <NavLink to='/privacy' className='NavLink'><p>Privacy</p></NavLink>
+          <NavLink to='/policy' className='NavLink-mob'><p>Policy and Financial</p></NavLink>
+          <NavLink to='/privacy' className='NavLink-mob'><p>Privacy</p></NavLink>
         </div>
         <div class="column">
-          <h2 class= 'header'>CONTACT US</h2>
-          <span className="footer-underline"></span>
-          <p>2607 Casto Lane,</p>
-          <p>Salt Lake City, Utah 84117</p>
-          <p>Phone: +1 801-859-1033</p>
-          <p>E-mail: van@genhu.org</p>
-          <p>Website: www.genhu.org</p>
+          <Link to='/contact' ><a className= 'header'>CONTACT US</a></Link>
+        
         </div>
         </div>
     </div>

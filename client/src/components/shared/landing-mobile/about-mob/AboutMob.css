@@ -1,16 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen|Raleway&display=swap');
+@font-face {
+  src: url('https://fonts.googleapis.com/css?family=Oxygen|Raleway&display=swap');
+  /* TITle */
+  font-family: 'Oxygen', sans-serif;
+  /* Text */
+  font-family: 'Raleway', sans-serif;
+}
+
+
 .about-container-mob {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 2em;
-  border: 3px green solid
+  /* border: 3px green solid */
+}
+
+.center-logo {
+  display: flex;
+  justify-content: center;
 }
 
 .about-logo-mob {
   background-size: cover;
   background-position: center;
-  height: 45vh;
-  width: 80%;
+  height: 35vh;
+  width: 68%;
   /* padding-left: 6em; */
   /* border: 1px solid red */
 }
@@ -24,32 +39,42 @@
 }
 
 .about-title-mob {
-  font-size: 50px;
-  padding-top: 2em;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 2.7em;
+  padding-top: 1em;
   padding-bottom: 1em;
-  padding-left: .8em;
+  /* padding-left: .8em; */
   text-align: center;
 }
 
 .mission-title-mob {
+  font-family: 'Oxygen', sans-serif;
   color: #3C7473;
-  font-size: 35px;
+  font-size: 2.3em;
   font-weight: 500;
+  text-align: center;
   /* padding-left: 1.8em; */
+}
+
+.line-center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .mission-line-mob {
   color: #3C7473;
   font-size: 45px;
   font-weight: 400;
-  padding-left: .8em;
   line-height: 0;
   padding-bottom: .9em;
 }
 
 .mission-paragraph-mob {
-  padding-top: .3em;
-  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  /* padding-top: .3em; */
+  padding: .6em .75em;
+  font-size: 1.25em;
   line-height: 2;
   
 }
@@ -59,20 +84,21 @@
 .convert-container-mob {
   display: flex;  
   flex-direction: column;
-  height: 200vh;
+  height: 107vh;
   margin-top: 1em;
   /* border: 2px solid purple; */
 }
 
 .converted-col-mob {
-  width: 85%;
+  width: 100%;
 }
 
 .converted-title-mob {
   color: #3C7473;
-  font-size: 35px;
+  font-size: 2.3em;
   font-weight: 500;
   padding-left: 0;
+  text-align: center;
 }
 
 .converted-line-mob {
@@ -80,25 +106,27 @@
   font-size: 45px;
   font-weight: 400;
   line-height: 0;
+  align-items: center;
 }
 
 .converted-paragraph-mob {
-  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+
+  font-size: 1.25em;
   line-height: 2;
 }
 
+
+/* ---------- Carousel -------------- */
+
 .carousel-container-mob {
-  width: 85%;
+  width: 100%;
   height: 100%;
-  padding-top: 2em;
-  padding-right: 7em;
-  padding-left: 4em;
-  padding-bottom: 1em;
   /* border: 2px solid #ddd; */
   /* border: 2px solid aqua; */
 }
 
-.carousel-animation:hover {
+.carousel-animation-mob:hover {
   padding: 1em;
   border: 2px solid #ddd;
     -webkit-transform: scale(1.04);

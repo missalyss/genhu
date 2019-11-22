@@ -5,6 +5,7 @@ import Logo from '../../../../assets/Images/LogoSymbol.png';
 import PicOne from '../../../../assets/Images/ablanding1.jpeg';
 import PicTwo from '../../../../assets/Images/ablanding2.jpeg';
 import PicThree from '../../../../assets/Images/ablanding3.jpeg';
+import Fade from 'react-reveal';
 
 
 
@@ -12,11 +13,16 @@ const AboutMob = () => {
 
   return (
     <div className="about-container-mob" id='about-mob'>
-      <img src={Logo} className='about-logo-mob'/>
+      <Fade duration={2000} >
+      <div className="center-logo">
+        <img src={Logo} className='about-logo-mob'/>
+      </div>
       <div className='learn-section-mob'>
       <div className="about-title-mob">Learn More About Generation Humanitarian</div>
       <div className="mission-title-mob">OUR MISSION</div>
-      <div className="mission-line-mob">_________</div>
+      <div className="line-center">
+          <div className="mission-line-mob">_________</div>
+        </div>
         <div className="mission-paragraph-mob">
         Generations Humanitarian is committed to transformingstreet children
         toward an abundance of health, hope, and lovinghomes—thereby breaking
@@ -25,12 +31,15 @@ const AboutMob = () => {
         development, and individual nurturing in a home environment.
       </div>
       </div>
+      </Fade>
     <div className="convert-container-mob">
+      <Fade duration={2000}>
       <div className="converted-col-mob">
         <div className="converted-title-mob">BECOME CONVERTED</div>
-        <div className="mission-line-mob">_________</div>
-        <span className="converted-line-mob"></span>
-        <div className="converted-paragraph-mob">
+        <div className="line-center">
+          <div className="mission-line-mob">_________</div>
+        </div>
+        <div className="mission-paragraph-mob">
           Come with us to Peru or Colombia and know these children first hand.
           Strip away the materialism that surrounds us here in the USA and
           experience how these children view the world—their humility,
@@ -42,7 +51,8 @@ const AboutMob = () => {
           these.”
         </div>
     </div>
-
+    </Fade>
+    <Fade duration={2000}>
     <div className='carousel-container-mob'>
       <div className='carousel-animation-mob'>
         <Carousel  fade indicators={false} interval={2500}pauseOnHover={false} style={{width: '100%', height: '100%'}}>
@@ -58,6 +68,7 @@ const AboutMob = () => {
         </Carousel>
         </div>
       </div>
+    </Fade>
     </div>
     </div> 
   );

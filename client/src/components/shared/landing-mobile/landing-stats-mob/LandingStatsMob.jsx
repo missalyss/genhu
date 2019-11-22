@@ -1,6 +1,8 @@
 import React from "react";
 import axios from "axios";
 import './LandingStatsMob.css';
+import { Fade } from "react-reveal";
+
 
 class LandingStatsMob extends React.Component {
   state = { stats: [] };
@@ -23,8 +25,10 @@ class LandingStatsMob extends React.Component {
       <div className="stats-container-mob">
         {stats.map(stat => (
           <div className="la-single-stat-mob">
+            {/* <Fade> */}
             <div className="stat-value-mob">{stat.value}</div>
             <div className="stat-name-mob">{stat.name}</div>
+          {/* </Fade> */}
           </div>
         ))}
       </div>
@@ -35,17 +39,18 @@ class LandingStatsMob extends React.Component {
     return (
       <div class="stats-body-mob">
         <div class="statsHeader-mob">
+          <Fade duration={2000}>
           <h1 style={{ marginTop: "4rem", fontSize: '2em' }}>SUCCESS</h1>
           <div className="stats-line-mob"></div>
           <h1>Since 2008</h1> 
           <h1>You have cared</h1> 
           <h1>We did the math</h1>
-          <br />
+          </Fade>
          
           <div className="stats-container-mob">
-            
+            <Fade left>
               {this.renderStats()}
-            
+              </Fade>
           </div>
         </div>
       </div>
