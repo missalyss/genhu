@@ -35,7 +35,7 @@ const AboutMob = () => {
     <div className="convert-container-mob">
       <Fade duration={2000}>
       <div className="converted-col-mob">
-        <div className="converted-title-mob">BECOME CONVERTED</div>
+        <div className="mission-title-mob">BECOME CONVERTED</div>
         <div className="line-center">
           <div className="mission-line-mob">_________</div>
         </div>

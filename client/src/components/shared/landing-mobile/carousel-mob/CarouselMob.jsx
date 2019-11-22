@@ -19,7 +19,7 @@ const LandingCarousel = () => {
               {/* </Carousel.Caption> */}
               <br></br>
               <Link
-              smooth to='/#about'
+              smooth to='/#about-mob'
               >
               <Button>Learn More</Button>
               </Link>
@@ -31,17 +31,16 @@ const LandingCarousel = () => {
           <div className='hero-mob-align_row' >
             <div className='hero-mob-align_col' >
               {/* <Carousel.Caption> */}
-              <Title className='title-car-mob'>Come to South America in 2019</Title>
+              <Title className='title-car-mob'>Come to <br></br>South America <br></br> in 2019</Title>
               <br></br>
               <SubHeading className="subhead-car-mob">Contact us for a group's custom expedition</SubHeading>
               {/* </Carousel.Caption> */}
               <br></br>
-              <Link
-              smooth to='/#about'
-              >
-              <Button >Learn More</Button>
-              </Link>
-              
+                <Link
+                smooth to='/#about-mob'
+                >
+                <Button >Learn More</Button>
+                </Link>
           </div>
         </div>
       </Carousel.Item>
@@ -55,7 +54,7 @@ const LandingCarousel = () => {
               {/* </Carousel.Caption> */}
               <br></br>
               <Link
-              smooth to='/#about'
+              smooth to='/#about-mob'
               >
               <Button>Learn More</Button>
               </Link>
@@ -73,7 +72,7 @@ const LandingCarousel = () => {
               {/* </Carousel.Caption> */}
               <br></br>
               <Link
-              smooth to='/#about'
+              smooth to='/#about-mob'
               >
               <Button>Learn More</Button>
               </Link>

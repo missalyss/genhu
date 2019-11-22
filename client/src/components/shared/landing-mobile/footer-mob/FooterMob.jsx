@@ -16,14 +16,13 @@ const FooterMob = () => {
              This is done through broad research, novel development, strengthening nonprofit entities in development, 
              and individual nurturing in a home environment.</p>
 
-          <br/>
-          <br/>   
+ 
             
         </div>
         <div class="column-mob">
-        <NavLink to='/expeditions' className='NavLink-mob'>
           <h2 class= 'header-mob'>GET INVOLVED</h2>
           <span className="footer-underline"></span>
+        <NavLink to='/expeditions' className='NavLink-mob'>
           <p>Go on an expedition</p>
           <p>Gift Levels:</p>
           <p>Support Sponsor: $50-100 monthly</p>
@@ -38,8 +37,9 @@ const FooterMob = () => {
           <NavLink to='/policy' className='NavLink-mob'><p>Policy and Financial</p></NavLink>
           <NavLink to='/privacy' className='NavLink-mob'><p>Privacy</p></NavLink>
         </div>
-        <div class="column">
-          <Link to='/contact' ><a className= 'header'>CONTACT US</a></Link>
+        <div class="column-mob">
+          <Link to='/contact'><a>CONTACT US</a></Link>
+          <span className="footer-underline"></span>
         
         </div>
         </div>

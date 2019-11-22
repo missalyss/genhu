@@ -20,6 +20,24 @@
   outline-color: red; */
 }
 
+.column-mob a {
+  text-align: center;
+  text-decoration: none;
+  color: #3C7473;
+}
+.column-mob a:hover {
+  text-align: center;
+  text-decoration: none;
+  color: #3C7473;
+}
+
+.column-mob p {
+  line-height: 2;
+  color: #3C7473;
+}
+
+
+
 .row-mob:after {
   content: "";
   display: table;
@@ -47,7 +65,7 @@
   background-color: #3C7473;
   width: 6em;
   height: .5px;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
 .NavLink-mob {
