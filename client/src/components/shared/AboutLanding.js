@@ -12,7 +12,7 @@ const AboutLanding = () => {
 
   return (
     <div className="about-container" id='about'>
-      <img src={Logo} className='about-logo'/>
+      <img src={Logo} alt='Generation Humanitatian' className='about-logo'/>
       <div className='learn-section'>
       <div className="about-title">Learn More About Generation Humanitarian</div>
       <div className="mission-title">OUR MISSION</div>

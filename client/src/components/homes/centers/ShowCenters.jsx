@@ -122,7 +122,6 @@ class ShowCenters extends React.Component {
           </div>
         </div>
       </div>
-      <Footer />
       </>
       )
     }

@@ -8,6 +8,7 @@ import { Switch, Route, } from 'react-router-dom';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import MyCalendar from './components/calendar/MyCalendar';
 import Navbar from './components/shared/Navbar';
+import NavMobile from './components/shared/navbar-mobile/NavMobile';
 import About from './components/about/About';
 import PolicyFinancial from './components/policyandfinancial/PolicyFinancial';
 import Expeditions from './components/expeditions/Expeditions';
@@ -26,19 +27,28 @@ import Employees from './components/admin/employees/Employees'
 import { HashLink as Link } from 'react-router-hash-link';
 import Privacy from './components/policyandfinancial/Privacy';
 import ProvenSoulsPage from './components/shared/ProvenSoulsPage';
+import Footer from './components/shared/Footer';
 
 // ---------Mobile Pages --------------
 
-import LandingMob from './components/shared/landing-mobile/LandingMob';
 import ExpeditionsMob from './components/expeditions/mobile/ExpeditionsMob';
+
+import LandingMob from './components/shared/landing-mobile/LandingMob';
+import NavModal from './components/shared/navbar-mobile/NavModal';
 
 
 class App extends Component {
   state= { 
     pageLoaded: false, 
     width: window.innerWidth, 
-    menuLoaded: false
+    menuLoaded: false,
+    showNavModal: false,
   };
+
+  toggleNavModal = () => {
+    const { showNavModal } = this.state;
+    this.setState({ showNavModal: !showNavModal });
+  }
 
   toggleModal = () => {
     // const { menuLoaded } = this.state;
@@ -64,10 +74,16 @@ class App extends Component {
     if (isMobile) {
       return(
         <>
+        <NavMobile toggleNavModal={this.toggleNavModal} showNavModal={this.state.showNavModal} />
+        <NavModal
+          showNavModal={this.state.showNavModal}
+          toggleNavModal={this.toggleNavModal}
+        />
       {/* <NavMobile toggleModal={this.togglemodal} />
       {menuLoaded === true ? <Modal toggleModal={this.toggleModal} /> : <></>} */}
       {/* <Switch> */}
       <Route exact path="/" component={LandingMob} />
+      <Route exact path='/staff' component={Staff} />
           {/* <Route exact path="/login" component={LoginMob} /> */}
           {/* <Route exact path="/register" component={RegisterMob} /> */}
           {/* <Route exact path="/calendar" component={MyCalendarMob} /> */}
@@ -121,6 +137,7 @@ class App extends Component {
           </FetchUser>
           <Route component={Nomatch} />
         </Switch>
+        <Footer/>
       </>
      
     )

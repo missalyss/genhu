@@ -1,0 +1,42 @@
+.menu-mob-icon {
+  width: 30px;
+}
+
+.exit-icon {
+  width: 30px;
+  float: right;
+}
+  
+.modal-main .modal-button {
+  background-color: teal;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  /* padding: .25em; */
+  width: 100vw; 
+  border: none;
+  padding: 30px;
+}
+
+.mob-nav-item button {
+  color: white;
+}
+
+.mob-nav-item button:hover {
+  color: gray;
+}
+
+.modal-main {
+    background-color: teal;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 5000;
+}
+
+.facebook {
+  background-color: teal;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30px;
+}
+

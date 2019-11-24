@@ -161,10 +161,6 @@ const DropInCenters = () => (
             </ol>
         </div>
         </div>
-        
-         
-         
-      <Footer/>
       </>
 )
   

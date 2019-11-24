@@ -39,7 +39,6 @@ class Policy extends Component {
             <br />
             </div>
             </div>
-          <Footer/>
         </div>
  
     )
