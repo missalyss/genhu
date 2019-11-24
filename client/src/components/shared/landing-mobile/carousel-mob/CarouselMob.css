@@ -12,7 +12,7 @@
   background-size: cover;
   width: 100vw;
   height: 45em;
-  border: red, solid, 2px;
+  /* border: red, solid, 2px; */
   }
 
   .hero-pic2-mob {
@@ -45,15 +45,18 @@
   .subhead-car-mob {
     font-size: 1.5em;
     
-    
   }
+
+ 
   
   .hero-mob-align_col {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* width: 100%; */
+    width: 50em;
     height: 100%;
-    border: red, solid, 2px;
+    /* border: blue solid 2px; */
     
   }
   
@@ -64,14 +67,20 @@
     width: 100vw;
     height: 100%;
     text-align: center;
-    padding-left: 11em;
-    padding-right: 11em;
+    padding-left: 4em;
+    padding-right: 4em;
     padding-bottom: 0em;
     color: white;
     background-color: rgba(0, 0, 0, .3);
-    border: red, solid, 2px;
+    /* border: red solid 2px; */
     
   }
   
+  .carousel-btn-mob {
+    display: flex;
+    justify-content: flex-end;
+    height: 20%;
+    /* border: yellow 2px solid; */
+  }
 
 

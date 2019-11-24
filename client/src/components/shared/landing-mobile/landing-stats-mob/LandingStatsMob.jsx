@@ -24,12 +24,12 @@ class LandingStatsMob extends React.Component {
     return (
       <div className="stats-container-mob">
         {stats.map(stat => (
+          <Fade left>
           <div className="la-single-stat-mob">
-            {/* <Fade> */}
             <div className="stat-value-mob">{stat.value}</div>
             <div className="stat-name-mob">{stat.name}</div>
-          {/* </Fade> */}
           </div>
+        </Fade>
         ))}
       </div>
     );
@@ -48,9 +48,9 @@ class LandingStatsMob extends React.Component {
           </Fade>
          
           <div className="stats-container-mob">
-            <Fade left>
+            {/* <Fade left> */}
               {this.renderStats()}
-              </Fade>
+              {/* </Fade> */}
           </div>
         </div>
       </div>

@@ -13,9 +13,9 @@
 .stats-line-mob {
   opacity: 0.7;
   border: 1px solid white;
-  width: 18%;
+  width: 40%;
   margin: auto;
-  margin-top: 1%;
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 
