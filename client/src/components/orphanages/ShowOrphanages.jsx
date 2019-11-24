@@ -117,7 +117,6 @@ class ShowOrphanages extends React.Component {
         </div>
         </div>
       </div>
-      <Footer />
       </>
       )
     }
