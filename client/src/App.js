@@ -1,4 +1,4 @@
-import React, { Fragment, Component } from 'react';
+import React, { Component } from 'react';
 import Home from './components/shared/Landing';
 import Nomatch from './components/shared/Nomatch';
 import FetchUser from './components/auth/FetchUser';
@@ -24,7 +24,6 @@ import Stats from './components/admin/stats/Stats';
 import Staff from './components/staff/Staff';
 import AdminHomes from './components/admin/homes/AdminHomes';
 import Employees from './components/admin/employees/Employees'
-import { HashLink as Link } from 'react-router-hash-link';
 import Privacy from './components/policyandfinancial/Privacy';
 import ProvenSoulsPage from './components/shared/ProvenSoulsPage';
 import Footer from './components/shared/Footer';
@@ -71,16 +70,16 @@ class App extends Component {
     if (isMobile) {
       return(
         <>
-        <NavMobile toggleNavModal={this.toggleNavModal} showNavModal={this.state.showNavModal} />
-        <NavModal
-          showNavModal={this.state.showNavModal}
-          toggleNavModal={this.toggleNavModal}
-        />
-      {/* <NavMobile toggleModal={this.togglemodal} />
-      {menuLoaded === true ? <Modal toggleModal={this.toggleModal} /> : <></>} */}
-      {/* <Switch> */}
-      <Route exact path="/" component={LandingMob} />
-      <Route exact path='/staff' component={Staff} />
+          <NavMobile toggleNavModal={this.toggleNavModal} showNavModal={this.state.showNavModal} />
+          <NavModal
+            showNavModal={this.state.showNavModal}
+            toggleNavModal={this.toggleNavModal}
+          />
+        {/* <NavMobile toggleModal={this.togglemodal} />
+        {menuLoaded === true ? <Modal toggleModal={this.toggleModal} /> : <></>} */}
+        {/* <Switch> */}
+          <Route exact path="/" component={LandingMob} />
+          <Route exact path='/staff' component={Staff} />
           {/* <Route exact path="/login" component={LoginMob} /> */}
           {/* <Route exact path="/register" component={RegisterMob} /> */}
           {/* <Route exact path="/calendar" component={MyCalendarMob} /> */}
@@ -96,48 +95,47 @@ class App extends Component {
           {/* <Route exact path='/privacy' component={ PrivacyMob } /> */}
           {/* <Route exact path='/proven_souls' component={ ProvenSoulsPageMob } /> */}
           {/* <FetchUser> */}
-            {/* <ProtectedRoute exact path="/admin" component={AdminMob} /> */}
-            {/* <ProtectedRoute exact path="/datastats" component={StatsMob} /> */}
-            {/* <ProtectedRoute exact path="/admin_homes" component={AdminHomesMob} /> */}
-            {/* <ProtectedRoute exact path="/admin_employee" component={EmployeesMob} /> */}
+          {/* <ProtectedRoute exact path="/admin" component={AdminMob} /> */}
+          {/* <ProtectedRoute exact path="/datastats" component={StatsMob} /> */}
+          {/* <ProtectedRoute exact path="/admin_homes" component={AdminHomesMob} /> */}
+          {/* <ProtectedRoute exact path="/admin_employee" component={EmployeesMob} /> */}
           {/* </FetchUser> */}
           {/* <Route component={NomatchMob} /> */}
-      {/* </Switch> */}
-      </>
+          {/* </Switch> */}
+        </>
       );
     } else {
-    return (
-    <>
-      <Navbar />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/register" component={Register} />
-          <Route exact path="/calendar" component={MyCalendar} />
-          <Route exact path='/about' component={About} />
-          <Route exact path='/policy' component={PolicyFinancial} />
-          <Route exact path='/expeditions' component={Expeditions} />
-          {/* <Route exact path='/homes' component={Homes} /> */}
-          <Route exact path='/contact' component={Contact} />
-          <Route exact path='/staff' component={Staff} />
-          <Route exact path='/orphanages' component={Orphanages} />
-          <Route exact path='/drop_in_centers' component={DropInCenters} />
-          <Route exact path='/orphanages/:id' component={ShowOrphanages} />
-          <Route exact path='/centers/:id' component={ShowCenters} />
-          <Route exact path='/privacy' component={ Privacy } />
-          <Route exact path='/proven_souls' component={ ProvenSoulsPage } />
-          <FetchUser>
-            <ProtectedRoute exact path="/admin" component={Admin} />
-            <ProtectedRoute exact path="/datastats" component={Stats} />
-            <ProtectedRoute exact path="/admin_homes" component={AdminHomes} />
-            <ProtectedRoute exact path="/admin_employee" component={Employees} />
-          </FetchUser>
-          <Route component={Nomatch} />
-        </Switch>
-        <Footer/>
-      </>
-     
-    )
+      return (
+        <>
+          <Navbar />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/login" component={Login} />
+              <Route exact path="/register" component={Register} />
+              <Route exact path="/calendar" component={MyCalendar} />
+              <Route exact path='/about' component={About} />
+              <Route exact path='/policy' component={PolicyFinancial} />
+              <Route exact path='/expeditions' component={Expeditions} />
+      {/* <Route exact path='/homes' component={Homes} /> */}
+              <Route exact path='/contact' component={Contact} />
+              <Route exact path='/staff' component={Staff} />
+              <Route exact path='/orphanages' component={Orphanages} />
+              <Route exact path='/drop_in_centers' component={DropInCenters} />
+              <Route exact path='/orphanages/:id' component={ShowOrphanages} />
+              <Route exact path='/centers/:id' component={ShowCenters} />
+              <Route exact path='/privacy' component={ Privacy } />
+              <Route exact path='/proven_souls' component={ ProvenSoulsPage } />
+              <FetchUser>
+                <ProtectedRoute exact path="/admin" component={Admin} />
+                <ProtectedRoute exact path="/datastats" component={Stats} />
+                <ProtectedRoute exact path="/admin_homes" component={AdminHomes} />
+                <ProtectedRoute exact path="/admin_employee" component={Employees} />
+              </FetchUser>
+              <Route component={Nomatch} />
+            </Switch>
+            <Footer/>
+        </>
+      )
     }
   }
 };
