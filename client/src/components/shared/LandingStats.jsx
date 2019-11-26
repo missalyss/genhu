@@ -33,8 +33,8 @@ class LandingStats extends React.Component {
 
   render() {
     return (
-      <div class="stats-body">
-        <div class="statsHeader">
+      <div className="stats-body">
+        <div className="statsHeader">
           <h1 style={{ marginTop: "4rem", fontSize: '2em' }}>SUCCESS </h1>
           <div className="stats-line"></div>
           <h1>Since 2008. You have cared. We did the math.</h1>

@@ -37,8 +37,8 @@ class LandingStatsMob extends React.Component {
 
   render() {
     return (
-      <div class="stats-body-mob">
-        <div class="statsHeader-mob">
+      <div className="stats-body-mob">
+        <div className="statsHeader-mob">
           <Fade duration={2000}>
           <h1 style={{ marginTop: "4rem", fontSize: '2em' }}>SUCCESS</h1>
           <div className="stats-line-mob"></div>
