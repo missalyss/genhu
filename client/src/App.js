@@ -31,10 +31,15 @@ import Footer from './components/shared/Footer';
 
 // ---------Mobile Pages --------------
 
-import ExpeditionsMob from './components/expeditions/mobile/ExpeditionsMob';
-
 import LandingMob from './components/shared/landing-mobile/LandingMob';
 import NavModal from './components/shared/navbar-mobile/NavModal';
+
+import ExpeditionsMob from './components/expeditions/mobile/ExpeditionsMob';
+import HomesMob from './components/homes/homes-mobile/HomesMob';
+import ShowCentersMob from './components/homes/centers/mobile/ShowCenterMob';
+import ShowOrphanageMob from './components/orphanages/show-orph-mobile/ShowOrphanageMob';
+
+import FooterMob from './components/shared/landing-mobile/footer-mob/FooterMob';
 
 
 class App extends Component {
@@ -93,9 +98,9 @@ class App extends Component {
           {/* <Route exact path='/contact' component={ContactMob} /> */}
           {/* <Route exact path='/staff' component={StaffMob} /> */}
           {/* <Route exact path='/orphanages' component={OrphanagesMob} /> */}
-          {/* <Route exact path='/drop_in_centers' component={DropInCentersMob} /> */}
-          {/* <Route exact path='/orphanages/:id' component={ShowOrphanagesMob} /> */}
-          {/* <Route exact path='/centers/:id' component={ShowCentersMob} /> */}
+          <Route exact path='/homes' component={HomesMob} />
+          <Route exact path='/orphanages/:id' component={ShowOrphanageMob} />
+          <Route exact path='/centers/:id' component={ShowCentersMob} />
           {/* <Route exact path='/privacy' component={ PrivacyMob } /> */}
           {/* <Route exact path='/proven_souls' component={ ProvenSoulsPageMob } /> */}
           {/* <FetchUser> */}
@@ -106,6 +111,8 @@ class App extends Component {
           {/* </FetchUser> */}
           {/* <Route component={NomatchMob} /> */}
       {/* </Switch> */}
+        <FooterMob />
+
       </>
       );
     } else {

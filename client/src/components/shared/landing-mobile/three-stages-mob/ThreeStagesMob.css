@@ -38,6 +38,7 @@
   font-size: 3em;
   color: black !important;
   padding: .75em;
+  text-align: center;
 }
 
 .ts-mob {
@@ -61,6 +62,7 @@
 
 .content-mob h3 {
   font-size: 2.5em;
+  text-align: center;
 }
 
 .content-mob h4 {
@@ -170,19 +172,20 @@
 
   cursor: pointer;
   background: #D5C54A;
-  font-size: 1em;
+  font-size: 1.25em;
   border-radius: 3px;
   align-content: center;
   color: white;
-  font-size: 1.75em;
   border: 2px solid white;
   /* border: 2px solid white; */
   /* margin: 0 auto; */
-  margin: 1em 0em;
+  /* margin: 1em 0em; */
   /* padding: 0.5em 1em; */
-  width: 20rem;
+  /* width: 20rem; */
   transition: 0.5s all ease-out;
-  padding: .65em 1.30em;
+  /* padding: .65em 1.30em; */
+  padding: 0.70em 1em;
+  width: 11rem;
   /* margin-left: 0 auto; */
 
 }
