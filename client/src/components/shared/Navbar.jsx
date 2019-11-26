@@ -62,6 +62,9 @@ class Navbar extends React.Component {
         <NavLink to="/"><Image src={Logo} className='logo-image' alt='logo'/></NavLink>
       </div></ScrollToTop>
       <div className='right_nav'>
+        <div className='hide-me'>
+        <NavLink to="/" className='nav-item'>Home</NavLink>
+        </div>
         <NavLink to="/calendar" className='nav-item'>Calendar</NavLink>
         <div className='dropdown'>
         <NavLink to="/about" className='nav-item'>About Us</NavLink>

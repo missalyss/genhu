@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import styles from './NavStyles.css';
 import { Fade } from "react-reveal";
 import Exit from '../../../assets/Icons/Exit.svg';
-import Facebook from "../../../assets/Images/facebook.png";
+import Facebook from "../../../assets/Icons/facebook.svg";
 import { Image } from 'semantic-ui-react';
 
 const NavModal = ({ showNavModal, toggleNavModal }) => {
