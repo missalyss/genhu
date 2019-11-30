@@ -12,7 +12,6 @@ import NavMobile from './components/shared/navbar-mobile/NavMobile';
 import About from './components/about/About';
 import PolicyFinancial from './components/policyandfinancial/PolicyFinancial';
 import Expeditions from './components/expeditions/Expeditions';
-// import Homes from './components/homes/Homes';
 import Contact from './components/contact/Contact';
 import Orphanages from './components/orphanages/Orphanages';
 import DropInCenters from './components/DropInCenter/DropInCenter';
@@ -75,33 +74,8 @@ class App extends Component {
             showNavModal={this.state.showNavModal}
             toggleNavModal={this.toggleNavModal}
           />
-        {/* <NavMobile toggleModal={this.togglemodal} />
-        {menuLoaded === true ? <Modal toggleModal={this.toggleModal} /> : <></>} */}
-        {/* <Switch> */}
           <Route exact path="/" component={LandingMob} />
           <Route exact path='/staff' component={Staff} />
-          {/* <Route exact path="/login" component={LoginMob} /> */}
-          {/* <Route exact path="/register" component={RegisterMob} /> */}
-          {/* <Route exact path="/calendar" component={MyCalendarMob} /> */}
-          {/* <Route exact path='/about' component={AboutMob} /> */}
-          {/* <Route exact path='/policy' component={PolicyFinancialMob} /> */}
-          {/* <Route exact path='/expeditions' component={ExpeditionsMob} /> */}
-          {/* <Route exact path='/contact' component={ContactMob} /> */}
-          {/* <Route exact path='/staff' component={StaffMob} /> */}
-          {/* <Route exact path='/orphanages' component={OrphanagesMob} /> */}
-          {/* <Route exact path='/drop_in_centers' component={DropInCentersMob} /> */}
-          {/* <Route exact path='/orphanages/:id' component={ShowOrphanagesMob} /> */}
-          {/* <Route exact path='/centers/:id' component={ShowCentersMob} /> */}
-          {/* <Route exact path='/privacy' component={ PrivacyMob } /> */}
-          {/* <Route exact path='/proven_souls' component={ ProvenSoulsPageMob } /> */}
-          {/* <FetchUser> */}
-          {/* <ProtectedRoute exact path="/admin" component={AdminMob} /> */}
-          {/* <ProtectedRoute exact path="/datastats" component={StatsMob} /> */}
-          {/* <ProtectedRoute exact path="/admin_homes" component={AdminHomesMob} /> */}
-          {/* <ProtectedRoute exact path="/admin_employee" component={EmployeesMob} /> */}
-          {/* </FetchUser> */}
-          {/* <Route component={NomatchMob} /> */}
-          {/* </Switch> */}
         </>
       );
     } else {
@@ -116,7 +90,6 @@ class App extends Component {
               <Route exact path='/about' component={About} />
               <Route exact path='/policy' component={PolicyFinancial} />
               <Route exact path='/expeditions' component={Expeditions} />
-      {/* <Route exact path='/homes' component={Homes} /> */}
               <Route exact path='/contact' component={Contact} />
               <Route exact path='/staff' component={Staff} />
               <Route exact path='/orphanages' component={Orphanages} />
