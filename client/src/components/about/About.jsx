@@ -11,6 +11,7 @@ class About extends Component {
       <div class='aboutUs-container'>
         <div class='au-container-top'>
           <h1>About Us</h1>
+          <br />
           <p>Genhu is a team of loving, charitable, 
             educated, and dedicated men and women who care about changing the lives of others. 
             Some volunteer their time, others are paid.</p>

@@ -21,7 +21,6 @@ const Landing = () => {
      <AboutLanding />
      <AboutCarousel />
      <ThreeStages />
-     <Footer/>
     </div>
   )
 }

@@ -27,9 +27,9 @@ import Privacy from './components/policyandfinancial/Privacy';
 import ProvenSoulsPage from './components/shared/ProvenSoulsPage';
 import Footer from './components/shared/Footer';
 // Mobile Page
-
 import LandingMob from './components/shared/landing-mobile/LandingMob';
 import NavModal from './components/shared/navbar-mobile/NavModal';
+import AboutMobile from './components/about/AboutMobile';
 
 
 class App extends Component {
@@ -76,6 +76,7 @@ class App extends Component {
           />
           <Route exact path="/" component={LandingMob} />
           <Route exact path='/staff' component={Staff} />
+          <Route exact path='/about' component={AboutMobile} />
         </>
       );
     } else {
