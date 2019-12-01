@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../shared/Footer';
 import './Expeditions.css';
+import {Fade} from 'react-reveal';
 
 const Expeditions = () => (
       <div >
@@ -27,6 +28,7 @@ const Expeditions = () => (
     </div>
       </div>
       <div className='mid-exp-container'>
+        <Fade duration={2000}>
         <div className='mid-exp-wrapper'>
           <div className='mid-exp-content'>
             <h1>We Invite You to Join Us In 2017-18</h1>
@@ -39,6 +41,8 @@ const Expeditions = () => (
            </div>
           </div>
         </div>
+        </Fade>
+        <Fade duration={2000}>
         <div className='mid-exp-wrapper'>
           <div className='exp-background-img2'>
             <div className='ex-color-opacity2'>
@@ -50,7 +54,9 @@ const Expeditions = () => (
              <p>August, 2018 marks the 20th year that Van Evans and Jaime Figueroa have taken humanitarian expeditions to Peru. Our first expedition was to Patacancha and the Sacred Valley of the Incas. We will return to the remote village of Patacancha (13,000 feet) after 20 years to celebrate with them their development. We expect a number of repeats to go on this trip, so a visit to Machu Picchu is optional. After doing our service for the homes and greenhouses, we will fly back to Lima and then take a bus down the coast to the Atacama desert and enjoy two days of touring the desert. We will visit the mysterious Nazca Lines as well as the Ballesta Islands (Peru’s Galapagos Islands) and the Oasis of Huacachina. Anyone who has been on an expedition with us before can return with a $100 discount.</p>
           </div>
         </div>
+        </Fade>
       </div>
+        <Fade duration={2000}>
       <div className='purple-container'>
         <div className='purple-words'>
           <h1>A Priceless Experience! Sign Up Today!</h1>
@@ -77,7 +83,9 @@ Download the Expedition Application</p>
           <div className='purple-img6'></div>
           </div>
         </div>
+        
       </div>
+        </Fade>
       </div>
 )
   

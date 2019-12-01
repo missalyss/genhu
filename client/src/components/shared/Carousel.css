@@ -45,6 +45,7 @@
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  padding-bottom: 3em;
   
 }
 
@@ -69,4 +70,25 @@
 
 .carousel-txt {
   text-shadow: 1px 1px black;
+}
+
+/* .car-btn {
+} */
+
+@media (max-width: 795px) {
+  .subhead-car-med {
+    font-size: 1.5em;
+    /* padding-top: 3em; */
+    /* border: red 1px solid; */
+    
+  }
+  .title-car-med {
+    /* height: auto; */
+    font-size: 4em;
+    display: inline-block;
+    height: 50%;
+    /* border: red 1px solid; */
+    /* overflow: hidden; */
+
+  }
 }

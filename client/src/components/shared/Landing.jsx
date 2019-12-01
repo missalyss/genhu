@@ -9,19 +9,21 @@ import Stats from './LandingStats'
 import ProvenSouls from '../shared/Proved-souls';
 import ThreeStages from '../shared/ThreeStages';
 import './Main.css';
-import Footer from '../shared/Footer';
+import {Fade} from 'react-reveal';
 
 
 const Landing = () => {
   return(
     <div>
+      
      <LandingCarousel />
+     <Fade duration={2000}>
      <ProvenSouls />
      <Stats/>
      <AboutLanding />
      <AboutCarousel />
      <ThreeStages />
-     <Footer/>
+     </Fade>
     </div>
   )
 }

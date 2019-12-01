@@ -113,6 +113,8 @@
   background-image: url('../../assets/carousel-pic3.jpg');
   background-position: center;
   background-size: cover;
+  margin-bottom: 1em;
+
 }
 
 .ts-background-image:hover {
@@ -130,6 +132,8 @@
   background-image: url('../../assets/carousel-pic1.jpg');
   background-position: center;
   background-size: cover;
+  margin-bottom: 1em;
+
 }
 
 .ts-background-image2:hover {
@@ -146,6 +150,8 @@
   background-image: url('../../assets/carousel-pic4.jpg');
   background-position: center;
   background-size: cover;
+  margin-bottom: 1em;
+
 }
 .ts-background-image3:hover {
   transform: scale(1.02);
@@ -229,4 +235,18 @@
 
 .NavLink:hover {
   color: white;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    height: 38em;
+    width: 23em;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    text-align: center;
+  }
 }
