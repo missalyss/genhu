@@ -13,7 +13,7 @@ const ThreeStages = () => {
       </div> */}
 
       <div className='ts-content-wrapper'>
-        <h3 className="ts-heading">Three stages of Street Children Development</h3>
+        <h3 className="ts-heading">Three Stages of Street Children Development</h3>
         <div className='ts'>
           <div className='ts-background-image'>
             <div className='ts-color-opacity'>
@@ -47,7 +47,7 @@ const ThreeStages = () => {
           </div>
           <div className='ts-long-box'>
             <div className='ts-flex'>
-              <h2>Help support Generations Humanitarian and our Causes</h2>
+              <h2>Help Support Generations Humanitarian and Our Causes</h2>
               <div className='ts-btn-row'>
               <button className='ts-button'><NavLink style={{textDecoration:'none'}} to='/expeditions'>Discover More</NavLink></button>
               </div>

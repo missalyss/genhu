@@ -3,6 +3,7 @@ import axios from 'axios';
 import Footer from '../shared/Footer';
 import CountUp from 'react-countup';
 import './ShowOrphanages.css';
+import {Fade} from 'react-reveal';
 
 
 class ShowOrphanages extends React.Component {
@@ -102,21 +103,23 @@ class ShowOrphanages extends React.Component {
         </div>
 
       </div>
-      <div className='cntr-content-home'>
-        <div className='cntr-col'>
-          <div style={{height: '25%'}}>
-          <h1>About {orphanage.name} </h1>
+      <Fade duration={2000}>
+        <div className='cntr-content-home'>
+          <div className='cntr-col'>
+            <div style={{height: '25%'}}>
+            <h1>About {orphanage.name} </h1>
+            </div>
+          <div className="about-info">
+            <p dangerouslySetInnerHTML={{__html: orphanage.description}}></p>
           </div>
-        <div style={{height: '100%', border: '1px solid green'}}>
-          <p dangerouslySetInnerHTML={{__html: orphanage.description}}></p>
+          </div>
+          <div className='cntr-col-img'>
+          <div>
+            <h1>Image Coming Soon</h1>
+          </div>
+          </div>
         </div>
-        </div>
-        <div className='cntr-col'>
-        <div>
-          <h1>Image Coming Soon</h1>
-        </div>
-        </div>
-      </div>
+      </Fade>
       </>
       )
     }

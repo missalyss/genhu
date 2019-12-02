@@ -13,9 +13,9 @@ const LandingCarousel = () => {
           <div className='hero-align_row' >
             <div className='hero-align_col' >
               {/* <Carousel.Caption> */}
-              <Title>Welcome to Generations Humanitarian</Title>
+              <Title className='title-car-med'>Welcome to <br></br> Generations Humanitarian</Title>
               <br></br>
-              <SubHeading>We build and operate orphanages and drop-in centers for street children in Latin America</SubHeading>
+              <SubHeading className="subhead-car-med">We build and operate orphanages and drop-in centers for street children in Latin America</SubHeading>
               {/* </Carousel.Caption> */}
               <br></br>
               <Link
@@ -30,9 +30,9 @@ const LandingCarousel = () => {
           <div className='hero-align_row' >
             <div className='hero-align_col' >
               {/* <Carousel.Caption> */}
-              <Title>Come to South America in 2019</Title>
+              <Title className='title-car-med'>Come to <br></br>South America <br></br>in 2019</Title>
               <br></br>
-              <SubHeading>Contact us for a group's custom expedition</SubHeading>
+              <SubHeading className="subhead-car-med">Contact us for a group's custom expedition</SubHeading>
               {/* </Carousel.Caption> */}
               <br></br>
               <Link
@@ -48,9 +48,9 @@ const LandingCarousel = () => {
           <div className='hero-align_row' >
             <div className='hero-align_col' >
               {/* <Carousel.Caption> */}
-              <Title>Refuge Crisis</Title>
+              <Title className='title-car-med'>Refuge Crisis</Title>
               <br></br>
-              <SubHeading>Help Venezuela Refugee Children</SubHeading>
+              <SubHeading className="subhead-car-med">Help Venezuela Refugee Children</SubHeading>
               {/* </Carousel.Caption> */}
               <br></br>
               <Link
@@ -65,9 +65,9 @@ const LandingCarousel = () => {
           <div className='hero-align_row' >
             <div className='hero-align_col'>
               {/* <Carousel.Caption> */}
-              <Title>Greenhouse & Hydroponics Project</Title>
+              <Title className='title-car-med'>Greenhouse & Hydroponics Project</Title>
               <br></br>
-              <SubHeading>We are creating self-sustaining, scalable, water efficient, organice greenhouses 
+              <SubHeading className="subhead-car-med">We are creating self-sustaining, scalable, water efficient, organice greenhouses 
                 that teach children a work ethic, give them price in their produce, and funds their home.</SubHeading>
               {/* </Carousel.Caption> */}
               <br></br>

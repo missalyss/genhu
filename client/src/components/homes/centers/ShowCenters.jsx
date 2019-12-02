@@ -3,6 +3,7 @@ import axios from 'axios';
 import CountUp from 'react-countup';
 import Footer from '../../shared/Footer';
 import './ShowCenters.css';
+import {Fade} from 'react-reveal';
 
 
 class ShowCenters extends React.Component {
@@ -92,7 +93,7 @@ class ShowCenters extends React.Component {
           <div className='centers-single-stat-col'>
             <div className='homes-stat-font'>
               { this.renderCountUpOrphans() }% </div>
-            <p className='homes-stat-title'>Orhpans</p>
+            <p className='homes-stat-title'>Orhpans <br></br></p>
           </div>
         </div>
         <div className='centers-single-stat'>
@@ -103,25 +104,25 @@ class ShowCenters extends React.Component {
         </div>
 
       </div>
+      <Fade duration={2000}>
       <div className='cntr-content-home'>
         <div className='cntr-col'>
           <div>
           <div style={{height: '25%'}}>
           <h1>About {center.name} </h1>
           </div>
-        <div style={{height: '10%', border: '1px solid green'}}>
+        <div className='about-info'>
           <p dangerouslySetInnerHTML={{__html: center.description}}></p>
         </div>
-            <p>Coming Soon...</p>
-            <h4>Stay Tuned!</h4>
           </div>
         </div>
-        <div className='cntr-col'>
+        <div className='cntr-col-img'>
           <div>
             <h1>Image Coming Soon</h1>
           </div>
         </div>
       </div>
+      </Fade>
       </>
       )
     }
