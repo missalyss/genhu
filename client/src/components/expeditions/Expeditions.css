@@ -46,7 +46,7 @@
 .exp {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
   /* border: 2px blue solid; */
 }
@@ -96,6 +96,16 @@
   background-position: center;
   background-size: cover;
   display: inline-block;
+}
+
+
+
+/* ----------- Hero Resonsive Middle ----------- */
+
+@media (max-width: 125px) {
+
+
+
 }
 
                   /* ----------------MID -----------------*/
