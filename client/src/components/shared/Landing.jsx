@@ -15,15 +15,15 @@ import {Fade} from 'react-reveal';
 const Landing = () => {
   return(
     <div>
-      
-     <LandingCarousel />
-     <Fade duration={2000}>
-     <ProvenSouls />
-     <Stats/>
-     <AboutLanding />
-     <AboutCarousel />
-     <ThreeStages />
-     </Fade>
+      <Fade duration={2000}>
+         <LandingCarousel />
+         <Fade duration={2000}>
+         <ProvenSouls />
+         <Stats/>
+         <AboutLanding />
+         <AboutCarousel />
+         <ThreeStages />
+      </Fade>
     </div>
   )
 }

@@ -28,10 +28,12 @@ import Privacy from './components/policyandfinancial/Privacy';
 import ProvenSoulsPage from './components/shared/ProvenSoulsPage';
 import Footer from './components/shared/Footer';
 
+
 // ---------Mobile Pages --------------
 
 import LandingMob from './components/shared/landing-mobile/LandingMob';
 import NavModal from './components/shared/navbar-mobile/NavModal';
+import AboutMobile from './components/about/AboutMobile';
 
 import ExpeditionsMob from './components/expeditions/mobile/ExpeditionsMob';
 import HomesMob from './components/homes/homes-mobile/HomesMob';
@@ -83,11 +85,10 @@ class App extends Component {
             showNavModal={this.state.showNavModal}
             toggleNavModal={this.toggleNavModal}
           />
-        {/* <NavMobile toggleModal={this.togglemodal} />
-        {menuLoaded === true ? <Modal toggleModal={this.toggleModal} /> : <></>} */}
-        {/* <Switch> */}
           <Route exact path="/" component={LandingMob} />
           <Route exact path='/staff' component={Staff} />
+          <Route exact path='/about' component={AboutMobile} />
+
           {/* <Route exact path="/login" component={LoginMob} /> */}
           {/* <Route exact path="/register" component={RegisterMob} /> */}
           {/* <Route exact path="/calendar" component={MyCalendarMob} /> */}
@@ -125,7 +126,6 @@ class App extends Component {
               <Route exact path='/about' component={About} />
               <Route exact path='/policy' component={PolicyFinancial} />
               <Route exact path='/expeditions' component={Expeditions} />
-      {/* <Route exact path='/homes' component={Homes} /> */}
               <Route exact path='/contact' component={Contact} />
               <Route exact path='/staff' component={Staff} />
               <Route exact path='/orphanages' component={Orphanages} />
