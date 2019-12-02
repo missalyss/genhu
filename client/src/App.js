@@ -17,6 +17,7 @@ import Orphanages from './components/orphanages/Orphanages';
 import DropInCenters from './components/DropInCenter/DropInCenter';
 import ShowOrphanages from './components/orphanages/ShowOrphanages';
 import ShowCenters from './components/homes/centers/ShowCenters';
+
 // Admin Imports
 import Admin from './components/admin/Admin';
 import Stats from './components/admin/stats/Stats';
@@ -26,10 +27,20 @@ import Employees from './components/admin/employees/Employees'
 import Privacy from './components/policyandfinancial/Privacy';
 import ProvenSoulsPage from './components/shared/ProvenSoulsPage';
 import Footer from './components/shared/Footer';
-// Mobile Page
+
+
+// ---------Mobile Pages --------------
+
 import LandingMob from './components/shared/landing-mobile/LandingMob';
 import NavModal from './components/shared/navbar-mobile/NavModal';
 import AboutMobile from './components/about/AboutMobile';
+
+import ExpeditionsMob from './components/expeditions/mobile/ExpeditionsMob';
+import HomesMob from './components/homes/homes-mobile/HomesMob';
+import ShowCentersMob from './components/homes/centers/mobile/ShowCenterMob';
+import ShowOrphanageMob from './components/orphanages/show-orph-mobile/ShowOrphanageMob';
+
+import FooterMob from './components/shared/landing-mobile/footer-mob/FooterMob';
 
 
 class App extends Component {
@@ -77,6 +88,30 @@ class App extends Component {
           <Route exact path="/" component={LandingMob} />
           <Route exact path='/staff' component={Staff} />
           <Route exact path='/about' component={AboutMobile} />
+
+          {/* <Route exact path="/login" component={LoginMob} /> */}
+          {/* <Route exact path="/register" component={RegisterMob} /> */}
+          {/* <Route exact path="/calendar" component={MyCalendarMob} /> */}
+          {/* <Route exact path='/about' component={AboutMob} /> */}
+          {/* <Route exact path='/policy' component={PolicyFinancialMob} /> */}
+          <Route exact path='/expeditions' component={ExpeditionsMob} />
+          {/* <Route exact path='/contact' component={ContactMob} /> */}
+          {/* <Route exact path='/staff' component={StaffMob} /> */}
+          {/* <Route exact path='/orphanages' component={OrphanagesMob} /> */}
+          <Route exact path='/homes' component={HomesMob} />
+          <Route exact path='/orphanages/:id' component={ShowOrphanageMob} />
+          <Route exact path='/centers/:id' component={ShowCentersMob} />
+          {/* <Route exact path='/privacy' component={ PrivacyMob } /> */}
+          {/* <Route exact path='/proven_souls' component={ ProvenSoulsPageMob } /> */}
+          {/* <FetchUser> */}
+          {/* <ProtectedRoute exact path="/admin" component={AdminMob} /> */}
+          {/* <ProtectedRoute exact path="/datastats" component={StatsMob} /> */}
+          {/* <ProtectedRoute exact path="/admin_homes" component={AdminHomesMob} /> */}
+          {/* <ProtectedRoute exact path="/admin_employee" component={EmployeesMob} /> */}
+          {/* </FetchUser> */}
+          {/* <Route component={NomatchMob} /> */}
+      {/* </Switch> */}
+        <FooterMob />
         </>
       );
     } else {

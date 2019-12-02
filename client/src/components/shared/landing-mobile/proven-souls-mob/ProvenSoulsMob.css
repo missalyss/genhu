@@ -19,8 +19,7 @@
   font-family: 'Oxygen', sans-serif;
   font-weight: bold;
   font-size: 2.9em;
-  margin-bottom: .5em;
-  padding-left: .6em;
+  text-align: center;
   /* flex-shrink: -1; */
 }
 .ps-para-mob {
@@ -29,7 +28,9 @@
   line-height: 2em;
   font-size: 1.25em;
   margin-bottom: .50em;
-  padding-left: .6em;
+  padding: .6em 2em;
+  /* border: 2px solid red; */
+  /* text-align: center; */
   }
 
 .btn-div-mob {
@@ -43,20 +44,22 @@
   
   cursor: pointer;
   background: #3C7473;
-  font-size: 1em;
+  /* font-size: .75em; */
   border-radius: 5px;
   align-content: center;
   color: white;
-  font-size: 1.75em;
+  font-size: 1.25em;
   
   /* border: 2px solid white; */
   /* margin: 0 auto; */
- margin-top: 1em;
+ /* margin-top: 1em; */
   /* padding: 0.5em 1em; */
-  width: 60%;
+  /* width: 60%; */
   transition: 0.5s all ease-out;
-  padding: .65em 1.25em;
-  /* margin-right: .75em; */
+  /* padding: .65em 1em; */
+  margin-top: .75em;
+  padding: 0.70em 1em;
+  width: 11rem;
   margin-bottom: 1em;
 }
 .proven-button-mob:hover {

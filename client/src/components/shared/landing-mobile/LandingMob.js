@@ -6,7 +6,6 @@ import LandingStatsMob from './landing-stats-mob/LandingStatsMob';
 import AboutMob from '../landing-mobile/about-mob/AboutMob';
 // import { AboutCarouselMob } from '../landing-mobile/about-mob/AboutMob';
 import ThreeStagesMob from '../landing-mobile/three-stages-mob/ThreeStagesMob';
-import FooterMob from '../landing-mobile/footer-mob/FooterMob';
 
 const LandingMob = () => (
   <>
@@ -17,7 +16,6 @@ const LandingMob = () => (
     <AboutMob />
     {/* <AboutCarouselMob /> */}
     <ThreeStagesMob />
-    <FooterMob />
   </>
 )
 

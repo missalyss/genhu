@@ -55,7 +55,7 @@ const ThreeStagesMob = () => {
             <Fade up >
           <div className='ts-long-box-mob'>
             <div className='ts-flex-mob'>
-              <h2>Help support Generations Humanitarian and our Causes</h2>
+              <h2>Help support Generations Humanitarian <br></br> and our Causes</h2>
               <div className='ts-btn-row-mob'>
               <button className='ts-button-mob'><NavLink style={{textDecoration:'none'}} to='/expeditions'>Discover More</NavLink></button>
               </div>
