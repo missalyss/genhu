@@ -1,10 +1,18 @@
 .menu-mob-icon {
+  width: 35px;
+  margin: 8px;
+  float: right;
+}
+
+.genhu-icon {
   width: 30px;
+  margin: 8px;
 }
 
 .exit-icon {
-  width: 30px;
+  width: 50px;
   float: right;
+  margin: 10px 10px -10px 10px;
 }
   
 .modal-main .modal-button {
@@ -16,6 +24,7 @@
   height: 12.5vh;
   border: none;
   padding: 30px;
+  margin: 0 auto;
 }
 
 .mob-nav-item button {
