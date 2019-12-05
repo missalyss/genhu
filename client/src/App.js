@@ -43,6 +43,12 @@ import ShowOrphanageMob from './components/orphanages/show-orph-mobile/ShowOrpha
 import FooterMob from './components/shared/landing-mobile/footer-mob/FooterMob';
 
 
+// --------- Admin Mobile Pages ------------
+
+import AdminHomeMob from './components/admin/admin-home-mob/AdminMob';
+import AdminEmployeesMob from './components/admin/employees/admin-emp-mobile/AdminEmployeesMob';
+
+
 class App extends Component {
   state= { 
     pageLoaded: false, 
@@ -89,7 +95,7 @@ class App extends Component {
           <Route exact path='/staff' component={Staff} />
           <Route exact path='/about' component={AboutMobile} />
 
-          {/* <Route exact path="/login" component={LoginMob} /> */}
+          <Route exact path="/login" component={Login} />
           {/* <Route exact path="/register" component={RegisterMob} /> */}
           {/* <Route exact path="/calendar" component={MyCalendarMob} /> */}
           {/* <Route exact path='/about' component={AboutMob} /> */}
@@ -104,10 +110,10 @@ class App extends Component {
           {/* <Route exact path='/privacy' component={ PrivacyMob } /> */}
           {/* <Route exact path='/proven_souls' component={ ProvenSoulsPageMob } /> */}
           {/* <FetchUser> */}
-          {/* <ProtectedRoute exact path="/admin" component={AdminMob} /> */}
+          <ProtectedRoute exact path="/admin" component={AdminHomeMob} />
           {/* <ProtectedRoute exact path="/datastats" component={StatsMob} /> */}
           {/* <ProtectedRoute exact path="/admin_homes" component={AdminHomesMob} /> */}
-          {/* <ProtectedRoute exact path="/admin_employee" component={EmployeesMob} /> */}
+          <ProtectedRoute exact path="/admin_employee" component={AdminEmployeesMob} />
           {/* </FetchUser> */}
           {/* <Route component={NomatchMob} /> */}
       {/* </Switch> */}

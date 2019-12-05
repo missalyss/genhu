@@ -17,7 +17,7 @@ const Landing = () => {
     <div>
       <Fade duration={2000}>
          <LandingCarousel />
-         <Fade duration={2000}>
+         {/* <Fade duration={2000}> */}
          <ProvenSouls />
          <Stats/>
          <AboutLanding />
