@@ -15,7 +15,6 @@ import {Fade} from 'react-reveal';
 const Landing = () => {
   return(
     <div>
-      <Fade duration={2000}>
          <LandingCarousel />
          {/* <Fade duration={2000}> */}
          <ProvenSouls />
@@ -23,7 +22,7 @@ const Landing = () => {
          <AboutLanding />
          <AboutCarousel />
          <ThreeStages />
-      </Fade>
+         </Fade>
     </div>
   )
 }

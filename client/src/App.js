@@ -13,6 +13,7 @@ import About from './components/about/About';
 import PolicyFinancial from './components/policyandfinancial/PolicyFinancial';
 import Expeditions from './components/expeditions/Expeditions';
 import Contact from './components/contact/Contact';
+import ContactMobile from './components/contact/contact-mobile/ContactMobile'
 import Orphanages from './components/orphanages/Orphanages';
 import DropInCenters from './components/DropInCenter/DropInCenter';
 import ShowOrphanages from './components/orphanages/ShowOrphanages';
@@ -94,6 +95,7 @@ class App extends Component {
           <Route exact path="/" component={LandingMob} />
           <Route exact path='/staff' component={Staff} />
           <Route exact path='/about' component={AboutMobile} />
+          <Route exact path='/contact' component={ContactMobile} />
 
           <Route exact path="/login" component={Login} />
           {/* <Route exact path="/register" component={RegisterMob} /> */}

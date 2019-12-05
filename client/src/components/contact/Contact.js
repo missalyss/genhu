@@ -27,6 +27,7 @@ class Contact extends Component {
       <div className='contact_right'>
         <form className='contact_form'>
         <h2>We're ready to help!</h2>
+        <br />
         <div className='contact_items'>
         <div className='contact_item'>
         <label>Name</label>
