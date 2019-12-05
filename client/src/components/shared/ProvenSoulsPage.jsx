@@ -5,7 +5,7 @@ const ProvenSoulsPage = () => {
   return (
   <>
   <div className='souls-container'>
-    <div style={{padding: "100px 0px 500px 100px"}}>
+    <div style={{padding: "200px 0px 500px 100px"}}>
       <h1>Coming Soon!</h1>
     </div>
   </div>
