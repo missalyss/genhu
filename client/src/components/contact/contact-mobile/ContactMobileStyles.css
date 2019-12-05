@@ -1,0 +1,21 @@
+.mobile-contact .contact_logo {
+  width: 280px;
+}
+
+.mobile-contact .contact {
+  padding: 20px;
+  width: 100vw;
+}
+
+.mobile-contact .address_info {
+  width: 90vw;
+}
+
+.mobile-contact .contact_form label, .mobile-contact .contact_form button, .mobile-contact .address_info p, .mobile-contact textarea {
+  font-size: 15px;
+}
+
+.mobile-contact .contact_form h2 {
+  font-size: 20px;
+}
+
