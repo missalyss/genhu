@@ -30,7 +30,7 @@
     font-size: 16px;
   }
 
-  .emp-page-heading {
+  .emp-page-heading-mob {
     text-align: center;
     background-color: #67385D;
     color: white;
@@ -62,12 +62,12 @@
 
 
   button.back-button-mob {
-    background-color: #D2AA31;
+    background-color: #3C7473;
     display: block;
   }
   
   button.back-button-mob:hover {
-    background-color: rgb(192, 153, 37);
+    background-color: rgb(40, 78, 78);
   }
 
   

@@ -48,6 +48,7 @@ import FooterMob from './components/shared/landing-mobile/footer-mob/FooterMob';
 
 import AdminHomeMob from './components/admin/admin-home-mob/AdminMob';
 import AdminEmployeesMob from './components/admin/employees/admin-emp-mobile/AdminEmployeesMob';
+import AdminHomesMob from './components/admin/homes/admin-homes-mob/AdminHomesMob'
 
 
 class App extends Component {
@@ -114,7 +115,7 @@ class App extends Component {
           {/* <FetchUser> */}
           <ProtectedRoute exact path="/admin" component={AdminHomeMob} />
           {/* <ProtectedRoute exact path="/datastats" component={StatsMob} /> */}
-          {/* <ProtectedRoute exact path="/admin_homes" component={AdminHomesMob} /> */}
+          <ProtectedRoute exact path="/admin_homes" component={AdminHomesMob} />
           <ProtectedRoute exact path="/admin_employee" component={AdminEmployeesMob} />
           {/* </FetchUser> */}
           {/* <Route component={NomatchMob} /> */}
