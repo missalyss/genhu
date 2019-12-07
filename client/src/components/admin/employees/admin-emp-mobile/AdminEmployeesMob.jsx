@@ -144,18 +144,18 @@ class AdminEmployeesMob extends React.Component {
   render() {
     return (
       <div className='employee-edit-page-mob'>
-        <div className='emp-page-heading'>
-          <h2 >Employees Page</h2>
+        <div className='emp-page-heading-mob'>
+          <h1 >Employees Page</h1>
         </div>
         <div className='emp-btn-flex'>
         <div className='employee-buttons-mob'>
-        <div className = 'add-button'>
+        <div className = 'add-button-mob'>
           <button onClick={this.toggle} >
             Add New Employee
           </button>
         </div>
         <Link to='/admin'>
-          <button className="back-button" onClick={this.toggle} >
+          <button className="back-button-mob" onClick={this.toggle} >
             Back
           </button>
          </Link>

@@ -1,13 +1,14 @@
 import React from "react";
 import axios from "axios";
-import Orphanage from "./orphanages/Orphanage";
-import Center from "./orphanages/Center";
-import HomeForm from "./AdminHomeForm";
-import { AdminTitle, AdminSubTitle } from "../Styles";
-import "../stats/AdminStats.css";
+import OrphanageMob from "./OrphanageMob";
+import CenterMob from "./CenterMob";
+// import AdminHomeFormMob from "./AdminHomeFormMob";
+import { AdminTitle, AdminSubTitle } from "../../Styles";
+import "../../stats/AdminStats.css";
 import { Link } from 'react-router-dom';
-import HomeModal from './orphanages/HomeModal';
-import '../../staff/StaffModal.css';
+import HomeModalMob from './HomeModalMob';
+import '../../../staff/StaffModal.css';
+import '../../employees/admin-emp-mobile/AdminEmployeesMob.css'
 
 class HomesMob extends React.Component {
   state = { homes: [], orphanages: [], centers: [], toggleModal: false };
@@ -93,10 +94,10 @@ class HomesMob extends React.Component {
     const { orphanages } = this.state;
 
     return (
-      <div className='home-section-cont'>
+      <div className='home-section-cont-mob'>
         {orphanages.map(orphanage => (
-          <div className="home-box">
-          <Orphanage
+          <div className="home-box-mob">
+          <OrphanageMob
             key={orphanage.id}
             {...orphanage}
 
@@ -116,10 +117,10 @@ class HomesMob extends React.Component {
     const { centers } = this.state;
     
     return (
-      <div className='home-section-cont'>
+      <div className='home-section-cont-mob'>
         {centers.map(center => (
-          <div className="home-box">
-          <Center
+          <div className="home-box-mob">
+          <CenterMob
           key={center.id}
           {...center}
             show={this.toggle}
@@ -135,21 +136,21 @@ class HomesMob extends React.Component {
   }
   render() {
     return (
-      <div style={{padding: '5em'}}>
-        <h1 className="homes-title">Homes Page</h1>
-        <div className="home-btn-flex">
-          <button className="add-button" onClick={this.toggle}>
-            Add New Home
+      <div style={{paddingTop: '2em'}}>
+        <h1 className="emp-page-heading-mob">Homes Page</h1>
+        <div className="employee-buttons-mob">
+          <button className="add-button-mob" onClick={this.toggle}>
+            Add Home
           </button>
           <Link to='/admin'>
-          <button className="add-button" onClick={this.toggle} >
+          <button className="back-btn-home-mob" onClick={this.toggle} >
             Back
           </button>
           </Link>
         </div>
         {this.state.toggleModal ? (
           <div className='center'> 
-          <HomeModal 
+          <HomeModalMob 
           show={this.toggle} 
           addHome={this.addHome} 
           toggle={this.toggle} 
@@ -162,11 +163,11 @@ class HomesMob extends React.Component {
           )}
           <div>
           <div>
-          <h1 className='homes-subtitle'>Orphanages</h1>
+          <h1 className='employee-title-mob'>Orphanages</h1>
             {this.renderOrphanages()}
           </div>
           <div>
-          <h1 className='homes-subtitle'>Centers</h1>
+          <h1 className='employee-title-mob'>Centers</h1>
             {this.renderCenters()}
           </div>
           </div>
