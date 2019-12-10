@@ -6,6 +6,7 @@ import ShowMob from "./ShowMob";
 import './AdminEmployeesMob.css'
 import { Link } from 'react-router-dom';
 import EmployeeModalMob from './EmployeeModalMob';
+import { AdminButtonMob, AdminButtonCont } from "../../Styles";
 
 class AdminEmployeesMob extends React.Component {
   state = { employees: [], volunteers: [], directors: [], staff: [], toggleModal: false };
@@ -149,16 +150,16 @@ class AdminEmployeesMob extends React.Component {
         </div>
         <div className='emp-btn-flex'>
         <div className='employee-buttons-mob'>
-        <div className = 'add-button-mob'>
-          <button onClick={this.toggle} >
+        <AdminButtonCont>
+          <AdminButtonMob onClick={this.toggle} >
             Add New Employee
-          </button>
-        </div>
+          </AdminButtonMob>
         <Link to='/admin'>
-          <button className="back-button-mob" onClick={this.toggle} >
+          <AdminButtonMob onClick={this.toggle} >
             Back
-          </button>
+          </AdminButtonMob>
          </Link>
+        </AdminButtonCont>
          </div>
         </div>
         {this.state.toggleModal ? (

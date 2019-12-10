@@ -1,4 +1,5 @@
 import React from "react";
+import { AdminButton } from "../../Styles";
 
 class StatFormMob extends React.Component {
   state = { name: "", value: "",};
@@ -50,7 +51,7 @@ class StatFormMob extends React.Component {
             onChange={this.handleChange}
           />
           <div className="button-cont-stat">
-          <button type="submit">Submit</button>
+          <AdminButton type="submit">Submit</AdminButton>
           </div>
         </form>
       </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AdminSubTitle,  } from "../Styles";
+import { AdminSubTitle, AdminButton, AdminButtonCont,  } from "../Styles";
 import EmployeeForm from "./EmployeeForm";
 import EmployeeModal from './EmployeeModal';
 const defaultImage = 'http://www.tolmayenterprises.com/images/Person.png';
@@ -13,27 +13,27 @@ const Show = ({ first_name, last_name, bio, title, email, phone, other, role, im
   return (
     <div>
       <div>
-        <AdminSubTitle>Name: {first_name} {last_name} </AdminSubTitle>
+        <AdminSubTitle className='center'>Name: {first_name} {last_name} </AdminSubTitle>
       </div>
         <div>
-        <AdminSubTitle>Title: {title}</AdminSubTitle>
+        <AdminSubTitle className='center'>Title: {title}</AdminSubTitle>
       </div>
         <div>
-        <AdminSubTitle>Role: {role}</AdminSubTitle>
+        <AdminSubTitle className='center'>Role: {role}</AdminSubTitle>
       </div>
       <br />
       <div>
         <img className='employee_photo' src={image || defaultImage} />
       </div>
-      <div>
-        <button onClick={editToggle}>Edit</button>
-        <button
+      <AdminButtonCont>
+        <AdminButton onClick={editToggle}>Edit</AdminButton>
+        <AdminButton
           style={{ backgroundColor: "#863A2A" }}
           onClick={() => deleteEmployee(id)}
         >
           Delete
-        </button>
-      </div>
+        </AdminButton>
+      </AdminButtonCont>
       {toggleEdit ? (
         <EmployeeModal
           show={editToggle}

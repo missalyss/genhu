@@ -1,4 +1,5 @@
 import React from "react";
+import { AdminButton } from "../Styles";
 
 class StatForm extends React.Component {
   state = { name: "", value: "",};
@@ -20,7 +21,7 @@ class StatForm extends React.Component {
     } else {
       this.props.addStat({ ...this.state });
     }
-    this.setState({ name: "", value: "", });
+    this.setState( { name: "", value: "", });
   };
 
   handleChange = e => {
@@ -37,20 +38,22 @@ class StatForm extends React.Component {
           <input
             name="name"
             value={name}
-            placeholder="Name"
+            // placeholder="Name"
             required
             onChange={this.handleChange}
           />
+          <br>
+          </br>
           <label>Value:</label>
           <input
             name="value"
             value={value}
-            placeholder="Value"
+            // placeholder="Value"
             required
             onChange={this.handleChange}
           />
           <div className="button-cont-stat">
-          <button type="submit">Submit</button>
+          <AdminButton type="submit">Submit</AdminButton>
           </div>
         </form>
       </div>

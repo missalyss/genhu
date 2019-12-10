@@ -1,6 +1,7 @@
 import React from "react";
 import Dropzone from 'react-dropzone';
 import './EmployeeFormMob.css';
+import { AdminButton } from "../../Styles";
 
 class EmployeeFormMob extends React.Component {
   state = { form_fields: { first_name: "", last_name: "", bio: "", title: "", email: "", phone: "", other: "", role: "", image: ""}, imgSrc: "", };
@@ -148,7 +149,7 @@ class EmployeeFormMob extends React.Component {
             onChange={this.handleChange}
           />
           <div className="button-cont-stat-mob">
-          <button type="submit">Submit</button>
+          <AdminButton type="submit">Submit</AdminButton>
           </div>
         </form>
       </div>
