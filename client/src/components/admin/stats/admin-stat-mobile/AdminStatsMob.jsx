@@ -78,7 +78,7 @@ class StatsMob extends React.Component {
         <h1 className="emp-page-heading-mob">Stats Page</h1>
         <div className="button-cont-sa-mob">
         <AdminButtonCont>
-          <AdminButtonMob conClick={this.toggle}>
+          <AdminButtonMob onClick={this.toggle}>
             Add New Stat
           </AdminButtonMob>
         <Link to='/admin'>

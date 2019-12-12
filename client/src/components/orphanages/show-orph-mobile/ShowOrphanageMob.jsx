@@ -17,7 +17,7 @@ class ShowOrphanageMob extends React.Component {
   }
 
   componentDidUpdate() {
-    this.componentDidMount()
+    // this.componentDidMount()
   }
 
   renderCountUpShelteredO = () => {
@@ -93,7 +93,7 @@ class ShowOrphanageMob extends React.Component {
           <div className='centers-single-stat-mob'>
             <div className='centers-single-stat-col-mob'>
               <div className='homes-stat-font-mob'>{ this.renderCountUpOrphansO() }% </div>
-              <p className='homes-stat-title-mob'>Orhpans</p>
+              <p className='homes-stat-title-mob'>Orphans</p>
             </div>
           </div>
         </Fade>
