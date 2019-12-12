@@ -2,6 +2,7 @@ import React from "react";
 import ReactQuill from "react-quill";
 import '../../../quill/EditorStyles.css';
 import 'react-quill/dist/quill.snow.css'
+import { AdminButton } from "../../../Styles";
 
 
 class AdminHomeFormMob extends React.Component {
@@ -193,7 +194,7 @@ class AdminHomeFormMob extends React.Component {
           
           </div>
           <div className="button-cont-stat">
-            <button type="submit">Submit</button>
+            <AdminButton type="submit">Submit</AdminButton>
           </div>
         </form>
       </div>

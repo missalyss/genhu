@@ -3,7 +3,7 @@ import axios from "axios";
 import OrphanageMob from "./OrphanageMob";
 import CenterMob from "./CenterMob";
 // import AdminHomeFormMob from "./AdminHomeFormMob";
-import { AdminTitle, AdminSubTitle } from "../../Styles";
+import { AdminTitle, AdminSubTitle, AdminButtonMob, AdminButtonCont } from "../../Styles";
 import "../../stats/AdminStats.css";
 import { Link } from 'react-router-dom';
 import HomeModalMob from './HomeModalMob';
@@ -54,7 +54,7 @@ class HomesMob extends React.Component {
         return home;
       });
       this.setState({ homes });
-      window.location.href = '/admin_homes'
+      this.toggle();
     });
   };
 
@@ -138,16 +138,16 @@ class HomesMob extends React.Component {
     return (
       <div style={{paddingTop: '2em'}}>
         <h1 className="emp-page-heading-mob">Homes Page</h1>
-        <div className="employee-buttons-mob">
-          <button className="add-button-mob" onClick={this.toggle}>
+        <AdminButtonCont>
+          <AdminButtonMob onClick={this.toggle}>
             Add Home
-          </button>
+          </AdminButtonMob>
           <Link to='/admin'>
-          <button className="back-btn-home-mob" onClick={this.toggle} >
+          <AdminButtonMob onClick={this.toggle} >
             Back
-          </button>
+          </AdminButtonMob>
           </Link>
-        </div>
+        </AdminButtonCont>
         {this.state.toggleModal ? (
           <div className='center'> 
           <HomeModalMob 

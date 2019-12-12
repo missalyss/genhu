@@ -3,7 +3,7 @@ import axios from "axios";
 import Orphanage from "./orphanages/Orphanage";
 import Center from "./orphanages/Center";
 import HomeForm from "./AdminHomeForm";
-import { AdminTitle, AdminSubTitle } from "../Styles";
+import { AdminTitle, AdminSubTitle, AdminButton, AdminButtonCont } from "../Styles";
 import "../stats/AdminStats.css";
 import { Link } from 'react-router-dom';
 import HomeModal from './orphanages/HomeModal';
@@ -61,8 +61,7 @@ class HomesMob extends React.Component {
     axios.delete(`/api/homes/${id}`).then(res => {
       const { homes, } = this.state;
       this.setState({ homes: homes.filter(h => h.id !== id) });
-      window.location.href = '/admin_homes'
-
+      this.toggle();
     });
   };
 
@@ -135,18 +134,20 @@ class HomesMob extends React.Component {
   }
   render() {
     return (
-      <div style={{padding: '5em'}}>
+      <div style={{paddingTop: '5em'}}>
         <h1 className="homes-title">Homes Page</h1>
-        <div className="home-btn-flex">
-          <button className="add-button" onClick={this.toggle}>
-            Add New Home
-          </button>
-          <Link to='/admin'>
-          <button className="add-button" onClick={this.toggle} >
-            Back
-          </button>
-          </Link>
-        </div>
+        <AdminButtonCont>
+          {/* <div className="home-btn-flex"> */}
+            <AdminButton onClick={this.toggle}>
+              Add New Home
+            </AdminButton>
+            <Link to='/admin'>
+            <AdminButton  onClick={this.toggle} >
+              Back
+            </AdminButton>
+            </Link>
+          {/* </div> */}
+        </AdminButtonCont>
         {this.state.toggleModal ? (
           <div className='center'> 
           <HomeModal 

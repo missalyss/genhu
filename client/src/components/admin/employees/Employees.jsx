@@ -1,9 +1,10 @@
 import React from "react";
 import axios from "axios";
 import EmployeeForm from "./EmployeeForm";
-import {AdminTitle} from "../Styles";
+import {AdminTitle, AdminButton, AdminButtonCont } from "../Styles";
 import Show from "./Show";
 import './Employees.css'
+import '../homes/Homes.css'
 import { Link } from 'react-router-dom';
 import EmployeeModal from './EmployeeModal';
 
@@ -144,23 +145,28 @@ class Employees extends React.Component {
   render() {
     return (
       <div className='employee-edit-page'>
-        <div className='employee-title'>Employees Page</div>
-        <div className='emp-btn-flex'>
-        <div className='employee-buttons'>
-        <div className = 'add-button'>
-          <button onClick={this.toggle} >
+        <h1 className='homes-title'>Employees Page</h1>
+        {/* <div className='emp-btn-flex'> */}
+        <AdminButtonCont>
+        {/* <div className = 'home-btn-flex'> */}
+          <AdminButton onClick={this.toggle} >
             Add New Employee
-          </button>
-        </div>
+          </AdminButton>
+        {/* </div> */}
         <Link to='/admin'>
-          <button className="back-button" onClick={this.toggle} >
+          <AdminButton  onClick={this.toggle} >
             Back
-          </button>
+          </AdminButton>
          </Link>
-         </div>
-        </div>
+         </AdminButtonCont>
+        {/* </div> */}
         {this.state.toggleModal ? (
-          <div> <EmployeeModal show={this.toggle} onHide={this.toggle} toggleShow={this.toggle} addEmployee={this.addEmployee}/> </div>
+          <div> 
+            <EmployeeModal 
+            show={this.toggle} 
+            onHide={this.toggle} 
+            toggleShow={this.toggle} 
+            addEmployee={this.addEmployee}/> </div>
         ) : (
           <div></div>
         )}

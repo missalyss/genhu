@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import { AdminSubTitle, AdminData } from "../../Styles";
+import { AdminSubTitle, AdminData, AdminButtonMob, AdminButtonCont } from "../../Styles";
 import StatForm from "./AdminStatFormMob";
+import AdminStatsModal from '../AdminStatsModal';
 // import { Trash } from '../../../assets/Icons/TrashIcon.png'
 
-const StatMob = ({ name, value, editStat, id, priority, deleteStat }) => {
-  const [toggleEdit, setToggleEdit] = useState(false);
+const StatMob = ({ onHide, name, value, editStat, id, priority, deleteStat, show, ...stat }) => {
+  const [toggleModal, setToggleModal] = useState(false);
 
-  const editToggle = () => setToggleEdit(!toggleEdit);
+  const toggle = () => setToggleModal(!toggleModal);
 
   return (
     <div className="single-stat-mob">
@@ -18,24 +19,30 @@ const StatMob = ({ name, value, editStat, id, priority, deleteStat }) => {
         <AdminSubTitle> Stat Value: </AdminSubTitle>
         <AdminData> {value}</AdminData>
       </div>
-      <div className="button-cont-stat-mob">
-        <button onClick={editToggle}>Edit</button>
-        <button
+      <AdminButtonCont>
+        <AdminButtonMob onClick={toggle}>Edit</AdminButtonMob>
+        <AdminButtonMob
           style={{ backgroundColor: "#863A2A" }}
           onClick={() => deleteStat(id)}
         >
           Delete
-        </button>
-      </div>
-      {toggleEdit ? (
-        <StatForm
-          editStat={editStat}
-          editToggle={editToggle}
+        </AdminButtonMob>
+      </AdminButtonCont>
+      {toggleModal ? (
+        <AdminStatsModal 
+          editStat={editStat} 
+          statname={name}
+          onHide={ toggle } 
           statName={name}
           statValue={value}
           priority={priority}
+          show={show} 
+          toggleShow = { toggle }
+          editToggle={toggle}
+          {...stat}          
           id={id}
-        />
+
+          /> 
       ) : (
         <div></div>
       )}

@@ -64,25 +64,28 @@
   button.back-button-mob {
     background-color: #3C7473;
     display: block;
+    border-radius: 2px
   }
   
-  button.back-button-mob:hover {
+  .back-button-mob:hover {
     background-color: rgb(40, 78, 78);
   }
 
   
-  button.add-button-mob {
+  .add-button-mob {
     background-color: #3C7473;
     display: block;
+    border-radius: 5px;
+
   }
   
-  button.add-button-mob:hover {
+ .add-button-mob:hover {
     background-color: rgb(40, 78, 78);
   }
 
-  .employee-edit-page-mob button {
+  /* .employee-edit-page-mob button {
     margin: 0em 1em 0em 0em;
-  }
+  } */
 
   .employee-buttons-mob {
     display: flex;
@@ -91,11 +94,11 @@
     flex-direction: row;
     /* width: 80%; */
     /* border: 2px solid red; */
-    padding-right: 2em;
+    /* padding-right: 2em; */
   }
 
-  .employee-edit-page-mob {
+  /* .employee-edit-page-mob {
     padding-top: 5em ;
-  }
+  } */
 
 

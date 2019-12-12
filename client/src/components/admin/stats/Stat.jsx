@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import { AdminSubTitle, AdminData } from "../Styles";
+import { AdminSubTitle, AdminData, AdminButtonMob, AdminButtonCont } from "../Styles";
 import StatForm from "./StatForm";
+import AdminStatsModal from './AdminStatsModal';
 // import { Trash } from '../../../assets/Icons/TrashIcon.png'
 
-const Stat = ({ name, value, editStat, id, priority, deleteStat }) => {
-  const [toggleEdit, setToggleEdit] = useState(false);
+const Stat = ({ onHide, name, value, editStat, id, priority, deleteStat, show, ...stat }) => {
+  const [toggleModal, setToggleModal] = useState(false);
 
-  const editToggle = () => setToggleEdit(!toggleEdit);
+  const toggle = () => setToggleModal(!toggleModal);
 
   return (
     <div className="single-stat">
@@ -18,24 +19,30 @@ const Stat = ({ name, value, editStat, id, priority, deleteStat }) => {
         <AdminSubTitle> Stat Value: </AdminSubTitle>
         <AdminData> {value}</AdminData>
       </div>
-      <div className="button-cont-stat">
-        <button onClick={editToggle}>Edit</button>
-        <button
-          style={{ backgroundColor: "#863A2A" }}
+      <AdminButtonCont>
+        <AdminButtonMob onClick={toggle} style={{ borderRadius: '5px'}}>Edit</AdminButtonMob>
+        <AdminButtonMob
+          style={{ backgroundColor: "#863A2A", borderRadius: '5px' }}
           onClick={() => deleteStat(id)}
         >
           Delete
-        </button>
-      </div>
-      {toggleEdit ? (
-        <StatForm
-          editStat={editStat}
-          editToggle={editToggle}
+        </AdminButtonMob>
+      </AdminButtonCont>
+      {toggleModal ? (
+        <AdminStatsModal 
+          editStat={editStat} 
+          statname={name}
+          onHide={ toggle } 
           statName={name}
           statValue={value}
           priority={priority}
+          show={show} 
+          toggleShow = { toggle }
+          editToggle={toggle}
+          {...stat}          
           id={id}
-        />
+
+          /> 
       ) : (
         <div></div>
       )}

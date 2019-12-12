@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AdminSubTitleMob,  } from "../../Styles";
+import { AdminSubTitleMob, AdminButtonMob, AdminButtonCont,  } from "../../Styles";
 import EmployeeFormMob from "./EmployeeFormMob";
 import EmployeeModalMob from './EmployeeModalMob';
 const defaultImage = 'http://www.tolmayenterprises.com/images/Person.png';
@@ -13,27 +13,27 @@ const ShowMob = ({ first_name, last_name, bio, title, email, phone, other, role,
   return (
     <div>
       <div>
-        <AdminSubTitleMob>Name: {first_name} {last_name} </AdminSubTitleMob>
+        <AdminSubTitleMob className='center'>Name: {first_name} {last_name} </AdminSubTitleMob>
       </div>
         <div>
-        <AdminSubTitleMob>Title: {title}</AdminSubTitleMob>
+        <AdminSubTitleMob className='center'>Title: {title}</AdminSubTitleMob>
       </div>
         <div>
-        <AdminSubTitleMob>Role: {role}</AdminSubTitleMob>
+        <AdminSubTitleMob className='center'>Role: {role}</AdminSubTitleMob>
       </div>
       <br />
       <div>
         <img className='employee_photo' src={image || defaultImage} />
       </div>
-      <div>
-        <button onClick={editToggle}>Edit</button>
-        <button
+      <AdminButtonCont>
+        <AdminButtonMob onClick={editToggle}>Edit</AdminButtonMob>
+        <AdminButtonMob
           style={{ backgroundColor: "#863A2A" }}
           onClick={() => deleteEmployee(id)}
         >
           Delete
-        </button>
-      </div>
+        </AdminButtonMob>
+      </AdminButtonCont>
       {toggleEdit ? (
         <EmployeeModalMob
           show={editToggle}

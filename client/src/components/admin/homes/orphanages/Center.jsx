@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AdminSubTitle, AdminData } from "../../Styles";
+import { AdminSubTitle, AdminData, AdminButtonMob, AdminButtonCont } from "../../Styles";
 import HomeForm from "../AdminHomeForm";
 import HomeModal from './HomeModal';
 
@@ -13,19 +13,19 @@ const Center = ({ show, onHide, editHome, id, deleteHome, addHome, ...orest }) =
 
   return (
     <div className="single-stat-home" style={{width: '10em'}}>
-      <div className="stat-data">
+      <div className="stat-data-mob">
         <AdminSubTitle>Center Name: </AdminSubTitle>
         <AdminData> {orest.name}</AdminData>
       </div>
-      <div className="button-cont-stat">
-        <button onClick={toggle}>Edit</button>
-        <button
+      <AdminButtonCont>
+        <AdminButtonMob onClick={toggle}>Edit</AdminButtonMob>
+        <AdminButtonMob
           style={{ backgroundColor: "#863A2A" }}
           onClick={() => deleteHome(id)}
         >
           Delete
-        </button>
-      </div>
+        </AdminButtonMob>
+      </AdminButtonCont>
       {toggleModal ? (
         <HomeModal
           addHome={addHome}

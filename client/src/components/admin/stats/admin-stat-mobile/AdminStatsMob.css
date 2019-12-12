@@ -45,7 +45,7 @@
 .single-stat-mob {
   height: 100%;
   width: 100%;
-  padding: .3em 0em;
+  padding: .3em .75em;
   align-items: center;
 }
 

@@ -1,7 +1,7 @@
 import React from "react";
 import AdminNav from "./AdminNav";
 import "./AdminHome.css";
-import { AdminTitle } from './Styles';
+import { AdminTitle, AdminButton } from './Styles';
 import { Link } from 'react-router-dom';
 
 const AdminHome = () => {
@@ -16,22 +16,22 @@ const AdminHome = () => {
           <div className="button-col-one">
             <div className="row-one">
               <Link to='/datastats'>
-              <button>Stats Page</button>
+               <AdminButton>Stats Page</AdminButton>
               </Link>
               <Link to='/admin_employee'>
-              <button>Employees Page</button>
+               <AdminButton>Employees Page</AdminButton>
               </Link>
-              <button>Events Page</button>
+              <Link to='/admin_homes'>
+                <AdminButton>Homes</AdminButton>
+              </Link>
             </div>
         </div>
           <div className="button-col">
             <div className="row-one">
-            <Link to='/admin_homes'>
-              <button>Homes</button>
-              </Link>
-              <button>Calendar Page</button>
+              <AdminButton>Events Page</AdminButton>
+              <AdminButton>Calendar Page</AdminButton>
             <Link to='/login'>
-              <button>Log Out</button>
+              <AdminButton>Log Out</AdminButton>
               </Link>
             </div>
         </div>

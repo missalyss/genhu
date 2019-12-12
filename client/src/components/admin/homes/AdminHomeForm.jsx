@@ -1,5 +1,6 @@
 import React from "react";
 import ReactQuill from "react-quill";
+import {AdminButton} from '../Styles';
 import '../quill/EditorStyles.css';
 import 'react-quill/dist/quill.snow.css'
 
@@ -193,7 +194,7 @@ class HomeForm extends React.Component {
           
           </div>
           <div className="button-cont-stat">
-            <button type="submit">Submit</button>
+            <AdminButton type="submit">Submit</AdminButton>
           </div>
         </form>
       </div>

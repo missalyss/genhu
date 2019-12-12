@@ -84,13 +84,13 @@
 
 .home-box-mob {
   /* border: 2px solid black; */
-  width: 100%;
+  width: 80%;
   /* height: 16em; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1em 0em;
+  margin: 2em 0em;
 
   /* margin: 1em 5em 1em 1em ; */
   
