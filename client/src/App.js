@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import ScrollToTop from './ScrollToTop';
+
 import Home from './components/shared/Landing';
 import Nomatch from './components/shared/Nomatch';
 import FetchUser from './components/auth/FetchUser';
@@ -94,6 +96,8 @@ class App extends Component {
             showNavModal={this.state.showNavModal}
             toggleNavModal={this.toggleNavModal}
           />
+          <ScrollToTop>
+
           <Route exact path="/" component={LandingMob} />
           <Route exact path='/staff' component={Staff} />
           <Route exact path='/about' component={AboutMobile} />
@@ -121,6 +125,7 @@ class App extends Component {
           {/* </FetchUser> */}
           {/* <Route component={NomatchMob} /> */}
       {/* </Switch> */}
+          </ScrollToTop>
         <FooterMob />
         </>
       );
@@ -129,6 +134,8 @@ class App extends Component {
         <>
           <Navbar />
             <Switch>
+              <ScrollToTop>
+
               <Route exact path="/" component={Home} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/register" component={Register} />
@@ -151,6 +158,7 @@ class App extends Component {
                 <ProtectedRoute exact path="/admin_employee" component={Employees} />
               </FetchUser>
               <Route component={Nomatch} />
+              </ScrollToTop>
             </Switch>
             <Footer/>
         </>

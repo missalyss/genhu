@@ -34,7 +34,6 @@ const Stats = () => {
           <p><NavLink to='/privacy' className='NavLink'>Privacy</NavLink></p>
           <br /><br />
         </div>
-        //This was changed from landingmobile branch
         <div class="column">
           <h2 class= 'header'><Link>CONTACT US</Link></h2>
 
