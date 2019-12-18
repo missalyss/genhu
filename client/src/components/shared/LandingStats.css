@@ -26,7 +26,6 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 0em 2em 2em;
-  text-shadow: 2px 2px black;
 }
 
 .la-single-stat {
@@ -41,11 +40,13 @@
 .stat-name {
   font-size: .85em;
   font-weight: 250;
+  text-shadow: 2px 2px 8px black;
 }
 
 .stat-value {
   font-size: 63px;
   line-height: 1.2;
+  text-shadow: 2px 2px 8px black;
 }
 .statsHeader {
   text-align: center;

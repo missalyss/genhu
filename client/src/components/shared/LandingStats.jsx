@@ -35,9 +35,9 @@ class LandingStats extends React.Component {
     return (
       <div className="stats-body">
         <div className="statsHeader">
-          <h1 style={{ marginTop: "4rem", fontSize: '2em' }}>SUCCESS </h1>
+          <h1 style={styles.sucess}>SUCCESS </h1>
           <div className="stats-line"></div>
-          <h1>Since 2008. You have cared. We did the math.</h1>
+          <h1 style={styles.shadow}>Since 2008. You have cared. We did the math.</h1>
           <br />
          
           <div className="stats-container">{this.renderStats()}</div>
@@ -48,3 +48,15 @@ class LandingStats extends React.Component {
 }
 
 export default LandingStats;
+
+const styles = {
+  shadow: {
+    textShadow: "2px 2px 8px black"
+  },
+  sucess: {
+    textShadow: "2px 2px 8px black",
+    marginTop: "4rem", 
+    fontSize: '2em'
+
+  }
+}

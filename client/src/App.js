@@ -157,8 +157,8 @@ class App extends Component {
                 <ProtectedRoute exact path="/admin_homes" component={AdminHomes} />
                 <ProtectedRoute exact path="/admin_employee" component={Employees} />
               </FetchUser>
-              <Route component={Nomatch} />
               </ScrollToTop>
+              <Route component={Nomatch} />
             </Switch>
             <Footer/>
         </>

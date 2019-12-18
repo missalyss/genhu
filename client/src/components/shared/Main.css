@@ -342,7 +342,7 @@ li {
   position: absolute;
   background: teal;
   width: 0;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width .5s ease 0s, left .5s ease 0s;
 }
 .nav-item:hover:after { 
   width: 100%; 
@@ -372,7 +372,7 @@ li {
   z-index: 5000;
   font-size: 22px;
   padding: 10px;
-  margin-top: 10px;
+  /* margin-top: 10em; */
 }
 
 .dropdown-content a {
