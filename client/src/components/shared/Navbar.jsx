@@ -90,7 +90,7 @@ class Navbar extends React.Component {
         </div>
         </div>
         <NavLink to="/contact" className='nav-item'>Contact Us</NavLink>
-        <a href="https://www.facebook.com/genhu.org/" target="_blank"><Image src={Facebook} className='facebook-image' alt='facebook'/></a>     
+        <a href="https://www.facebook.com/genhu.org/" target="_blank" className='nav-item'><img src={Facebook} className='facebook-image' alt='facebook'/></a>     
       </div>
     </div>
   )

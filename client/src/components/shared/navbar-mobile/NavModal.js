@@ -49,7 +49,7 @@ const NavModal = ({ showNavModal, toggleNavModal }) => {
           </div>
           <div className='mob-nav-item'>
             <a href="https://www.facebook.com/genhu.org/" target="_blank">
-            <button onClick={toggleNavModal} className='modal-button'><Image src={Facebook} alt='facebook icon' className='facebook' /></button>
+            <button onClick={toggleNavModal} className='modal-button'><Image src={Facebook} alt='facebook icon' className='facebook-mobile' /></button>
             </a>
           </div>
         </div>

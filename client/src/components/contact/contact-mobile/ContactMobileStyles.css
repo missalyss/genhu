@@ -5,10 +5,22 @@
 .mobile-contact .contact {
   padding: 20px;
   width: 100vw;
+  display: flex;
+  flex-direction: column
+}
+
+.mobile-contact .contact_right {
+  margin-top: 60px;
+  order: 1;
+}
+
+.mobile-contact .contact_left {
+  order: 2;
 }
 
 .mobile-contact .address_info {
   width: 90vw;
+  margin-bottom: 60px;
 }
 
 .mobile-contact .contact_form label, .mobile-contact .contact_form button, .mobile-contact .address_info p, .mobile-contact textarea {
@@ -22,3 +34,4 @@
 .mobile-contact .contact_submit {
   margin: 0;
 }
+
